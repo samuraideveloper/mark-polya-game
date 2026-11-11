@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#14122b">
+<title>MARK & POLINA: SCHOOL DAY — MADE BY ANONYMOUS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Nunito:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--y:#ffd23f;--p:#ff5d8f;--b:#3fa7ff;--bg:#14122b;--sl:env(safe-area-inset-left,0px);--sr:env(safe-area-inset-right,0px);--st:env(safe-area-inset-top,0px);--sb:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{width:100%;height:100%;overflow:hidden;background:#000;color:#fff;font-family:Nunito,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;-webkit-user-select:none;user-select:none;touch-action:none;overscroll-behavior:none}
+h1,h2,h3,.ttl,button{font-family:'Russo One',Nunito,system-ui,sans-serif;letter-spacing:.03em}
+#cv{position:fixed;inset:0;width:100%;height:100%;display:block}
+.hide{display:none!important}
+.scr{position:fixed;inset:0;z-index:40;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:calc(14px + var(--st)) calc(14px + var(--sr)) calc(14px + var(--sb)) calc(14px + var(--sl));overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:pan-y}
+button{cursor:pointer;border:0;color:#14122b;background:var(--y);padding:14px 26px;border-radius:14px;font-size:clamp(14px,2.2vw,19px);box-shadow:0 5px 0 #b98a00,0 10px 24px rgba(0,0,0,.4);transition:transform .12s,filter .12s}
+button:hover{filter:brightness(1.1);transform:translateY(-2px)}
+button:active{transform:translateY(3px);box-shadow:0 2px 0 #b98a00}
+button.alt{background:#2b2850;color:#fff;box-shadow:0 5px 0 #17153a,0 10px 24px rgba(0,0,0,.4)}
+.row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:18px}
+/* disclaimer */
+#disc{background:radial-gradient(circle at 50% 20%,#2c2760,#0b0a1a 70%)}
+.card0{max-width:660px;width:100%;background:rgba(20,18,43,.92);border:3px solid var(--y);border-radius:22px;padding:clamp(18px,4vw,36px);text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.6);animation:pop .5s cubic-bezier(.2,1.4,.4,1)}
+.card0 h2{color:var(--y);font-size:clamp(28px,6vw,46px);margin-bottom:14px}
+.card0 p{font-size:clamp(14px,2.3vw,18px);line-height:1.55;color:#dcd9f5;margin-bottom:12px}
+.card0 .big{color:var(--p);font-family:'Russo One',sans-serif;font-size:clamp(15px,2.6vw,21px)}
+@keyframes pop{from{transform:scale(.7);opacity:0}to{transform:none;opacity:1}}
+/* menu */
+#menu{background:linear-gradient(180deg,rgba(20,18,43,.78),rgba(20,18,43,.35) 45%,rgba(20,18,43,.9));justify-content:flex-start}
+#cardM{display:none!important}
+#menu .in{margin:auto;display:flex;flex-direction:column;align-items:center;width:100%}
+.logo{text-align:center;animation:drop .8s cubic-bezier(.2,1.3,.4,1)}
+.logo h1{font-size:clamp(26px,6.4vw,66px);line-height:1.02;text-shadow:0 4px 0 #000,0 0 30px rgba(255,210,63,.45)}
+.logo h1 em{font-style:normal;color:var(--b)}.logo h1 i{font-style:normal;color:var(--p)}.logo h1 span{display:block;color:var(--y);font-size:.62em}
+.logo small{display:inline-block;margin-top:8px;background:#000;border:2px solid var(--y);color:var(--y);padding:3px 12px;border-radius:99px;font-family:'Russo One',sans-serif;font-size:clamp(10px,1.6vw,14px);transform:rotate(-2deg)}
+@keyframes drop{from{transform:translateY(-60px);opacity:0}to{transform:none;opacity:1}}
+.cards{display:flex;gap:clamp(12px,3vw,34px);margin-top:clamp(12px,3vh,30px);justify-content:center;width:100%}
+.pc{position:relative;width:min(42vw,270px);border-radius:22px;overflow:hidden;cursor:pointer;background:#1d1a3d;border:3px solid rgba(255,255,255,.18);box-shadow:0 14px 40px rgba(0,0,0,.55);transition:transform .25s cubic-bezier(.2,1.3,.4,1),border-color .25s,box-shadow .25s;animation:rise .7s backwards cubic-bezier(.2,1.2,.4,1)}
+.pc:nth-child(2){animation-delay:.12s}
+@keyframes rise{from{transform:translateY(70px) rotate(4deg);opacity:0}}
+.pc:hover,.pc:focus{transform:translateY(-10px) rotate(-1.5deg) scale(1.04);border-color:var(--y);box-shadow:0 24px 60px rgba(255,210,63,.25)}
+.pc:nth-child(2):hover{transform:translateY(-10px) rotate(1.5deg) scale(1.04)}
+.pc canvas{display:block;width:100%;aspect-ratio:1/1.05}
+.pc .nm{padding:8px 10px 12px;text-align:center}
+.pc .nm b{display:block;font-family:'Russo One',sans-serif;font-size:clamp(18px,3.6vw,30px)}
+.pc .nm span{font-size:clamp(10px,1.7vw,14px);color:#bdb9e6}
+.pc .tag{position:absolute;top:10px;left:10px;background:var(--p);color:#fff;font:700 11px Nunito,sans-serif;padding:3px 9px;border-radius:99px}
+.pc:nth-child(2) .tag{background:var(--b)}
+.hint{margin-top:12px;font-size:clamp(10px,1.6vw,13px);color:#bdb9e6;text-align:center;max-width:680px;line-height:1.5}
+/* panels */
+.panel{background:rgba(20,18,43,.96);border:2px solid rgba(255,255,255,.16);border-radius:20px;padding:clamp(16px,3vw,30px);max-width:520px;width:100%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.6);animation:pop .3s}
+.panel h2{font-size:clamp(22px,4.5vw,36px);color:var(--y);margin-bottom:14px}
+.panel p{color:#dcd9f5;line-height:1.5;margin-bottom:6px}
+#sett,#pause,#over{background:rgba(5,4,15,.72);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+#sett{z-index:50}
+.opt{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:11px 0;text-align:left;font-weight:700;font-size:15px}
+.opt select,.opt input[type=range]{width:52%;accent-color:var(--y);height:32px;border-radius:8px;border:0;font:700 14px Nunito,sans-serif;touch-action:auto}
+.opt select{background:#2b2850;color:#fff;padding:0 8px}
+#over h2{color:var(--p);font-size:clamp(34px,8vw,64px);animation:shake .5s}
+@keyframes shake{20%{transform:translateX(-10px) rotate(-3deg)}40%{transform:translateX(10px) rotate(3deg)}60%{transform:translateX(-6px)}80%{transform:translateX(6px)}}
+/* HUD */
+#hud{position:fixed;inset:0;z-index:5;pointer-events:none}
+#obj{position:absolute;top:calc(10px + var(--st));left:calc(10px + var(--sl));max-width:min(56vw,400px);background:rgba(20,18,43,.82);border-left:5px solid var(--y);border-radius:10px;padding:8px 12px;font-weight:700;font-size:clamp(11px,1.7vw,15px);line-height:1.35}
+#obj small{display:block;color:var(--y);font:400 10px 'Russo One',sans-serif;letter-spacing:.1em;margin-bottom:2px}
+#bars{position:absolute;top:calc(10px + var(--st));right:calc(10px + var(--sr));width:min(34vw,230px);display:flex;flex-direction:column;gap:6px}
+.bar span{font:400 clamp(8px,1.2vw,11px) 'Russo One',sans-serif;text-shadow:0 1px 3px #000}
+.bar i{display:block;height:12px;background:rgba(0,0,0,.55);border-radius:99px;overflow:hidden;border:2px solid rgba(255,255,255,.35)}
+.bar b{display:block;height:100%;width:100%;background:linear-gradient(90deg,#39d98a,#b6f36a);border-radius:99px;transition:width .15s}
+#irr{background:linear-gradient(90deg,#ffd23f,#ff5d8f,#ff2a2a)}
+#timer{align-self:flex-end;font:400 clamp(16px,2.6vw,24px) 'Russo One',sans-serif;background:rgba(20,18,43,.82);padding:2px 12px;border-radius:10px;color:var(--y)}
+#alert{position:absolute;top:calc(64px + var(--st));left:50%;transform:translateX(-50%);font:400 clamp(18px,4vw,34px) 'Russo One',sans-serif;color:#ff3b3b;text-shadow:0 0 14px #ff0000,0 3px 0 #000;animation:blink .5s infinite alternate;white-space:nowrap}
+@keyframes blink{to{opacity:.35;transform:translateX(-50%) scale(1.06)}}
+#prompt{position:absolute;left:50%;bottom:calc(24% + var(--sb));transform:translateX(-50%);background:rgba(20,18,43,.9);border:2px solid var(--y);border-radius:12px;padding:8px 16px;font-weight:900;font-size:clamp(12px,2vw,17px);white-space:nowrap}
+#prompt kbd{background:var(--y);color:#14122b;border-radius:6px;padding:1px 8px;margin-right:8px;font-family:'Russo One',sans-serif}
+#toast{position:absolute;left:50%;top:22%;transform:translateX(-50%);text-align:center;font-weight:900;font-size:clamp(14px,2.4vw,22px);text-shadow:0 2px 6px #000,0 0 14px #000;opacity:0;transition:opacity .35s;max-width:86vw}
+#toast.on{opacity:1}
+.bb{position:absolute;transform:translate(-50%,-100%);background:#fff;color:#14122b;border-radius:12px;padding:5px 10px;font-weight:700;font-size:clamp(10px,1.5vw,13px);max-width:190px;text-align:center;box-shadow:0 4px 10px rgba(0,0,0,.35);white-space:normal}
+.bb:after{content:'';position:absolute;left:50%;bottom:-7px;margin-left:-7px;border:7px solid transparent;border-top-color:#fff;border-bottom:0}
+#lockHint{position:absolute;left:50%;bottom:calc(10px + var(--sb));transform:translateX(-50%);background:rgba(0,0,0,.6);padding:5px 14px;border-radius:99px;font-size:13px}
+#touch{position:absolute;inset:0}
+#joyZone,#lookZone{position:absolute;top:0;bottom:0;pointer-events:auto}
+#joyZone{left:0;width:42%}#lookZone{right:0;width:58%}
+#joyB{position:absolute;left:calc(26px + var(--sl));bottom:calc(30px + var(--sb));width:124px;height:124px;border-radius:50%;background:rgba(255,255,255,.13);border:2px solid rgba(255,255,255,.4)}
+#joyK{position:absolute;left:50%;top:50%;width:56px;height:56px;margin:-28px;border-radius:50%;background:rgba(255,210,63,.85);box-shadow:0 3px 10px rgba(0,0,0,.4)}
+#touch button{position:absolute;pointer-events:auto;border-radius:50%;padding:0;font-size:15px;opacity:.88}
+#bE{right:calc(26px + var(--sr));bottom:calc(112px + var(--sb));width:82px;height:82px;font-size:26px!important}
+#bE.on{background:#39d98a;box-shadow:0 0 0 6px rgba(57,217,138,.35)}
+#bRun{right:calc(118px + var(--sr));bottom:calc(30px + var(--sb));width:78px;height:78px;background:#fff}
+#bRun.on{background:var(--p);color:#fff}
+#bPause{right:calc(12px + var(--sr));top:calc(74px + var(--st));width:50px;height:50px;background:rgba(20,18,43,.8);color:#fff;box-shadow:none;border:2px solid rgba(255,255,255,.4)}
+/* dialog */
+#dlg{position:fixed;z-index:20;left:50%;bottom:calc(14px + var(--sb));transform:translateX(-50%);width:min(94vw,720px);background:rgba(20,18,43,.95);border:3px solid var(--y);border-radius:18px;padding:14px 18px;box-shadow:0 14px 40px rgba(0,0,0,.6);animation:pop .22s;touch-action:manipulation}
+#dName{display:inline-block;font:400 clamp(13px,2vw,17px) 'Russo One',sans-serif;background:var(--y);color:#14122b;padding:2px 12px;border-radius:99px;margin-bottom:8px}
+#dText{font-weight:700;font-size:clamp(14px,2.3vw,20px);line-height:1.4;margin-bottom:10px}
+#dOpts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+#dOpts button{font:700 clamp(12px,1.9vw,16px) Nunito,sans-serif;letter-spacing:0;padding:11px 10px;border-radius:11px;background:#2b2850;color:#fff;box-shadow:0 3px 0 #17153a;text-align:left}
+#dOpts button:hover{background:#3b3770}
+#dOpts button kbd{color:var(--y);margin-right:6px;font-family:'Russo One',sans-serif}
+#dOpts.one{grid-template-columns:1fr}#dOpts.one button{text-align:center;background:var(--y);color:#14122b;box-shadow:0 3px 0 #b98a00}
+@media(max-width:560px){#dOpts{grid-template-columns:1fr}}
+#peep{position:fixed;inset:0;z-index:6;pointer-events:none;background:radial-gradient(circle at 50% 50%,transparent 0,transparent min(30vw,30vh),rgba(0,0,0,.7) min(34vw,34vh),#000 min(38vw,38vh))}
+#fade{position:fixed;inset:0;z-index:30;background:#000;opacity:0;pointer-events:none;transition:opacity .5s;display:flex;align-items:center;justify-content:center;font:400 clamp(18px,4vw,34px) 'Russo One',sans-serif;color:#fff;text-align:center;padding:20px}
+#fade.on{opacity:1;pointer-events:auto}
+/* credits */
+#cred{background:#000;overflow:hidden;padding:0}
+#roll{position:absolute;left:0;right:0;top:100%;text-align:center;padding:0 20px}
+#roll.go{animation:roll 46s linear forwards}
+@keyframes roll{to{transform:translateY(calc(-100% - 100vh))}}
+#roll h1{font-size:clamp(26px,6vw,58px);color:var(--y);margin-bottom:90px;text-shadow:0 0 30px rgba(255,210,63,.5)}
+#roll h3{font-size:clamp(14px,2.4vw,20px);color:var(--p);letter-spacing:.3em;margin:70px 0 18px}
+#roll p{font-size:clamp(15px,2.8vw,24px);line-height:1.9;color:#eee}
+#roll p span{color:#9d99c9}
+#roll .end{font:400 clamp(34px,9vw,84px) 'Russo One',sans-serif;margin-top:140px;color:#fff}
+#roll .mb{font:400 clamp(16px,3.4vw,30px) 'Russo One',sans-serif;color:var(--y);margin-top:26px;letter-spacing:.2em}
+#credEnd{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 1.5s}
+#credEnd.on{opacity:1;pointer-events:auto}
+#credEnd h2{font-size:clamp(22px,5vw,44px);color:var(--y);text-align:center}
+#skipCred{position:absolute;right:calc(14px + var(--sr));bottom:calc(14px + var(--sb));padding:8px 14px;font-size:12px;opacity:.6}
+#load{position:fixed;inset:0;z-index:60;background:#0b0a1a;display:flex;align-items:center;justify-content:center;font:400 22px 'Russo One',sans-serif;color:var(--y)}
+</style>
+</head>
+<body>
+<canvas id="cv"></canvas>
+
+<div id="hud" class="hide">
+  <div id="obj"></div>
+  <div id="bars">
+    <div class="bar"><span>ВЫНОСЛИВОСТЬ</span><i><b id="stam"></b></i></div>
+    <div class="bar"><span id="irrL">РАЗДРАЖЕНИЕ МАРКА</span><i><b id="irr"></b></i></div>
+    <div id="timer" class="hide">8:00</div>
+  </div>
+  <div id="alert" class="hide">⚠ ПОГОНЯ! ⚠</div>
+  <div id="prompt" class="hide"></div>
+  <div id="toast"></div>
+  <div id="bub"></div>
+  <div id="lockHint" class="hide">Кликни по экрану, чтобы управлять камерой</div>
+  <div id="touch" class="hide">
+    <div id="joyZone"><div id="joyB"><div id="joyK"></div></div></div>
+    <div id="lookZone"></div>
+    <button id="bRun">БЕГ</button><button id="bE">E</button><button id="bPause">II</button>
+  </div>
+</div>
+<div id="peep" class="hide"></div>
+<div id="dlg" class="hide"><div id="dName"></div><div id="dText"></div><div id="dOpts"></div></div>
+<div id="fade"></div>
+
+<div id="language" class="scr" style="background:radial-gradient(circle at 50% 20%,#2c2760,#0b0a1a 70%)">
+  <div class="card0"><h2>LANGUAGE</h2><div class="row"><button id="langRU">Russian</button><button id="langUK" class="alt">Ukrainian</button></div></div>
+</div>
+<div id="disc" class="scr hide">
+  <div class="card0">
+    <h2>ВАЖНО!</h2>
+    <p>Эта игра создана исключительно ради юмора и развлечения. Все персонажи и ситуации представлены в шуточной, преувеличенной форме. Игра не ставит целью кого-либо обидеть, унизить или высмеять. Все происходящее — выдумка и дружеский прикол.</p>
+    <p class="big">ЭТО ПРОСТО ФАНОВАЯ ИГРА MADE BY ANONYMOUS!</p>
+    <div class="row"><button id="discOk">Я ВСЁ ПОНЯЛ, НАЧАТЬ</button></div>
+  </div>
+</div>
+
+<div id="menu" class="scr hide"><div class="in">
+  <div class="logo"><h1><em>MARK</em> &amp; <i>POLINA</i><span>SCHOOL DAY</span></h1><small>MADE BY ANONYMOUS</small></div>
+  <div class="cards">
+    <div class="pc" id="cardP" tabindex="0"><div class="tag">ОСНОВНОЙ РЕЖИМ</div><canvas id="pcP" width="360" height="378"></canvas><div class="nm"><b style="color:var(--p)">ПОЛИНА</b><span>7 класс · убегай от Марка</span></div></div>
+  </div>
+  <div class="row"><button class="alt" id="mSett">⚙ НАСТРОЙКИ</button></div>
+  <div class="hint" id="ctrlHint"></div>
+</div></div>
+
+<div id="sett" class="scr hide"><div class="panel">
+  <h2>НАСТРОЙКИ</h2>
+  <div class="opt"><label>Качество графики</label><select id="sQ"><option value="auto">Авто</option><option value="low">Низкое</option><option value="med">Среднее</option><option value="high">Высокое</option></select></div>
+  <div class="opt"><label>Тени</label><select id="sSh"><option value="auto">Авто</option><option value="on">Вкл</option><option value="off">Выкл</option></select></div>
+  <div class="opt"><label>Дальность прорисовки</label><input type="range" id="sD" min="40" max="200" step="10"></div>
+  <div class="opt"><label>Громкость</label><input type="range" id="sV" min="0" max="100"></div>
+  <div class="opt"><label>Чувствительность камеры</label><input type="range" id="sS" min="10" max="100"></div>
+  <div class="row"><button class="alt" id="sDisc">ДИСКЛЕЙМЕР</button><button id="sOk">ГОТОВО</button></div>
+</div></div>
+
+<div id="pause" class="scr hide"><div class="panel">
+  <h2>ПАУЗА</h2><p id="pauseObj"></p>
+  <div class="row"><button id="pRes">ПРОДОЛЖИТЬ</button><button class="alt" id="pSett">⚙ НАСТРОЙКИ</button><button class="alt" id="pMenu">ГЛАВНОЕ МЕНЮ</button></div>
+</div></div>
+
+<div id="over" class="scr hide"><div class="panel">
+  <h2>GAME OVER</h2><p id="overT"></p>
+  <div class="row"><button id="oAgain">ЕЩЁ РАЗ</button><button class="alt" id="oMenu">ГЛАВНОЕ МЕНЮ</button></div>
+</div></div>
+
+<div id="cred" class="scr hide">
+  <div id="roll">
+    <h1>MARK &amp; POLINA:<br>SCHOOL DAY</h1>
+    <h3>ПЕРСОНАЖИ</h3><p>Полина<br>Марк</p>
+    <h3>РАЗРАБОТКА</h3>
+    <p><span>Разработчик графики</span> — Anonymous<br><span>Проектирование игры</span> — Anonymous<br><span>Разработка сценария</span> — Anonymous<br><span>Автор промпта</span> — Anonymous</p>
+    <h3>ОСОБАЯ БЛАГОДАРНОСТЬ</h3><p>Всем, кто сыграл в эту шуточную игру!</p>
+    <div class="end">THE END</div><div class="mb">MADE BY ANONYMOUS</div>
+  </div>
+  <div id="credEnd"><h2>MADE BY ANONYMOUS</h2><div class="row"><button id="cAgain">ИГРАТЬ СНОВА</button><button class="alt" id="cMenu">ГЛАВНОЕ МЕНЮ</button></div></div>
+  <button class="alt" id="skipCred">ПРОПУСТИТЬ ▶▶</button>
+</div>
+
+<div id="load">ЗАГРУЗКА ШКОЛЫ...</div>
+
+<style>
+#day1Choice,#day2Card,#day3Card{position:fixed;inset:0;z-index:120;background:rgba(8,7,18,.94);display:none;align-items:center;justify-content:center;padding:22px;text-align:center;color:#fff}
+#day1Choice .panel,#day2Card .panel,#day3Card .panel{width:min(92vw,620px);padding:32px 26px;border:2px solid #ffd23f;border-radius:22px;background:linear-gradient(145deg,#211b39,#11101f);box-shadow:0 22px 80px #000b}
+#day1Choice h2,#day2Card h2,#day3Card h2{font:32px 'Russo One',sans-serif;margin:0 0 14px;color:#ffd23f}
+#day1Choice p,#day2Card p,#day3Card p{font:700 17px Nunito,sans-serif;line-height:1.6;color:#e7e3f5;margin:0 0 24px}
+#day1Choice button,#day2Card button,#day3Card button{margin:7px;min-width:190px;padding:14px 20px;border:0;border-radius:12px;background:#ffd23f;color:#171323;font:900 15px Nunito,sans-serif;cursor:pointer}
+#day1Choice button.alt,#day2Card button.alt,#day3Card button.alt{background:#51496b;color:white}
+</style>
+<div id="day1Choice"><div class="panel"><h2>КОНЕЦ ДНЯ 1</h2><p>Полина посмотрела в глазок. Марк всё ещё стоит за дверью…<br>Но эта история ещё не закончена.</p><button id="goDay2">НАЧАТЬ ДЕНЬ 2</button><button class="alt" id="goMain">ГЛАВНОЕ МЕНЮ</button></div></div>
+<div id="day2Card"><div class="panel"><h2>ДЕНЬ 2</h2><p>После вчерашнего Полина не может забыть выражение лица Марка. Сегодня ей предстоит найти его и поговорить.</p><button id="beginDay2">ПРОДОЛЖИТЬ</button><button class="alt" id="day2Menu">ГЛАВНОЕ МЕНЮ</button></div></div>
+<div id="day3Card" style="display:none"><div class="panel"><h2>ДЕНЬ 3</h2><p>Новый день. Полина собирается в школу, не подозревая, кого встретит у входа.</p><button id="beginDay3">НАЧАТЬ ДЕНЬ 3</button><button class="alt" id="day3Menu">ГЛАВНОЕ МЕНЮ</button></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+'use strict';
+/* ================= CORE ================= */
+const $=id=>document.getElementById(id);
+const clamp=(v,a,b)=>v<a?a:v>b?b:v, lerp=(a,b,t)=>a+(b-a)*t;
+const rnd=(a=1,b)=>b===undefined?Math.random()*a:a+Math.random()*(b-a), pick=a=>a[Math.random()*a.length|0];
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+const isTouch=matchMedia('(pointer:coarse)').matches||('ontouchstart' in window&&navigator.maxTouchPoints>0);
+let S={q:'auto',sh:'auto',dist:120,vol:70,sens:50};
+try{Object.assign(S,JSON.parse(localStorage.getItem('mp_set')||'{}'));}catch(e){}
+const saveS=()=>{try{localStorage.setItem('mp_set',JSON.stringify(S));}catch(e){}};
+const QL=()=>S.q!=='auto'?S.q:(isTouch?((navigator.deviceMemory&&navigator.deviceMemory<=3)?'low':'med'):'high');
+
+/* ================= AUDIO ================= */
+const mf=m=>440*Math.pow(2,(m-69)/12);
+const AU={ctx:null,out:null,cur:null,mi:0,mt:0,
+ tracks:{
+  menu:{bpm:118,bw:'triangle',bv:.11,lw:'square',lv:.035,ll:1.2,hat:1,
+   lead:[72,0,76,0,79,0,76,0,77,0,81,0,79,0,0,0,72,0,76,0,79,0,84,0,83,0,79,0,76,0,74,0],
+   bass:[48,0,0,0,55,0,0,0,53,0,0,0,55,0,0,0,48,0,0,0,52,0,0,0,55,0,0,0,43,0,0,0]},
+  chase:{bpm:172,bw:'sawtooth',bv:.07,lw:'square',lv:.04,ll:.8,hat:1,
+   lead:[69,72,76,72,69,72,76,81,68,71,76,71,68,71,76,80,65,69,72,69,65,69,72,77,64,68,71,68,76,74,72,71],
+   bass:[45,45,0,45,45,0,45,0,44,44,0,44,44,0,44,0,41,41,0,41,41,0,41,0,40,40,0,40,40,0,40,0]},
+  credits:{bpm:78,bw:'sine',bv:.16,lw:'triangle',lv:.09,ll:3,
+   lead:[77,0,81,0,84,0,81,0,82,0,79,0,77,0,0,0,74,0,77,0,81,0,79,0,76,0,72,0,77,0,0,0,81,0,84,0,89,0,86,0,84,0,82,0,81,0,0,0,79,0,77,0,76,0,79,0,77,0,0,0,0,0,0,0],
+   bass:[41,0,48,0,53,0,48,0,46,0,53,0,58,0,53,0,38,0,45,0,50,0,45,0,36,0,43,0,48,0,41,0]},
+  home:{bpm:84,bw:'sine',bv:.1,lw:'sine',lv:.06,ll:2.5,
+   lead:[76,0,0,79,0,0,72,0,74,0,0,77,0,0,71,0,72,0,0,76,0,0,67,0,69,0,71,0,72,0,0,0],
+   bass:[48,0,0,0,0,0,0,0,53,0,0,0,0,0,0,0,45,0,0,0,0,0,0,0,43,0,0,0,0,0,0,0]}
+ },
+ init(){ if(this.ctx){ if(this.ctx.state!=='running')this.ctx.resume(); return; }
+  const A=window.AudioContext||window.webkitAudioContext; if(!A)return;
+  try{ this.ctx=new A(); }catch(e){ return; }
+  this.out=this.ctx.createGain(); this.out.connect(this.ctx.destination); this.setVol();
+  const n=this.ctx.sampleRate, b=this.ctx.createBuffer(1,n,n), d=b.getChannelData(0);
+  for(let i=0;i<n;i++)d[i]=Math.random()*2-1; this.nb=b;
+  setInterval(()=>this.tick(),60); },
+ setVol(){ if(this.out)this.out.gain.value=S.vol/100; },
+ tone(f,d,type,v,t,f2){ if(!this.ctx)return; const c=this.ctx,t0=c.currentTime+(t||0),o=c.createOscillator(),g=c.createGain();
+  o.type=type||'sine'; o.frequency.setValueAtTime(f,t0); if(f2)o.frequency.exponentialRampToValueAtTime(f2,t0+d);
+  g.gain.setValueAtTime(.0001,t0); g.gain.linearRampToValueAtTime(v||.2,t0+.012); g.gain.exponentialRampToValueAtTime(.0001,t0+d);
+  o.connect(g); g.connect(this.out); o.start(t0); o.stop(t0+d+.05); },
+ noise(d,v,fq,ft,t){ if(!this.ctx)return; const c=this.ctx,t0=c.currentTime+(t||0),s=c.createBufferSource(),f=c.createBiquadFilter(),g=c.createGain();
+  s.buffer=this.nb; s.loop=true; f.type=ft||'lowpass'; f.frequency.value=fq||1000;
+  g.gain.setValueAtTime(v||.2,t0); g.gain.exponentialRampToValueAtTime(.0001,t0+d);
+  s.connect(f); f.connect(g); g.connect(this.out); s.start(t0,Math.random()*.5); s.stop(t0+d+.05); },
+ step(v){ this.noise(.07,.13*(v||1),420+rnd(260),'bandpass'); this.tone(85,.06,'sine',.07*(v||1)); },
+ door(){ this.tone(210,.32,'sawtooth',.035,0,95); this.noise(.12,.16,500,'lowpass',.28); },
+ knock(){ for(let i=0;i<3;i++){ this.tone(130,.13,'sine',.6,i*.24,60); this.noise(.05,.35,900,'lowpass',i*.24); } },
+ babble(p,n){ p=p||220; n=n||5; for(let i=0;i<n;i++)this.tone(p*(.8+Math.random()*.7),.07,'triangle',.07,i*.085,p*(.8+Math.random()*.6)); },
+ ding(){ this.tone(880,.14,'sine',.16); this.tone(1320,.35,'sine',.14,.1); },
+ click(){ this.tone(620,.05,'square',.05); },
+ bell(){ for(let i=0;i<26;i++)this.tone(i%2?1480:1760,.05,'square',.035,i*.045); },
+ fail(){ [392,370,349,262].forEach((f,i)=>this.tone(f,.32,'sawtooth',.09,i*.26)); },
+ win(){ [523,659,784,1047].forEach((f,i)=>this.tone(f,.22,'triangle',.13,i*.12)); },
+ bird(){ const f=2300+rnd(1500); this.tone(f,.09,'sine',.03,0,f*1.3); this.tone(f*1.1,.09,'sine',.03,.13,f*.9); },
+ music(n){ if(this.cur===n)return; this.cur=n; this.mi=0; this.mt=0; },
+ tick(){ if(!this.ctx||!this.cur||this.ctx.state!=='running')return; const T=this.tracks[this.cur], sp=60/T.bpm/2, ct=this.ctx.currentTime;
+  if(this.mt<ct)this.mt=ct+.06;
+  while(this.mt<ct+.25){ const i=this.mi%T.lead.length, b=T.bass[i%T.bass.length], l=T.lead[i], dt=this.mt-ct;
+   if(b)this.tone(mf(b),sp*1.9,T.bw,T.bv,dt); if(l)this.tone(mf(l),sp*T.ll,T.lw,T.lv,dt);
+   if(T.hat&&i%2===0)this.noise(.03,.035,6500,'highpass',dt);
+   this.mi++; this.mt+=sp; } }
+};
+
+/* ================= THREE SETUP ================= */
+const renderer=new THREE.WebGLRenderer({canvas:$('cv'),antialias:!isTouch,powerPreference:'high-performance'});
+renderer.outputEncoding=THREE.sRGBEncoding; renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+const scene=new THREE.Scene(); const SKY=0xa9d6ff; scene.background=new THREE.Color(SKY); scene.fog=new THREE.Fog(SKY,50,120);
+const camera=new THREE.PerspectiveCamera(66,1,.08,300);
+const hemi=new THREE.HemisphereLight(0xffffff,0x9a8f80,.74); scene.add(hemi);
+const sun=new THREE.DirectionalLight(0xfff1d6,.8); sun.castShadow=true; scene.add(sun); scene.add(sun.target);
+sun.shadow.camera.left=-30; sun.shadow.camera.right=30; sun.shadow.camera.top=30; sun.shadow.camera.bottom=-30; sun.shadow.camera.near=1; sun.shadow.camera.far=120; sun.shadow.bias=-.0006; sun.shadow.normalBias=.04;
+const plight=new THREE.PointLight(0xffe9c4,.5,15,1.4); scene.add(plight);
+function applyQuality(){ const q=QL(), dpr=window.devicePixelRatio||1;
+ renderer.setPixelRatio(q==='low'?Math.min(dpr,1):q==='med'?Math.min(dpr,1.5):Math.min(dpr,2));
+ const sh=S.sh==='auto'?q!=='low':S.sh==='on'; const sz=q==='high'?2048:1024;
+ if(renderer.shadowMap.enabled!==sh||sun.shadow.mapSize.x!==sz){ renderer.shadowMap.enabled=sh; sun.shadow.mapSize.set(sz,sz); if(sun.shadow.map){sun.shadow.map.dispose(); sun.shadow.map=null;}
+  scene.traverse(o=>{ if(o.material){ (Array.isArray(o.material)?o.material:[o.material]).forEach(m=>m.needsUpdate=true); } }); }
+ camera.far=S.dist*1.6; scene.fog.near=S.dist*.45; scene.fog.far=S.dist; resize(); }
+function resize(){ const w=window.innerWidth,h=window.innerHeight; renderer.setSize(w,h,false); camera.aspect=w/h; camera.updateProjectionMatrix(); }
+addEventListener('resize',resize); addEventListener('orientationchange',()=>setTimeout(resize,250));
+
+/* ================= TEXTURES & MATERIALS ================= */
+function tex(w,h,draw){ const c=document.createElement('canvas'); c.width=w; c.height=h; draw(c.getContext('2d'),w,h); const t=new THREE.CanvasTexture(c); t.wrapS=t.wrapT=THREE.RepeatWrapping; t.encoding=THREE.sRGBEncoding; t.anisotropy=4; return t; }
+const speck=(x,w,h,n,cols,s)=>{ for(let i=0;i<n;i++){ x.fillStyle=pick(cols); x.fillRect(Math.random()*w,Math.random()*h,s||2,s||2); } };
+const T={
+ lino:tex(256,256,(x,w,h)=>{ x.fillStyle='#c9b996'; x.fillRect(0,0,w,h); speck(x,w,h,2600,['#b9a781','#d8cba9','#a8976f','#e2d7b8'],2); x.strokeStyle='rgba(90,75,50,.35)'; x.lineWidth=2; x.strokeRect(1,1,w/2,h/2); x.strokeRect(w/2+1,h/2+1,w/2,h/2); x.strokeRect(1,h/2+1,w/2,h/2); x.strokeRect(w/2+1,1,w/2,h/2); }),
+ wood:tex(256,256,(x,w,h)=>{ for(let i=0;i<8;i++){ x.fillStyle=`hsl(${28+rnd(6)},${48+rnd(10)}%,${50+rnd(10)}%)`; x.fillRect(0,i*32,w,32); x.fillStyle='rgba(60,30,10,.35)'; x.fillRect(0,i*32,w,2); x.fillRect((i%2?70:190),i*32,2,32); } x.globalAlpha=.08; for(let i=0;i<300;i++){ x.fillStyle='#3a1c05'; x.fillRect(rnd(w),rnd(h),rnd(40)+8,1); } }),
+ grass:tex(256,256,(x,w,h)=>{ x.fillStyle='#5fa348'; x.fillRect(0,0,w,h); speck(x,w,h,5000,['#4f9340','#6fb556','#7fc266','#47883a'],3); }),
+ asph:tex(128,128,(x,w,h)=>{ x.fillStyle='#4a4c52'; x.fillRect(0,0,w,h); speck(x,w,h,1800,['#3d3f44','#5a5c63','#66686e'],2); }),
+ brick:tex(256,256,(x,w,h)=>{ x.fillStyle='#d8cfc0'; x.fillRect(0,0,w,h); for(let r=0;r<8;r++)for(let c=-1;c<4;c++){ x.fillStyle=`hsl(${12+rnd(10)},${50+rnd(12)}%,${44+rnd(12)}%)`; x.fillRect(c*64+(r%2?32:0)+2,r*32+2,60,28); } }),
+ tile:tex(128,128,(x,w,h)=>{ x.fillStyle='#e9eef2'; x.fillRect(0,0,w,h); x.fillStyle='#9fc3d6'; x.fillRect(0,0,64,64); x.fillRect(64,64,64,64); x.strokeStyle='#fff'; x.lineWidth=2; x.strokeRect(0,0,64,64); x.strokeRect(64,64,64,64); }),
+ pave:tex(128,128,(x,w,h)=>{ x.fillStyle='#b9b4ac'; x.fillRect(0,0,w,h); speck(x,w,h,900,['#a9a49b','#c9c4bc'],2); x.strokeStyle='#8a857c'; x.lineWidth=2; for(let i=0;i<2;i++)for(let j=0;j<2;j++)x.strokeRect(i*64+1,j*64+1,62,62); }),
+ roof:tex(128,128,(x,w,h)=>{ x.fillStyle='#5b616b'; x.fillRect(0,0,w,h); speck(x,w,h,1500,['#4d525b','#6a707b'],2); })
+};
+/* world-space UVs so instanced boxes tile textures uniformly */
+function wuv(m,s){ m.customProgramCacheKey=()=>'wuv'+s; m.onBeforeCompile=sh=>{ sh.vertexShader=sh.vertexShader.replace('#include <uv_vertex>',
+ '#include <uv_vertex>\n#ifdef USE_UV\n{ vec4 wp_=vec4(position,1.0);\n#ifdef USE_INSTANCING\n wp_=instanceMatrix*wp_;\n#endif\n wp_=modelMatrix*wp_; vUv=abs(normal.y)>0.5?wp_.xz*'+s.toFixed(3)+':vec2(wp_.x+wp_.z,wp_.y)*'+s.toFixed(3)+'; }\n#endif'); }; return m; }
+const sm=(c,r,o)=>new THREE.MeshStandardMaterial(Object.assign({color:c,roughness:r===undefined?.85:r,metalness:0},o||{}));
+const tm=(t,s,r,c)=>wuv(new THREE.MeshStandardMaterial({map:t,roughness:r||.85,color:c||0xffffff}),s);
+const M={
+ lino:tm(T.lino,.5,.55), woodF:tm(T.wood,.5,.5), grass:tm(T.grass,.25,1), asph:tm(T.asph,.5,.95), brick:tm(T.brick,.5,.9), tile:tm(T.tile,1,.35), pave:tm(T.pave,.5,.9), roof:tm(T.roof,.5,.9),
+ wallLo:sm(0x6fae9a,.75), wallHi:sm(0xf3ecd9,.9), homeLo:sm(0xd9b8c4,.85), homeHi:sm(0xf6efe6,.9), ceil:sm(0xf7f5ee,.95),
+ white:sm(0xf4f4f4,.6), wood:sm(0xc89a62,.6), woodD:sm(0x7a5230,.65), metal:sm(0x8d949c,.4,{metalness:.6}), steel:sm(0xc7ccd2,.3,{metalness:.7}), dark:sm(0x22242a,.7),
+ board:sm(0x1f4a3a,.8), red:sm(0xc63b3b,.7), blue:sm(0x3d6fd1,.7), yellow:sm(0xf0c23a,.7), green:sm(0x3e8f45,.9), leaf:sm(0x4f9c3f,.95), leaf2:sm(0x6db552,.95), trunk:sm(0x6a4a2e,.95),
+ concrete:sm(0xb7b3ab,.95), orange:sm(0xe8873a,.7), purple:sm(0x8a5bc4,.7), pink:sm(0xe889ae,.75), cream:sm(0xf3e2b8,.8), house2:sm(0x9cc4d8,.85), house3:sm(0xe3b08a,.85), roofR:sm(0x9c4234,.85),
+ lamp:new THREE.MeshBasicMaterial({color:0xfffbe8}), glass:new THREE.MeshStandardMaterial({color:0xbfe3ff,transparent:true,opacity:.28,roughness:.05,metalness:.3}),
+ cloud:new THREE.MeshBasicMaterial({color:0xffffff,fog:false}), gold:sm(0xffd23f,.3,{metalness:.8,emissive:0x664400}),
+ doorM:sm(0xa9794a,.6), doorExit:sm(0x2f6b4f,.5), line:sm(0xffffff,.8)
+};
+M.glass.noShadow=true; M.lamp.noShadow=true; M.cloud.noShadow=true;
+
+/* ================= INSTANCED BUILD HELPERS ================= */
+const batches={box:new Map(),cyl:new Map(),sph:new Map()};
+const _m=new THREE.Matrix4(),_q=new THREE.Quaternion(),_e=new THREE.Euler(),_v=new THREE.Vector3(),_s=new THREE.Vector3();
+function put(kind,mat,x,y,z,sx,sy,sz,ry,rx,rz){ _e.set(rx||0,ry||0,rz||0); _q.setFromEuler(_e); _m.compose(_v.set(x,y,z),_q,_s.set(sx,sy,sz)); let a=batches[kind].get(mat); if(!a)batches[kind].set(mat,a=[]); a.push(_m.clone()); }
+const colliders=[]; let tall=[];
+function col(x0,x1,z0,z1,lv,low){ const c={x0,x1,z0,z1,lv,low:!!low,off:false}; colliders.push(c); return c; }
+/* B: box by centre x,z and BOTTOM y. lv given => collider */
+function B(x,y,z,w,h,d,mat,lv){ put('box',mat,x,y+h/2,z,w,h,d); if(lv!==undefined)return col(x-w/2,x+w/2,z-d/2,z+d/2,lv,h<1.7); }
+function CY(x,y,z,r,h,mat,lv){ put('cyl',mat,x,y+h/2,z,r*2,h,r*2); if(lv!==undefined)return col(x-r,x+r,z-r,z+r,lv,h<1.7); }
+function SP(x,y,z,r,mat,sy){ put('sph',mat,x,y,z,r*2,r*2*(sy||1),r*2); }
+function flush(){ const geo={box:new THREE.BoxGeometry(1,1,1),cyl:new THREE.CylinderGeometry(.5,.5,1,14),sph:new THREE.SphereGeometry(.5,14,10)};
+ for(const k in batches){ batches[k].forEach((arr,mat)=>{ const im=new THREE.InstancedMesh(geo[k],mat,arr.length); arr.forEach((m,i)=>im.setMatrixAt(i,m)); im.castShadow=!mat.noShadow; im.receiveShadow=true; im.frustumCulled=false; scene.add(im); }); batches[k].clear(); }
+ tall=colliders.filter(c=>!c.low); }
+/* ================= LANGUAGE ================= */
+let LANG='ru';
+const TR={
+'ЛИЦЕЙ':['ЛІЦЕЙ'],'Лицей':['Ліцей'],'ЛИЦЕЙ':['ЛІЦЕЙ'],'Лицей':['Ліцей'],'ВАЖНО!':['ВАЖЛИВО!'],'Эта игра создана исключительно ради юмора и развлечения. Все персонажи и ситуации представлены в шуточной, преувеличенной форме. Игра не ставит целью кого-либо обидеть, унизить или высмеять. Все происходящее — выдумка и дружеский прикол.':['Ця гра створена виключно заради гумору та розваги. Усі персонажі й ситуації подані в жартівливій, перебільшеній формі. Гра не має на меті когось образити, принизити чи висміяти. Усе, що відбувається, — вигадка та дружній жарт.'],
+'ЭТО ПРОСТО ФАНОВАЯ ИГРА MADE BY ANONYMOUS!':['ЦЕ ПРОСТО ФАНОВА ГРА MADE BY ANONYMOUS!'],'Я ВСЁ ПОНЯЛ, НАЧАТЬ':['Я ВСЕ ЗРОЗУМІВ, ПОЧАТИ'],
+'ОСНОВНОЙ РЕЖИМ':['ОСНОВНИЙ РЕЖИМ'],'ПОЛИНА':['ПОЛІНА'],'7 класс · убегай от Марка':['7 клас · тікай від Марка'],
+'⚙ НАСТРОЙКИ':['⚙ НАЛАШТУВАННЯ'],'НАСТРОЙКИ':['НАЛАШТУВАННЯ'],'Качество графики':['Якість графіки'],'Авто':['Авто'],'Низкое':['Низька'],'Среднее':['Середня'],'Высокое':['Висока'],'Тени':['Тіні'],'Вкл':['Увімк.'],'Выкл':['Вимк.'],'Дальность прорисовки':['Дальність промальовування'],'Громкость':['Гучність'],'Чувствительность камеры':['Чутливість камери'],'ДИСКЛЕЙМЕР':['ДИСКЛЕЙМЕР'],'ГОТОВО':['ГОТОВО'],'ПАУЗА':['ПАУЗА'],'ПРОДОЛЖИТЬ':['ПРОДОВЖИТИ'],'ГЛАВНОЕ МЕНЮ':['ГОЛОВНЕ МЕНЮ'],'ЕЩЁ РАЗ':['ЩЕ РАЗ'],'ЗАДАЧА':['ЗАВДАННЯ'],'ВЫНОСЛИВОСТЬ':['ВИТРИВАЛІСТЬ'],'РАЗДРАЖЕНИЕ МАРКА':['РОЗДРАТУВАННЯ МАРКА'],'БЕГ':['БІГ'],'Кликни по экрану, чтобы управлять камерой':['Клацни по екрану, щоб керувати камерою'],
+'Возьми рюкзак со стола':['Візьми рюкзак зі столу'],'Выйди из дома через дверь':['Вийди з дому через двері'],'Иди в школу через дорогу (главный вход)':['Іди до школи через дорогу (головний вхід)'],'Сдай куртку в гардероб (1 этаж, слева от холла)':['Здай куртку до гардероба (1-й поверх, ліворуч від холу)'],'Иди на урок: кабинет 201 «Математика» на 2 этаже, сядь за парту':['Іди на урок: кабінет 201 «Математика» на 2-му поверсі, сядь за парту'],'Пообедай в столовой (1 этаж)':['Пообідай у їдальні (1-й поверх)'],'Забери куртку из гардероба':['Забери куртку з гардероба'],'Марк не отстаёт... Не доводи шкалу до максимума!':['Марк не відстає... Не доводь шкалу до максимуму!'],'Уроки окончены! Выйди из школы.':['Уроки закінчилися! Вийди зі школи.'],'Иди домой — дом через дорогу напротив школы':['Іди додому — будинок через дорогу навпроти школи'],'Ложись на кровать':['Лягай на ліжко'],'Кто-то стучит! Подойди к двери и посмотри в глазок':['Хтось стукає! Підійди до дверей і подивись у вічко'],
+'Сначала возьми рюкзак!':['Спочатку візьми рюкзак!'],'Доброе утро! Школа — прямо через дорогу.':['Доброго ранку! Школа — просто через дорогу.'],'Рано домой! Сначала школа.':['Ще рано додому! Спочатку школа.'],'Домой ещё рано!':['Додому ще рано!'],'Утро. Полина собирается в школу...':['Ранок. Поліна збирається до школи...'],'МАРК НЕ ВЫДЕРЖАЛ! БЕГИ!':['МАРК НЕ ВИТРИМАВ! ТІКАЙ!'],'⚠ ПОГОНЯ! ⚠':['⚠ ПОГОНЯ! ⚠'],'ПОЛИНА УБЕГАЕТ!':['ПОЛІНА ТІКАЄ!'],'Выйти из укрытия':['Вийти зі схованки'],'Далее ▶':['Далі ▶'],'Прозвенел последний звонок. Полина ушла домой, а Марк остался на продлёнку.':['Пролунав останній дзвоник. Поліна пішла додому, а Марк залишився на групу подовженого дня.']
+};
+Object.assign(TR,{
+'Фух... сейчас... отдышусь...':['Фух... зараз... переведу подих...'],'МАРК НЕ ВЫДЕРЖАЛ! БЕГИ!':['МАРК НЕ ВИТРИМАВ! ТІКАЙ!'],'ПОЛИНА УБЕГАЕТ!':['ПОЛІНА ТІКАЄ!'],
+'Полина! Это тебе! Почти не надкусано!':['Поліно! Це тобі! Майже не надкушене!'],'Полина! Стой! У меня для тебя ещё подарок!':['Поліно! Зачекай! У мене для тебе ще подарунок!'],'Полина! Вот! От всего сердца и немножко от желудка!':['Поліно! Ось! Від щирого серця і трішечки від шлунка!'],'Эм... спасибо?.. Но я всё равно побегу.':['Ем... дякую?.. Але я все одно побіжу.'],'Опять ты?! ...Ладно, давай сюда. Но это ничего не значит!':['Знову ти?! ...Гаразд, давай сюди. Але це нічого не означає!'],'Марк, ты... упорный. Как таракан. В хорошем смысле.':['Марку, ти... наполегливий. Як тарган. У хорошому сенсі.'],'Ладно, Марк. Ты смешной. Но мне пора домой! Пока!':['Гаразд, Марку. Ти кумедний. Але мені час додому! Бувай!'],'Все подарки вручены! Пора домой.':['Усі подарунки вручено! Час додому.'],'Симпатия Полины выросла!':['Симпатія Поліни зросла!'],'С пустыми руками? Даже без булочки? Фу, Марк!':['З порожніми руками? Навіть без булочки? Фу, Марку!'],'Нужен подарок! Ищи их по школе.':['Потрібен подарунок! Шукай їх у школі.'],'Булочка добыта! Главное — не съесть.':['Булочку знайдено! Головне — не з’їсти.'],'Цветок с учительского стола. Биологичка не заметит.':['Квітка зі столу вчительки. Біологиня не помітить.'],'Валентинка! Подписана: «от тайного Марка».':['Валентинка! Підписана: «від таємного Марка».'],
+'Сначала возьми рюкзак!':['Спочатку візьми рюкзак!'],'Доброе утро! Школа — прямо через дорогу.':['Доброго ранку! Школа — просто через дорогу.'],'Рано домой! Сначала школа.':['Ще рано додому! Спочатку школа.'],'Домой ещё рано!':['Додому ще рано!'],'Куртка сдана. Номерок: 13. Ну конечно.':['Куртку здано. Номерок: 13. Ну звісно.'],'Уроки окончены! Пора домой.':['Уроки закінчилися! Час додому.'],'Котлета съедена. Компот выпит. Жизнь налаживается.':['Котлету з’їдено. Компот випито. Життя налагоджується.'],'Рюкзак собран. Можно идти.':['Рюкзак зібрано. Можна йти.'],'Ключ от главного входа у тебя!':['Ключ від головного входу в тебе!'],'Главный вход открыт!':['Головний вхід відчинено!'],'Заперто! Ключ — в учительской на 2 этаже. Или иди через запасной выход в конце коридора.':['Замкнено! Ключ — у вчительській на 2-му поверсі. Або йди через запасний вихід у кінці коридору.'],
+'Взять рюкзак':['Взяти рюкзак'],'Взять шоколадку':['Взяти шоколадку'],'Взять ключ от главного входа':['Взяти ключ від головного входу'],'Открыть главный вход ключом':['Відчинити головний вхід ключем'],'Главный вход (заперто)':['Головний вхід (замкнено)'],'Сдать куртку в гардероб':['Здати куртку до гардероба'],'Пообедать':['Пообідати'],'Сказать Марку «Отстань!»':['Сказати Марку «Відчепись!»'],
+'WASD — движение · Мышь — камера · E — взаимодействие · Shift — бег · Esc — пауза · 1–4 — ответы в диалогах':['WASD — рух · Миша — камера · E — взаємодія · Shift — біг · Esc — пауза · 1–4 — відповіді в діалогах'],'Джойстик слева — движение · свайп справа — камера · кнопки: БЕГ, E (действие), II (пауза)':['Джойстик ліворуч — рух · свайп праворуч — камера · кнопки: БІГ, E (дія), II (пауза)']
+});
+
+Object.assign(TR,{
+'Спрятаться в шкафу':['Сховатися в шафі'],'Спрятаться в кабинке':['Сховатися в туалетній кабінці'],'ТУАЛЕТ':['ТУАЛЕТ'],'101 УКРАЇНСЬКА МОВА':['101 УКРАЇНСЬКА МОВА'],'102 ИСТОРИЯ':['102 ІСТОРІЯ'],'СТОЛОВАЯ':['ЇДАЛЬНЯ'],'103 ГЕОГРАФИЯ':['103 ГЕОГРАФІЯ'],'ГАРДЕРОБ':['ГАРДЕРОБ'],'СПОРТЗАЛ':['СПОРТЗАЛ'],'201 МАТЕМАТИКА':['201 МАТЕМАТИКА'],'202 ИНФОРМАТИКА':['202 ІНФОРМАТИКА'],'203 БИОЛОГИЯ':['203 БІОЛОГІЯ'],'204 ЛИТЕРАТУРА':['204 ЛІТЕРАТУРА'],'УЧИТЕЛЬСКАЯ':['УЧИТЕЛЬСЬКА'],'БИБЛИОТЕКА':['БІБЛІОТЕКА'],'АКТОВЫЙ ЗАЛ':['АКТОВА ЗАЛА'],'ЛЕСТНИЦА ▲':['СХОДИ ▲'],
+'УКРАЇНСЬКА МОВА: АПОСТРОФ — НЕ ІГРАШКА':['УКРАЇНСЬКА МОВА: АПОСТРОФ — НЕ ІГРАШКА'],'ИСТОРИЯ: КТО СЪЕЛ МЕЛ?':['ІСТОРІЯ: ХТО З’ЇВ КРЕЙДУ?'],'ГЕОГРАФИЯ: ГДЕ СТОЛОВАЯ?':['ГЕОГРАФІЯ: ДЕ ЇДАЛЬНЯ?'],'2 + 2 = 4 (ЭТО НЕ ТОЧНО)':['2 + 2 = 4 (ЦЕ НЕ ТОЧНО)'],'ИНФОРМАТИКА: CTRL+C CTRL+V':['ІНФОРМАТИКА: CTRL+C CTRL+V'],'БИОЛОГИЯ: МАРК — ЭТО ВИД?':['БІОЛОГІЯ: МАРК — ЦЕ ВИД?'],'ЛИТЕРАТУРА: МУ-МУ ЖАЛКО':['ЛІТЕРАТУРА: МУ-МУ ШКОДА'],'МЕНЮ: КОТЛЕТА, ПЮРЕ, КОМПОТ':['МЕНЮ: КОТЛЕТА, ПЮРЕ, КОМПОТ'],'ОХРАНА':['ОХОРОНА'],'РАСПИСАНИЕ ЗВОНКОВ':['РОЗКЛАД ДЗВІНКІВ'],'ВЫХОД':['ВИХІД'],'ЗАПАСНОЙ ВЫХОД':['ЗАПАСНИЙ ВИХІД'],'ДОМ':['ДІМ'],'НЕ БЕСПОКОИТЬ!':['НЕ ТУРБУВАТИ!'],
+'«Отстань.»':['«Відчепись.»'],'«ПОЛИНА-А-А!»':['«ПОЛІНО-О-О!»'],'Полина':['Поліна'],'Марк':['Марк'],'Ученик':['Учень'],'Завуч':['Завуч'],'Выносливость кончилась! Отдышись...':['Витривалість закінчилася! Переведи подих...'],'Ты спряталась. Тсс...':['Ти сховалася. Тсс...'],'Ты спрятался. Но зачем?..':['Ти сховався. Але навіщо?..'],'Ты сделал домашку?':['Ти зробив домашнє завдання?'],'Дай списать!':['Дай списати!'],'В столовой сегодня котлеты!':['Сьогодні в їдальні котлети!'],'Марк опять бегает за Полиной...':['Марк знову бігає за Поліною...'],'Кто съел мой бутерброд?':['Хто з’їв мій бутерброд?'],'Физра отменяется!':['Фізкультури не буде!'],'Скинь мем!':['Скинь мем!'],'Контрольная?! Какая контрольная?!':['Контрольна?! Яка контрольна?!'],'Я забыл сменку...':['Я забув змінне взуття...'],'Го в столовку!':['Ходімо до їдальні!'],'Звонок — для учителя!':['Дзвінок — для вчителя!'],'А у нас сейчас инфа?':['А в нас зараз інформатика?'],'Ты видел Марка? Он странный.':['Ти бачив Марка? Він дивний.'],'Хочу домой...':['Хочу додому...'],
+'Полина! А ты знала, что у улитки 25 тысяч зубов? Прямо как у меня вопросов к тебе!':['Поліно! А ти знала, що в равлика 25 тисяч зубів? Майже стільки ж, скільки в мене запитань до тебе!'],'Полина, пойдём в столовую? Я угощаю! ...Половинкой сосиски.':['Поліно, ходімо до їдальні? Я пригощаю! ...Половинкою сосиски.'],'Полина, я написал про тебя стих! «Полина, Полина... ты как... мандарина!»':['Поліно, я написав про тебе вірш! «Поліно, Поліно... ти наче... мандарина!»'],'А хочешь, я понесу твой рюкзак? И тебя. И рюкзак.':['Хочеш, я понесу твій рюкзак? І тебе. І рюкзак.'],'Полина, смотри, как я умею! *шевелит ушами*':['Поліно, дивись, що я вмію! *рухає вухами*'],'Ты сегодня такая... такая... такая же, как вчера! Супер!':['Ти сьогодні така... така... така сама, як учора! Супер!'],'Полина, а давай сидеть вместе? На всех уроках. Всегда.':['Поліно, може, сидітимемо разом? На всіх уроках. Завжди.'],'Я вчера прошёл игру на сто процентов! Рассказать? Это всего часа три.':['Я вчора пройшов гру на сто відсотків! Розповісти? Це лише години на три.'],
+'Отстань.':['Відчепись.'],'Я не пристаю, я СОПРОВОЖДАЮ!':['Я не чіпляюся, я ТЕБЕ СУПРОВОДЖУЮ!'],'Иди отсюда.':['Іди геть.'],'Куда? Я уже тут!':['Куди? Я вже тут!'],'Оставь меня.':['Залиш мене.'],'Оставлю... у себя в сердце!':['Залишу... у своєму серці!'],'Мне пора.':['Мені час.'],'Мне тоже! Нам по пути!':['Мені теж! Нам по дорозі!'],'У тебя шнурки развязались.':['У тебе розв’язалися шнурки.'],'Где?! ...Стоп. У меня же липучки...':['Де?! ...Стривай. У мене ж липучки...'],'Марк, ты как реклама — тебя не пропустить.':['Марку, ти як реклама — тебе не оминути.'],'Зато я без подписки!':['Зате я без підписки!'],'Ладно. Привет, Марк.':['Гаразд. Привіт, Марку.'],'ОНА ПОЗДОРОВАЛАСЬ! Лучший день в жизни!':['ВОНА ПРИВІТАЛАСЯ! Найкращий день у житті!'],'Я тебя не слышу, у меня лапки.':['Я тебе не чую, у мене лапки.'],'Тогда я буду говорить ГРОМЧЕ!!!':['Тоді я говоритиму ГУЧНІШЕ!!!'],'Смотри, там бесплатные булочки!':['Дивись, там безкоштовні булочки!'],'ГДЕ?! БУЛОЧКИ?!':['ДЕ?! БУЛОЧКИ?!'],'О нет, Марк!':['О ні, Марку!'],'Только не он!':['Тільки не він!'],'Я занята!!!':['Я зайнята!!!'],'*убегает*':['*тікає*'],'Марк, отстань!':['Марку, відчепись!'],'Привет!':['Привіт!'],'Ты не видела Марка? Надеюсь, нет.':['Ти не бачила Марка? Сподіваюся, що ні.'],'Что задали?':['Що задали?'],'Если что — меня тут не было.':['Якщо що — мене тут не було.'],'Спасите...':['Рятуйте...'],'НЕ БЕГАТЬ ПО КОРИДОРАМ!!!':['НЕ БІГАТИ КОРИДОРАМИ!!!'],'Завуч заметила! Выносливость на нуле!':['Завуч помітила! Витривалість на нулі!'],
+'Марк. Отстань!':['Марку. Відчепись!'],'Ты заговорила со мной ПЕРВАЯ! Это знак!':['Ти заговорила зі мною ПЕРША! Це знак!'],'«Отстань» — это почти «останься»!':['«Відчепись» — це майже «залишся»!'],'Я не слышу отказов, у меня в ушах любовь!':['Я не чую відмов, у мене у вухах кохання!'],'ПОЛИНА-А-А! ВЫСЛУШАЙ МЕНЯ!!!':['ПОЛІНО-О-О! ВИСЛУХАЙ МЕНЕ!!!'],'Марк потерял тебя из виду. Фух!':['Марк загубив тебе з поля зору. Фух!'],'ПОПАЛАСЬ! Теперь ты выслушаешь мой доклад про Майнкрафт. Он на три часа. С презентацией. На 214 слайдах.':['ПОПАЛАСЯ! Тепер ти вислухаєш мою доповідь про Майнкрафт. Вона на три години. З презентацією на 214 слайдах.'],'Не-е-е-е-ет!..':['Ні-і-і-і-і!..'],'Марк догнал Полину. Доклад длился до самого вечера.':['Марк наздогнав Поліну. Доповідь тривала до самого вечора.'],'Ты выбежала из школы. Марк остался внутри!':['Ти вибігла зі школи. Марк залишився всередині!'],'Полина, ты где?..':['Поліно, ти де?..'],'Я знаю, что ты где-то здесь!':['Я знаю, що ти десь тут!'],'Полина, я только спросить!':['Поліно, я лише запитати!'],'Ау-у-у!':['Ау-у-у!'],
+'Утро. Марк полон надежд...':['Ранок. Марк сповнений надій...'],'Сначала возьми шоколадку!':['Спочатку візьми шоколадку!'],'Возьми со стола шоколадку — на удачу':['Візьми зі столу шоколадку — на удачу'],'Собери подарки:':['Збери подарунки:'],'булочка — столовая · цветок — каб. 203 · валентинка — библиотека':['булочка — їдальня · квітка — каб. 203 · валентинка — бібліотека'],'Догони Полину и вручи:':['Наздожени Поліну та вручи:'],'Уроки окончены! Выйди из школы.':['Уроки закінчилися! Вийди зі школи.'],'Главный вход заперт (ключ — в учительской, 2 этаж). Запасной выход — в восточном конце коридора 1 этажа.':['Головний вхід замкнено (ключ — у вчительській, 2-й поверх). Запасний вихід — у східному кінці коридору 1-го поверху.'],
+'ПОЛИНА! Привет! А я тебя тут жду! С шести утра!':['ПОЛІНО! Привіт! А я тебе тут чекаю! Із шостої ранку!'],'...О нет. Только не это.':['...О ні. Тільки не це.'],'Сегодня тот самый день! Соберу подарки, подарю Полине — и она точно меня заметит!':['Сьогодні той самий день! Зберу подарунки, подарую Поліні — і вона точно мене помітить!'],'Все зашли? Закрываю главный вход на ключ! Ключ отнесу в учительскую.':['Усі зайшли? Замикаю головний вхід! Ключ віднесу до вчительської.'],'У тебя 8 минут до последнего звонка!':['У тебе 8 хвилин до останнього дзвоника!'],'Урок математики... 45 минут спустя':['Урок математики... 45 хвилин потому'],'Марк! Хватит кидать записки Полине! Полина, а ты хватит их выбрасывать не читая!':['Марку! Досить кидати записки Поліні! Поліно, а ти досить викидати їх, не читаючи!'],'Шоколадка взята. Главное — не съесть по дороге!':['Шоколадку взято. Головне — не з’їсти дорогою!'],
+'Посмотреть в глазок':['Подивитися у вічко'],'Выйти на улицу':['Вийти надвір'],'Лечь на кровать':['Лягти на ліжко'],'Войти домой':['Увійти додому'],'Сдать куртку':['Здати куртку'],'Забрать куртку':['Забрати куртку'],'Сесть за парту (урок)':['Сісти за парту (урок)'],'Взять обед':['Взяти обід'],'Взять булочку':['Взяти булочку'],'Взять цветок':['Взяти квітку'],'Взять валентинку':['Взяти валентинку'],
+'Наконец-то дома... Какой длинный день. И ни одного Марка вокруг.':['Нарешті вдома... Який довгий день. І жодного Марка навколо.'],'Какой день... Три подарка! Она почти улыбнулась! Наверное.':['Оце день... Три подарунки! Вона майже усміхнулася! Напевно.'],'...А? Кто там стучит в такое время?':['...А? Хто там стукає в такий час?'],'Полина... Я тебя искал!':['Поліно... Я тебе шукав!'],'Марк... Я тебя люблю!':['Марку... Я тебе люблю!'],'...Всё. Я переезжаю. В другую страну. Сегодня.':['...Усе. Я переїжджаю. До іншої країни. Сьогодні.'],'...Это сон? Ущипните меня! Только не сильно!':['...Це сон? Ущипніть мене! Тільки не сильно!'],
+'GAME OVER':['ГРУ ЗАВЕРШЕНО'],'ЗАГРУЗКА ШКОЛЫ...':['ЗАВАНТАЖЕННЯ ШКОЛИ...'],'ПЕРСОНАЖИ':['ПЕРСОНАЖІ'],'РАЗРАБОТКА':['РОЗРОБКА'],'Разработчик графики':['Розробник графіки'],'Проектирование игры':['Проєктування гри'],'Разработка сценария':['Розробка сценарію'],'Автор промпта':['Автор промпту'],'ОСОБАЯ БЛАГОДАРНОСТЬ':['ОСОБЛИВА ПОДЯКА'],'Всем, кто сыграл в эту шуточную игру!':['Усім, хто зіграв у цю жартівливу гру!'],'ИГРАТЬ СНОВА':['ГРАТИ ЗНОВУ'],'ПРОПУСТИТЬ ▶▶':['ПРОПУСТИТИ ▶▶'],'ЗАДАЧА':['ЗАВДАННЯ'],'Уроки ещё не закончились! Вернись в школу.':['Уроки ще не закінчилися! Повернися до школи.'],'Охранник':['Охоронець'],'Учитель':['Учитель'],'Завуч':['Завуч']
+});
+
+Object.assign(TR,{
+'КОНЕЦ ДНЯ 1':['КІНЕЦЬ ДНЯ 1'],'Полина посмотрела в глазок. Марк всё ещё стоит за дверью…':['Поліна подивилася у вічко. Марк усе ще стоїть за дверима…'],'Но эта история ещё не закончена.':['Але ця історія ще не закінчилася.'],'Полина посмотрела в глазок. Марк всё ещё стоит за дверью…<br>Но эта история ещё не закончена.':['Поліна подивилася у вічко. Марк усе ще стоїть за дверима…<br>Але ця історія ще не закінчилася.'],'НАЧАТЬ ДЕНЬ 2':['ПОЧАТИ ДЕНЬ 2'],'ДЕНЬ 2':['ДЕНЬ 2'],'После вчерашнего Полина не может забыть выражение лица Марка. Сегодня ей предстоит найти его и поговорить.':['Після вчорашнього Поліна не може забути вираз обличчя Марка. Сьогодні їй потрібно знайти його та поговорити.'],'ПРОДОЛЖИТЬ':['ПРОДОВЖИТИ'],
+'Открыть дверь (E)':['Відчинити двері (E)'],'Взять рюкзак':['Взяти рюкзак'],'Осмотреть гардеробную':['Оглянути гардероб'],'Расспросить в столовой':['Розпитати в їдальні'],'Осмотреть библиотеку':['Оглянути бібліотеку'],'Поговорить с Марком':['Поговорити з Марком'],
+'Подойди к двери и нажми E':['Підійди до дверей і натисни E'],'Возьми рюкзак со стола':['Візьми рюкзак зі столу'],'Иди в школу через дорогу':['Іди до школи через дорогу'],'Найди Марка: осмотри гардеробную, столовую и библиотеку (':['Знайди Марка: оглянь гардероб, їдальню та бібліотеку ('],'Найди Марка в кабинете 201 и поговори с ним':['Знайди Марка в кабінеті 201 і поговори з ним'],
+'Рюкзак собран. Пора в школу.':['Рюкзак зібрано. Час до школи.'],'Рюкзак собран. Теперь выйди из дома через дверь.':['Рюкзак зібрано. Тепер вийди з дому через двері.'],'ДЕНЬ 2 — Подойди к двери и нажми E.':['ДЕНЬ 2 — Підійди до дверей і натисни E.'],'Ищи подсказки в разных частях школы. Осмотри 3 места.':['Шукай підказки в різних частинах школи. Оглянь 3 місця.'],'Все подсказки указывают на кабинет 201. Проверь его.':['Усі підказки вказують на кабінет 201. Перевір його.'],
+'Записка':['Записка'],'одноклассник видел Марка у старого кабинета':['однокласник бачив Марка біля старого кабінету'],'Разговор':['Розмова'],'Марк сегодня почти ничего не ел и ушёл наверх':['Марк сьогодні майже нічого не їв і пішов нагору'],'Закладка':['Закладка'],'в книге осталась записка с номером кабинета 201':['у книжці залишилася записка з номером кабінету 201'],
+'Ты?! Ты опять пришёл ко мне домой?!':['Ти?! Ти знову прийшов до мене додому?!'],'Хватит следить за мной и ходить за мной повсюду!':['Досить стежити за мною та ходити за мною всюди!'],'Я… я просто хотел поговорить.':['Я… я просто хотів поговорити.'],'Понял. Прости. Я уйду.':['Зрозумів. Вибач. Я піду.'],'Вот и правильно…':['От і правильно…'],'...Почему-то мне совсем не стало легче.':['...Чомусь мені зовсім не стало легше.'],
+'Вчера я была слишком резкой. Но он действительно не должен был меня преследовать.':['Учора я була надто різкою. Але він справді не повинен був мене переслідувати.'],'Надо хотя бы узнать, где он. Может, кто-нибудь видел его сегодня.':['Треба хоча б дізнатися, де він. Можливо, хтось бачив його сьогодні.'],
+'Марк… Вот ты где. Я тебя искала.':['Марку… Ось ти де. Я тебе шукала.'],'Зачем? Чтобы снова сказать, чтобы я отстал?':['Навіщо? Щоб знову сказати, аби я відчепився?'],'Я хочу извиниться за пощёчину и за то, как я с тобой разговаривала. Я была зла и испугалась.':['Я хочу вибачитися за ляпас і за те, як я з тобою розмовляла. Я розсердилася й злякалася.'],'Но ты тоже должен понять: следить за мной и приходить без приглашения — это неправильно. Мне нужно личное пространство.':['Але ти теж маєш зрозуміти: стежити за мною та приходити без запрошення — неправильно. Мені потрібен особистий простір.'],'Я понял. Я не буду больше так делать. Прости, что напугал тебя.':['Я зрозумів. Більше так не робитиму. Вибач, що налякав тебе.'],'Спасибо. Может, попробуем просто общаться в школе? Без преследований и странных сюрпризов.':['Дякую. Може, спробуємо просто спілкуватися у школі? Без переслідувань і дивних сюрпризів.'],'Да. Я буду вести себя нормально. Обещаю.':['Так. Я поводитимуся нормально. Обіцяю.'],
+'Я же просила не следить за мной! Хватит ходить за мной повсюду!':['Я ж просила не стежити за мною! Досить ходити за мною всюди!'],'Мне не нужны такие визиты. Уходи.':['Мені не потрібні такі візити. Іди геть.'],'Я… я просто хотел поговорить.':['Я… я просто хотів поговорити.'],'Понял… Прости. Я уйду.':['Зрозумів… Вибач. Я піду.'],'Открой дверь (E)':['Відчини двері (E)'],'Выйти из дома и идти в школу':['Вийти з дому та йти до школи'],'Возьми рюкзак со стола. Затем подойди к двери и нажми E.':['Візьми рюкзак зі столу. Потім підійди до дверей і натисни E.'],'Ты?! Ты опять пришёл ко мне домой?!':['Ти?! Ти знову прийшов до мене додому?!'],'Я же просила не следить за мной!':['Я ж просила не стежити за мною!'],'Мне не нужны такие визиты. Уходи.':['Мені не потрібні такі візити. Іди геть.']
+});
+
+Object.assign(TR,{
+ '20 ЛЕТ СПУСТЯ':['20 РОКІВ ПОТОМУ'],
+ 'КОНЕЦ':['КІНЕЦЬ'],
+ 'ДЕНЬ 3':['ДЕНЬ 3'],
+ 'Новый день. Полина собирается в школу, не подозревая, кого встретит у входа.':['Новий день. Поліна збирається до школи, не підозрюючи, кого зустріне біля входу.'],
+ 'НАЧАТЬ ДЕНЬ 3':['ПОЧАТИ ДЕНЬ 3'],
+ 'ДЕНЬ 3 — Возьми рюкзак и отправляйся в школу.':['ДЕНЬ 3 — Візьми рюкзак і вирушай до школи.'],
+ 'Возьми рюкзак со стола':['Візьми рюкзак зі столу'],
+ 'Иди в школу через дорогу':['Іди до школи через дорогу'],
+ 'Полина! Подожди. Я вчера видел тебя с другим мальчиком.':['Поліно! Зачекай. Учора я бачив тебе з іншим хлопцем.'],
+ 'И что? Ты опять за мной следишь? Ревнуешь меня к каждому, с кем я разговариваю?':['І що? Ти знову стежиш за мною? Ревнуєш мене до кожного, з ким я розмовляю?'],
+ 'Нет, я просто хотел понять, кто он такой...':['Ні, я просто хотів зрозуміти, хто він такий...'],
+ 'Вот именно. Ты меня преследуешь и постоянно ревнуешь. Мне это надоело.':['Саме так. Ти переслідуєш мене й постійно ревнуєш. Мені це набридло.'],
+ 'Я не собираюсь с тобой общаться. Я не верю, что у тебя хоть что-нибудь получится. Оставь меня в покое.':['Я не збираюся з тобою спілкуватися. Я не вірю, що в тебе хоч щось вийде. Залиш мене у спокої.'],
+ 'Но Полина...':['Але Поліно...'],
+ 'Прощай, Марк.':['Прощавай, Марку.'],
+ 'ПОЛИНА! А ТЫ ГОВОРИЛА, У МЕНЯ НИЧЕГО НЕ ПОЛУЧИТСЯ! ВИДИШЬ, НА КАКОЙ BUGATTI ЕЗЖУ?!':['ПОЛІНО! А ТИ КАЗАЛА, ЩО В МЕНЕ НІЧОГО НЕ ВИЙДЕ! БАЧИШ, НА ЯКОМУ BUGATTI Я ЇЖДЖУ?!'],
+ 'Марк?.. Это же маршрутка.':['Марк?.. Та це ж маршрутка.'],
+ 'Главное — уверенно подать!':['Головне — впевнено подати!'],
+ 'MADE BY ANONYMOUS':['MADE BY ANONYMOUS'],
+ 'ЭТО ПРОСТО ФАНОВАЯ ИГРА MADE BY ANONYMOUS!':['ЦЕ ПРОСТО ФАНОВА ГРА MADE BY ANONYMOUS!']
+});
+function tr(v){ if(LANG!=='uk'||typeof v!=='string')return v; if(TR[v])return TR[v][0]; let out=v; for(const k of Object.keys(TR).sort((a,b)=>b.length-a.length)){ if(out.includes(k))out=out.split(k).join(TR[k][0]); } return out; }
+const labelRecords=[];
+function redrawLabels(){ for(const q of labelRecords){ const g=q.canvas.getContext('2d'); g.clearRect(0,0,q.canvas.width,q.canvas.height); g.fillStyle=q.bg||'#1d3557';g.fillRect(0,0,q.canvas.width,q.canvas.height);g.strokeStyle='rgba(255,255,255,.7)';g.lineWidth=6;g.strokeRect(5,5,q.canvas.width-10,q.canvas.height-10);g.fillStyle=q.fg||'#fff';g.textAlign='center';g.textBaseline='middle';let fs=q.canvas.height*.56;g.font='bold '+fs+'px Arial,sans-serif';const tx=tr(q.text);while(g.measureText(tx).width>q.canvas.width-36&&fs>10){fs-=3;g.font='bold '+fs+'px Arial,sans-serif';}g.fillText(tx,q.canvas.width/2,q.canvas.height/2+2);q.texture.needsUpdate=true;} }
+function applyLanguage(){
+ if(LANG!=='uk')return;
+ document.documentElement.lang='uk';
+ const walk=(node)=>{
+  if(node.nodeType===Node.TEXT_NODE){ const raw=node.nodeValue; const trimmed=raw.trim(); if(trimmed){ const lead=raw.match(/^\s*/)[0],tail=raw.match(/\s*$/)[0]; node.nodeValue=lead+tr(trimmed)+tail; } return; }
+  if(node.nodeType!==Node.ELEMENT_NODE)return;
+  if(['SCRIPT','STYLE'].includes(node.tagName))return;
+  for(const a of ['placeholder','title','aria-label','alt'])if(node.hasAttribute(a))node.setAttribute(a,tr(node.getAttribute(a)));
+  for(const child of [...node.childNodes])walk(child);
+ };
+ walk(document.body);
+ document.title=tr('MARK & POLINA: SCHOOL DAY — MADE BY ANONYMOUS');
+ redrawLabels();
+}
+$('langRU').onclick=()=>{LANG='ru';document.documentElement.lang='ru';$('language').classList.add('hide');$('disc').classList.remove('hide');};
+$('langUK').onclick=()=>{LANG='uk';document.documentElement.lang='uk';$('language').classList.add('hide');$('disc').classList.remove('hide');applyLanguage();};
+
+function label(text,x,y,z,ry,w,h,bg,fg){ w=w||1.5; h=h||.36; const c=document.createElement('canvas'); c.width=512; c.height=Math.round(512*h/w); const g=c.getContext('2d');
+ g.fillStyle=bg||'#1d3557'; g.fillRect(0,0,c.width,c.height); g.strokeStyle='rgba(255,255,255,.7)'; g.lineWidth=6; g.strokeRect(5,5,c.width-10,c.height-10);
+ g.fillStyle=fg||'#fff'; g.textAlign='center'; g.textBaseline='middle'; let fs=c.height*.56; g.font='bold '+fs+'px Arial,sans-serif'; const shown=tr(text); while(g.measureText(shown).width>c.width-36&&fs>10){ fs-=3; g.font='bold '+fs+'px Arial,sans-serif'; } g.fillText(shown,c.width/2,c.height/2+2);
+ const t=new THREE.CanvasTexture(c); t.encoding=THREE.sRGBEncoding; labelRecords.push({text,canvas:c,texture:t,bg,fg}); const m=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({map:t})); m.position.set(x,y,z); m.rotation.y=ry||0; scene.add(m); return m; }
+</script>
+<script>
+/* ================= WORLD: WALLS / DOORS ================= */
+const HX=-300, WT=.3; let WH=3.7, WLO=M.wallLo, WHI=M.wallHi;
+const doors=[], DOOR={}, interacts=[];
+function addInt(x,z,lv,r,label,act,cond){ const o={x,z,lv,r,label,act,cond}; interacts.push(o); return o; }
+function addDoor(ax,c,p,w,lv,o){ const y0=lv*4, piv=new THREE.Group();
+ const leaf=new THREE.Mesh(new THREE.BoxGeometry(w-.08,2.16,.07),o.mat||M.doorM); leaf.position.set((w-.08)/2,1.08,0); leaf.castShadow=true; piv.add(leaf);
+ const hd=new THREE.Mesh(new THREE.SphereGeometry(.05,8,6),M.steel); hd.position.set(w-.25,1.05,.08); piv.add(hd); const h2=hd.clone(); h2.position.z=-.08; piv.add(h2);
+ const b0=ax==='x'?0:-Math.PI/2; if(ax==='x')piv.position.set(p+.04,y0,c); else piv.position.set(c,y0,p+.04); piv.rotation.y=b0; scene.add(piv);
+ const d={ax,lv,x:ax==='x'?p+w/2:c,z:ax==='x'?c:p+w/2,piv,b0,open:0,locked:false,col:null,snd:0};
+ if(o.lock){ d.col=ax==='x'?col(p,p+w,c-WT/2,c+WT/2,lv):col(c-WT/2,c+WT/2,p,p+w,lv); d.col.off=true; }
+ if(o.id)DOOR[o.id]=d; doors.push(d);
+ if(o.n&&ax==='x'){ const s=o.s||1; label(o.n,p+w/2,y0+2.5,c+s*(WT/2+.02),s>0?0:Math.PI,1.5,.34,o.bg); } }
+function setLock(id,v){ const d=DOOR[id]; d.locked=v; if(d.col)d.col.off=!v; }
+function wall(ax,c,a,b,lv,ops,ext){ const y0=lv*4; ops=(ops||[]).slice().sort((p,q)=>p.p-q.p); ext=ext||0;
+ const box=(m,l,off,th,yy,hh,mat)=>{ if(ax==='x')B(m,y0+yy,c+off,l,hh,th,mat); else B(c+off,y0+yy,m,th,hh,l,mat); };
+ const paint=(m,l,off,th,yb,h)=>{ const lo=1.3; if(yb<lo){ const hh=Math.min(h,lo-yb); box(m,l,off,th,yb,hh,WLO); if(h>hh+.001)box(m,l,off,th,yb+hh,h-hh,WHI); } else box(m,l,off,th,yb,h,WHI); };
+ const cl=(s,e)=>{ if(ax==='x')col(s,e,c-WT/2,c+WT/2,lv); else col(c-WT/2,c+WT/2,s,e,lv); };
+ const seg=(s,e,yb,h,solid)=>{ if(e-s<.01||h<.01)return; const m=(s+e)/2,l=e-s;
+  if(ext){ box(m,l,ext*WT/4,WT/2,yb,h,M.brick); paint(m,l,-ext*WT/4,WT/2,yb,h); } else paint(m,l,0,WT,yb,h);
+  if(solid)cl(s,e); };
+ let cur=a;
+ for(const o of ops){ seg(cur,o.p,0,WH,true); const e=o.p+o.w, m=o.p+o.w/2;
+  if(o.t==='win'){ seg(o.p,e,0,1,false); seg(o.p,e,2.7,WH-2.7,false); box(m,o.w,0,.04,1,1.7,M.glass); box(m,o.w,0,.08,1.82,.06,M.white); box(m,.06,0,.08,1,1.7,M.white); box(m,o.w+.1,0,WT+.14,.96,.05,M.white); cl(o.p,e); }
+  else if(o.t==='door'){ seg(o.p,e,2.2,WH-2.2,false); addDoor(ax,c,o.p,o.w,lv,o); }
+  else seg(o.p,e,2.7,WH-2.7,false);
+  cur=e; }
+ seg(cur,b,0,WH,true); }
+function wins(a,b,n,w){ w=w||2; const r=[],st=(b-a)/n; for(let i=0;i<n;i++)r.push({p:a+st*i+st/2-w/2,w,t:'win'}); return r; }
+const dr=(p,n,s,bg)=>({p,w:1.6,t:'door',n,s,bg});
+
+/* ================= FURNITURE ================= */
+function desk(x,z,lv){ const y=lv*4; B(x,y+.7,z,.6,.05,1.2,M.wood); B(x,y,z-.56,.5,.7,.04,M.metal); B(x,y,z+.56,.5,.7,.04,M.metal); B(x-.27,y+.3,z,.03,.4,1.1,M.woodD);
+ B(x+.62,y+.42,z,.42,.05,.44,M.wood); B(x+.82,y+.47,z,.04,.42,.44,M.wood); B(x+.62,y,z,.34,.42,.04,M.metal); col(x-.3,x+.86,z-.6,z+.6,lv,true); }
+function plant(x,z,lv){ const y=lv*4; CY(x,y,z,.22,.42,M.orange,lv); SP(x,y+.85,z,.42,M.leaf,1.3); SP(x+.15,y+1.1,z-.1,.26,M.leaf2); }
+function bench(x,z,lv,alongX){ const y=lv*4, w=alongX?1.9:.42, d=alongX?.42:1.9; B(x,y+.4,z,w,.07,d,M.wood,lv); B(x-(alongX?.8:0),y,z-(alongX?0:.8),.08,.4,.08,M.metal); B(x+(alongX?.8:0),y,z+(alongX?0:.8),.08,.4,.08,M.metal); }
+function hideSpot(x,z,lv,cx,cz,name){ addInt(x,z,lv,1.3,()=>P.hidden?'Выйти из укрытия':name,()=>doHide(cx,cz)); }
+function cabinet(x,z,lv,hide){ const y=lv*4; B(x,y,z,.7,2.1,1.3,M.woodD,lv); B(x-.36,y+.1,z,.02,1.9,.03,M.dark); CY(x-.38,y+1.05,z-.12,.025,.12,M.steel); CY(x-.38,y+1.05,z+.12,.025,.12,M.steel);
+ if(hide)hideSpot(x-.95,z,lv,x-.3,z,'Спрятаться в шкафу'); }
+const BK=[M.red,M.blue,M.yellow,M.green,M.purple,M.orange];
+function classroom(x0,x1,z0,z1,lv,txt){ const y=lv*4, zc=(z0+z1)/2, north=z0<15;
+ B(x0+.19,y+.95,zc,.06,1.3,4.2,M.board); B(x0+.2,y+.9,zc,.05,.05,4.4,M.wood); B(x0+.27,y+.88,zc,.1,.03,4.2,M.wood);
+ label(txt,x0+.24,y+1.95,zc,Math.PI/2,2.8,.5,'#1f4a3a','#f1f1dd');
+ B(x0+1.9,y,zc,.8,.76,1.7,M.woodD,lv); B(x0+1.9,y+.77,zc+.4,.3,.02,.42,M.dark); B(x0+1.74,y+.79,zc+.4,.02,.28,.42,M.dark); B(x0+1.9,y+.76,zc-.4,.3,.08,.22,BK[lv+1]);
+ B(x0+1.05,y,zc,.42,.45,.42,M.dark); B(x0+.85,y+.45,zc,.05,.45,.42,M.dark);
+ for(let x=x0+4;x<=x1-2.6;x+=2)for(const z of [z0+3.5,zc,z1-3.5])desk(x,z,lv);
+ cabinet(x1-.5,z0+5.5,lv,true);
+ B(x1-.42,y,z1-5.5,.5,1.8,1.4,M.wood,lv); for(let i=0;i<3;i++)B(x1-.69,y+.25+i*.55,z1-5.5,.03,.38,1.25,BK[(i+lv)%6]);
+ plant(x0+.7,north?z0+.7:z1-.7,lv);
+ B(x1-.17,y+1.7,zc-1.6,.03,.9,.7,BK[(lv*2+1)%6]); B(x1-.17,y+1.7,zc+1.6,.03,.7,1,BK[(lv*2+3)%6]); }
+function toilet(x0,lv){ const xc=x0+2.5; B(xc,0,7.5,4.7,.02,14.7,M.tile);
+ for(const z of [3,6,9]){ B(x0+1.1,0,z,1.9,2,.06,M.cream,lv); B(x0+.55,0,z-1.5,.5,.42,.42,M.white); B(x0+.3,.42,z-1.5,.18,.5,.44,M.white); }
+ B(x0+1.1,0,.2,1.9,2,.06,M.cream);
+ for(const z of [11.3,12.9]){ B(x0+4.55,.72,z,.5,.16,.6,M.white); B(x0+4.82,1.25,z,.03,.7,.5,M.glass); CY(x0+4.6,.88,z,.02,.14,M.steel); }
+ hideSpot(x0+2.1,4.5,lv,x0+.9,4.5,'Спрятаться в кабинке'); }
+
+/* ================= SCHOOL ================= */
+function buildSchool(){
+ B(30,-.3,18,60.3,.3,36.3,M.lino);
+ for(const r of [[0,2,0,36],[2,5,0,7],[2,5,15,36],[5,55,0,36],[55,58,0,7],[55,58,15,36],[58,60,0,36]]){ const w=r[1]-r[0],d=r[3]-r[2],x=(r[0]+r[1])/2,z=(r[2]+r[3])/2; B(x,3.7,z,w,.1,d,M.ceil); B(x,3.8,z,w,.2,d,M.lino); }
+ B(30,7.7,18,60.3,.1,36.3,M.ceil); B(30,7.8,18,61,.3,37,M.roof); B(30,8.1,18,61,.3,.4,M.concrete);
+ for(const lv of [0,1]){
+  wall('x',0,0,60,lv,lv?[...wins(0,10,2),...wins(10,23,2),...wins(23,37,2),...wins(37,50,2),...wins(50,60,2)]:[...wins(5,10,1,1.2),...wins(10,22,2),...wins(22,34,2),...wins(34,50,3),...wins(50,55,1,1.2)],-1);
+  wall('x',36,0,60,lv,lv?[...wins(0,14,2),...wins(14,26,2),...wins(26,40,2),...wins(40,60,3)]:[...wins(0,12,2),...wins(12,22,2),{p:24,w:2,t:'win'},{p:29.2,w:1.6,t:'door',id:'main',lock:1,mat:M.doorExit},{p:34,w:2,t:'win'},...wins(38,60,4)],1);
+  wall('z',0,0,36,lv,[{p:17,w:2,t:'win'}],-1);
+  wall('z',60,0,36,lv,lv?[{p:17,w:2,t:'win'}]:[{p:17.2,w:1.6,t:'door',id:'spare',mat:M.doorExit}],1);
+  wall('z',2,7,15,lv); wall('z',58,7,15,lv); }
+ /* floor 1 interior */
+ wall('x',15,0,60,0,[{p:2,w:3,t:'open'},dr(6.7,'ТУАЛЕТ',1,'#555'),dr(11,'101 УКРАЇНСЬКА МОВА',1),dr(23,'102 ИСТОРИЯ',1),dr(36,'СТОЛОВАЯ',1,'#8a4b12'),dr(46,'СТОЛОВАЯ',1,'#8a4b12'),dr(51.7,'ТУАЛЕТ',1,'#555'),{p:55,w:3,t:'open'}]);
+ wall('x',21,0,22,0,[dr(1.2,'103 ГЕОГРАФИЯ',-1),dr(16,'ГАРДЕРОБ',-1,'#5a2d82')]);
+ wall('x',21,38,60,0,[dr(40,'СПОРТЗАЛ',-1,'#1b6a3d'),dr(56,'СПОРТЗАЛ',-1,'#1b6a3d')]);
+ for(const x of [5,10,22,34,50,55])wall('z',x,0,15,0);
+ wall('x',7,0,5,0); wall('x',7,55,60,0);
+ for(const x of [12,22,38])wall('z',x,21,36,0);
+ /* floor 2 interior */
+ wall('x',15,0,60,1,[{p:5.5,w:4,t:'open'},dr(11.2,'201 МАТЕМАТИКА',1),dr(24.2,'202 ИНФОРМАТИКА',1),dr(38.2,'203 БИОЛОГИЯ',1),{p:50.5,w:4,t:'open'}]);
+ wall('x',21,0,60,1,[dr(1.2,'204 ЛИТЕРАТУРА',-1),dr(15.2,'УЧИТЕЛЬСКАЯ',-1,'#7a1f1f'),dr(27.2,'БИБЛИОТЕКА',-1,'#5a2d82'),dr(42,'АКТОВЫЙ ЗАЛ',-1,'#8a4b12'),dr(56,'АКТОВЫЙ ЗАЛ',-1,'#8a4b12')]);
+ for(const x of [10,23,37,50])wall('z',x,0,15,1);
+ for(const x of [14,26,40])wall('z',x,21,36,1);
+ wall('z',5,7,15,1); wall('z',55,7,15,1); wall('x',7,0,2,1); wall('x',7,58,60,1);
+ /* stairs */
+ for(const xc of [3.5,56.5])for(let i=0;i<16;i++){ B(xc,0,15-i*.5-.25,2.7,(i+1)*.25,.5,M.concrete); B(xc,(i+1)*.25,15-i*.5-.03,2.7,.012,.06,M.yellow); }
+ label('ЛЕСТНИЦА ▲',3.5,2.95,15.18,0,1.6,.34,'#555'); label('ЛЕСТНИЦА ▲',56.5,2.95,15.18,0,1.6,.34,'#555');
+ /* lamps */
+ for(const lv of [0,1])for(let x=3;x<=57;x+=6)for(const z of [3.5,11.5,18,25,32.5]){ if(z===11.5&&(x===3||x===57))continue; B(x,lv*4+3.63,z,1.5,.07,.35,M.lamp); }
+ /* classrooms */
+ classroom(10,22,0,15,0,'УКРАЇНСЬКА МОВА: АПОСТРОФ — НЕ ІГРАШКА'); classroom(22,34,0,15,0,'ИСТОРИЯ: КТО СЪЕЛ МЕЛ?'); classroom(0,12,21,36,0,'ГЕОГРАФИЯ: ГДЕ СТОЛОВАЯ?');
+ classroom(10,23,0,15,1,'2 + 2 = 4 (ЭТО НЕ ТОЧНО)'); classroom(23,37,0,15,1,'ИНФОРМАТИКА: CTRL+C CTRL+V'); classroom(37,50,0,15,1,'БИОЛОГИЯ: МАРК — ЭТО ВИД?'); classroom(0,14,21,36,1,'ЛИТЕРАТУРА: МУ-МУ ЖАЛКО');
+ toilet(5,0); toilet(50,0);
+ /* canteen */
+ B(42,0,7.5,15.7,.02,14.7,M.tile); B(42,0,1.7,10,1,.8,M.steel,0); B(42,1.5,1.2,10,.06,.5,M.glass);
+ for(let i=0;i<8;i++){ B(37.8+i*1.2,1,1.7,.7,.04,.5,M.white); CY(37.8+i*1.2,1.04,1.7,.14,.08,BK[i%6]); }
+ label('МЕНЮ: КОТЛЕТА, ПЮРЕ, КОМПОТ',42,3.2,.17,0,4.5,.5,'#8a4b12');
+ for(const x of [38,42.5,47])for(const z of [6,10.5]){ CY(x,.72,z,.8,.05,M.white); CY(x,0,z,.08,.72,M.metal); for(const o of [[1.05,0],[-1.05,0],[0,1.05],[0,-1.05]])CY(x+o[0],0,z+o[1],.2,.45,M.orange); col(x-1.2,x+1.2,z-1.2,z+1.2,0,true); }
+ /* cloakroom */
+ B(17,0,25,8,1.05,.5,M.wood,0); label('ГАРДЕРОБ',17,1.9,35.83,Math.PI,2.4,.5,'#5a2d82');
+ for(const z of [28,31,34]){ B(17,1.55,z,7,.05,.05,M.metal); B(13.5,0,z,.06,1.55,.06,M.metal); B(20.5,0,z,.06,1.55,.06,M.metal); for(let x=13.9;x<20.4;x+=.5)B(x,.62,z,.36,.9,.24,BK[(x*2+z|0)%6]); col(13.5,20.5,z-.2,z+.2,0,true); }
+ /* hall */
+ B(35,0,32.5,1.6,1.05,2.4,M.woodD,0); label('ОХРАНА',34.18,.6,32.5,-Math.PI/2,1.6,.4,'#7a1f1f'); B(35.2,1.05,32.5,.3,.3,.4,M.dark);
+ bench(23,26,0,false); bench(23,31,0,false); bench(37,26,0,false); plant(23,35.2,0); plant(37,35.2,0); plant(23,21.8,0); plant(37,21.8,0);
+ CY(26.5,0,27,.3,3.7,M.wallHi,0); CY(33.5,0,27,.3,3.7,M.wallHi,0); B(30,0,34.8,2.4,.02,1.4,M.red);
+ label('РАСПИСАНИЕ ЗВОНКОВ',22.17,1.8,29,Math.PI/2,2.4,1,'#f1f1dd','#1d3557'); label('ВЫХОД',30,2.5,35.83,Math.PI,1.4,.34,'#1b7a3d'); label('ЗАПАСНОЙ ВЫХОД',59.83,2.5,18,-Math.PI/2,1.7,.34,'#1b7a3d');
+ /* gym */
+ B(49,0,28.5,21.7,.02,14.7,M.woodF); B(49,.02,28.5,.08,.01,14,M.line); B(49,.02,28.5,21,.01,.08,M.line);
+ for(const s of [-1,1]){ const x=49+s*10.55; B(x,2.3,28.5,.06,1,1.6,M.white); B(x-s*.35,2.45,28.5,.6,.04,.6,M.orange); }
+ bench(44,35.2,0,true); bench(54,35.2,0,true); B(57.5,0,33,2.4,.15,1.6,M.blue,0); B(57.5,.15,33,2.2,.12,1.4,M.red); SP(41,.16,24,.14,M.orange); SP(45,.16,33,.14,M.orange); SP(56,.16,23,.14,M.blue);
+ /* corridors */
+ bench(16,15.55,0,true); bench(29,15.55,0,true); bench(48,20.45,0,true); plant(.8,16,0); plant(.8,20,0); plant(59.3,15.9,0); plant(59.3,20.1,0);
+ bench(18,15.55,1,true); bench(32,15.55,1,true); bench(46,15.55,1,true); bench(10,20.45,1,true); bench(36,20.45,1,true); plant(.8,16,1); plant(.8,20,1); plant(59.3,16,1); plant(59.3,20,1);
+ plant(1,1,1); plant(9,1,1); plant(51,1,1); plant(59,1,1); bench(5,.6,1,true); bench(55,.6,1,true);
+ /* teachers room */
+ B(20,4,30,2.4,.76,1.2,M.woodD,1); B(24.6,4,26,1,.76,2.2,M.woodD,1); B(15,4,33,1,.45,3,M.purple,1); B(14.55,4.45,33,.2,.5,3,M.purple); cabinet(25.45,33,1,true); plant(14.8,22,1);
+ B(20.4,4.77,29.8,.3,.02,.42,M.dark); B(20.4,4.79,29.6,.3,.28,.02,M.dark); CY(19.3,4.76,30.2,.05,.12,M.white);
+ /* library */
+ for(const x of [31,34,37]){ B(x,4,30.5,.6,2.2,8,M.woodD,1); for(let i=0;i<4;i++){ B(x-.31,4.15+i*.5,30.5,.03,.36,7.6,BK[(i+x)%6]); B(x+.31,4.15+i*.5,30.5,.03,.36,7.6,BK[(i+x+3)%6]); } }
+ B(33,4,23.3,2.4,.76,.9,M.wood,1); B(33,4.76,23.3,.3,.1,.22,M.red); plant(39.2,22,1);
+ /* assembly hall */
+ B(57.4,4,28.5,4.9,.5,11,M.woodD,1); B(59.75,4.5,28.5,.1,3.1,11,M.red); B(55.2,4.5,23.3,.4,3.1,.5,M.red); B(55.2,4.5,33.7,.4,3.1,.5,M.red);
+ for(let x=44.5;x<=52.6;x+=1.6){ B(x,4,28.5,.5,.45,9,M.red); B(x-.22,4.45,28.5,.08,.5,9,M.red); col(x-.3,x+.3,24,33,1,true); }
+}
+
+/* ================= OUTDOOR ================= */
+const roofGeo=new THREE.ConeGeometry(1,1,4); roofGeo.rotateY(Math.PI/4);
+function tree(x,z,s){ s=s||1; CY(x,0,z,.22*s,2.3*s,M.trunk,0); SP(x,3.3*s,z,1.5*s,M.leaf,.9); SP(x+.7*s,2.8*s,z+.4*s,1.1*s,M.leaf2); SP(x-.6*s,3*s,z-.5*s,1*s,M.leaf2); }
+function house(x,z,w,d,mat,rm){ B(x,0,z,w,3.2,d,mat,0); const r=new THREE.Mesh(roofGeo,rm); r.scale.set(w*.8,2.4,d*.8); r.position.set(x,4.4,z); r.castShadow=true; scene.add(r);
+ B(x,0,z-d/2-.03,1.1,2.1,.08,M.doorM); B(x-w*.3,1.2,z-d/2-.02,1.3,1.1,.06,M.glass); B(x+w*.3,1.2,z-d/2-.02,1.3,1.1,.06,M.glass); B(x-w*.3,1.15,z-d/2-.05,1.45,.06,.1,M.white); B(x+w*.3,1.15,z-d/2-.05,1.45,.06,.1,M.white); B(x+w*.25,4,z+d*.15,.6,1.6,.6,M.brick); }
+function buildOutdoor(){
+ B(35,-.22,45,260,.2,260,M.grass);
+ B(30,-.1,48,6,.1,24,M.pave); B(35,-.1,65,260,.09,8,M.asph); B(30,-.1,76.5,3,.1,15,M.pave); B(64.5,-.1,18,9,.1,3,M.pave); B(67.5,-.1,39,3,.1,42,M.pave); B(35,-.1,60.4,100,.1,1.6,M.pave); B(35,-.1,69.6,100,.1,1.6,M.pave);
+ for(let x=-90;x<160;x+=5)B(x,-.01,65,2.2,.012,.16,M.line);
+ B(30,2.9,37.4,5.4,.18,2.6,M.concrete); CY(27.6,0,38.4,.13,2.9,M.white,0); CY(32.4,0,38.4,.13,2.9,M.white,0); B(30,0,37,4,.02,1.6,M.concrete);
+ label(LANG==='uk'?'Ліцей':'Лицей',30,3.5,36.2,0,5,.8,'#1d3557'); label('ЗАПАСНОЙ ВЫХОД',60.2,2.5,18,Math.PI/2,1.7,.34,'#1b7a3d');
+ house(30,88,10,8,M.cream,M.roofR); house(8,89,9,8,M.house2,M.roof); house(52,89,9,8,M.house3,M.roofR); house(72,89,8,7,M.cream,M.roof); house(-9,88,7,7,M.house3,M.roofR);
+ label('ДОМ',30,2.5,83.9,Math.PI,.9,.3,'#7a1f1f');
+ for(const t of [[20,42],[40,42],[14,52],[46,52],[-6,30,1.2],[-8,8,1.1],[70,6,1.2],[74,30],[72,50,1.1],[8,74],[52,75],[66,76],[-4,76,1.1],[20,-5],[42,-5,1.2],[-8,50],[-5,62.5,0.8]])tree(t[0],t[1],t[2]);
+ for(const p of [[24,40],[36,40],[24,46],[36,46],[24,54],[36,54]]){ SP(p[0],.45,p[1],.6,M.leaf,.8); }
+ bench(25.5,50,0,false); bench(34.5,50,0,false);
+ for(const p of [[26.4,58],[33.6,58],[66,58],[10,71],[50,71]]){ CY(p[0],0,p[1],.07,3.6,M.dark,0); SP(p[0],3.7,p[1],.2,M.lamp); }
+
+ /* car */
+ B(48,.3,62.6,3.8,.6,1.6,M.red,0); B(47.8,.9,62.6,2,.55,1.45,M.glass); B(47.8,1.42,62.6,2,.06,1.45,M.red);
+ for(const o of [[-1.2,-.8],[1.2,-.8],[-1.2,.8],[1.2,.8]])put('cyl',M.dark,48+o[0],.32,62.6+o[1],.64,.22,.64,0,Math.PI/2,0);
+ /* fence */
+ const X0=-14,X1=80,Z0=-10,Z1=98;
+ for(const h of [.5,1]){ B((X0+X1)/2,h,Z0,X1-X0,.07,.05,M.woodD); B((X0+X1)/2,h,Z1,X1-X0,.07,.05,M.woodD); B(X0,h,(Z0+Z1)/2,.05,.07,Z1-Z0,M.woodD); B(X1,h,(Z0+Z1)/2,.05,.07,Z1-Z0,M.woodD); }
+ for(let x=X0;x<=X1;x+=3.76){ B(x,0,Z0,.12,1.2,.12,M.woodD); B(x,0,Z1,.12,1.2,.12,M.woodD); } for(let z=Z0;z<=Z1;z+=4){ B(X0,0,z,.12,1.2,.12,M.woodD); B(X1,0,z,.12,1.2,.12,M.woodD); }
+ col(X0-1,X1+1,Z0-1,Z0,0); col(X0-1,X1+1,Z1,Z1+1,0); col(X0-1,X0,Z0,Z1,0); col(X1,X1+1,Z0,Z1,0);
+ for(let i=0;i<9;i++){ const x=rnd(-80,150),z=rnd(-60,140),y=rnd(38,60); put('sph',M.cloud,x,y,z,rnd(14,22),5,rnd(8,12)); put('sph',M.cloud,x+6,y+1.5,z+2,rnd(8,12),5,8); }
+}
+/* ================= HOME INTERIOR ================= */
+function buildHome(){ WH=2.9; WLO=M.homeLo; WHI=M.homeHi; const X=HX;
+ B(X+4,-.2,5,8.3,.2,10.3,M.woodF); B(X+4,2.9,5,8.3,.2,10.3,M.ceil);
+ wall('x',0,X,X+8,0,[{p:X+3,w:2,t:'win'}]); wall('x',7,X,X+8,0,[{p:X+3.2,w:1.2,t:'door',id:'home',lock:1}]); wall('z',X,0,10,0); wall('z',X+8,0,10,0); wall('x',10,X,X+8,0);
+ B(X+.8,0,1.35,1.2,.35,2.3,M.woodD,0); B(X+.8,.35,1.35,1.1,.18,2.2,M.white); B(X+.8,.5,1.8,1.12,.07,1.35,M.purple); B(X+.8,.53,.52,.8,.12,.45,M.white); B(X+.8,0,.22,1.2,.95,.08,M.woodD);
+ B(X+7.45,.72,2.2,.7,.05,1.6,M.wood); B(X+7.45,0,1.45,.6,.72,.05,M.wood); B(X+7.45,0,2.95,.6,.72,.05,M.wood); col(X+7.1,X+7.8,1.4,3,0,true);
+ B(X+6.7,0,2.5,.45,.45,.45,M.dark,0); B(X+6.5,.45,2.5,.05,.45,.45,M.dark); B(X+7.5,.77,2.6,.3,.02,.45,M.dark); B(X+7.66,.79,2.6,.02,.3,.45,M.dark);
+ CY(X+7.5,.77,1.6,.08,.3,M.metal); SP(X+7.5,1.15,1.6,.13,M.lamp);
+ B(X+7.55,0,5.3,.7,2.2,1.6,M.woodD,0); B(X+7.19,.1,5.3,.02,2,.03,M.dark);
+ CY(X+4,0,3.6,1.5,.02,M.red); CY(X+4,.02,3.6,1.1,.005,M.cream);
+ B(X+.27,1.5,4.8,.25,.04,1.4,M.wood); for(let i=0;i<6;i++)B(X+.27,1.54,4.25+i*.2,.2,.26+.04*(i%3),.14,BK[i]);
+ plant(X+.6,6.3,0); B(X+2,0,6.6,1,.5,.5,M.wood,0);
+ label('НЕ БЕСПОКОИТЬ!',X+.17,2,3.2,Math.PI/2,1.2,.5,'#ff5d8f'); label('★ ANONYMOUS ★',X+7.83,2.1,3.8,-Math.PI/2,1,.6,'#14122b','#ffd23f');
+ SP(X+3.8,1.45,6.94,.035,M.dark); SP(X+3.8,1.45,7.06,.035,M.dark); B(X+3.8,0,7.7,1,.02,.6,M.green); B(X+4,2.86,3.5,.6,.05,.6,M.lamp); B(X+4,2.86,8.5,.4,.05,.4,M.lamp);
+ WH=3.7; WLO=M.wallLo; WHI=M.wallHi; }
+buildSchool(); buildOutdoor(); buildHome(); flush(); setLock('home',true);
+</script>
+<script>
+/* ================= NAVIGATION (grid A*, 2 floors + stairs) ================= */
+const CS=.5,GW=120,GD=72,GN=GW*GD;
+const blk=new Uint8Array(GN*2), stairLv=new Int8Array(GN);
+const inStair=(x,z)=>z>7&&z<15&&((x>2&&x<5)||(x>55&&x<58));
+const groundY=(x,z,lv)=>inStair(x,z)?Math.min(4,(15-z)*.5+.12):lv*4;
+(function buildNav(){ const sc=colliders.filter(c=>c.x1>-1&&c.x0<61&&c.z1>-1&&c.z0<37), R=.3;
+ for(let lv=0;lv<2;lv++){ const cl=sc.filter(c=>c.lv===lv);
+  for(let j=0;j<GD;j++)for(let i=0;i<GW;i++){ const x=(i+.5)*CS,z=(j+.5)*CS,idx=j*GW+i; let b=0;
+   for(const c of cl){ if(x<c.x0-R||x>c.x1+R||z<c.z0-R||z>c.z1+R)continue; const dx=x-clamp(x,c.x0,c.x1),dz=z-clamp(z,c.z0,c.z1); if(dx*dx+dz*dz<R*R){b=1;break;} }
+   const st=inStair(x,z), sl=z<11?1:0; if(lv===0)stairLv[idx]=st?sl:-1; if(st&&sl!==lv)b=1; blk[lv*GN+idx]=b; } } })();
+const aG=new Float32Array(GN*2),aP=new Int32Array(GN*2),aS=new Uint32Array(GN*2),aC=new Uint32Array(GN*2); let aRun=0;
+const hN=new Int32Array(GN*17),hF=new Float32Array(GN*17); let hL=0;
+function hPush(n,f){ let i=hL++; while(i>0){ const p=(i-1)>>1; if(hF[p]<=f)break; hN[i]=hN[p]; hF[i]=hF[p]; i=p; } hN[i]=n; hF[i]=f; }
+function hPop(){ const top=hN[0]; hL--; if(hL>0){ const n=hN[hL],f=hF[hL]; let i=0; for(;;){ let c=i*2+1; if(c>=hL)break; if(c+1<hL&&hF[c+1]<hF[c])c++; if(hF[c]>=f)break; hN[i]=hN[c]; hF[i]=hF[c]; i=c; } hN[i]=n; hF[i]=f; } return top; }
+function cellOf(x,z,lv){ const i=clamp(Math.floor(x/CS),0,GW-1), j=clamp(Math.floor(z/CS),0,GD-1); const s=stairLv[j*GW+i]; if(s>=0)lv=s; let n=lv*GN+j*GW+i; if(!blk[n])return n;
+ for(let r=1;r<8;r++)for(let dj=-r;dj<=r;dj++)for(let di=-r;di<=r;di++){ if(Math.max(Math.abs(di),Math.abs(dj))!==r)continue; const ii=i+di,jj=j+dj; if(ii<0||jj<0||ii>=GW||jj>=GD)continue; const s2=stairLv[jj*GW+ii]; if(s2>=0&&s2!==lv)continue; n=lv*GN+jj*GW+ii; if(!blk[n])return n; }
+ return -1; }
+function navClear(ax,az,bx,bz,lv){ const d=Math.hypot(bx-ax,bz-az), n=Math.max(1,Math.ceil(d/.2)); for(let k=0;k<=n;k++){ const t=k/n, i=Math.floor((ax+(bx-ax)*t)/CS), j=Math.floor((az+(bz-az)*t)/CS); if(i<0||j<0||i>=GW||j>=GD)return false; const c=j*GW+i; if(stairLv[c]>=0||blk[lv*GN+c])return false; } return true; }
+const DI=[1,-1,0,0,1,1,-1,-1],DJ=[0,0,1,-1,1,-1,1,-1];
+const oct=(a,b)=>{ a=Math.abs(a); b=Math.abs(b); return Math.max(a,b)+.414*Math.min(a,b); };
+function findPath(sx,sz,slv,tx,tz,tlv){ const s=cellOf(sx,sz,slv), t=cellOf(tx,tz,tlv); if(s<0||t<0)return null; if(s===t)return [];
+ aRun++; hL=0; const tl=t>=GN?1:0, tc=t-tl*GN, ti=tc%GW, tj=(tc/GW)|0, d0=oct(ti-7,tj-22), d1=oct(ti-113,tj-22);
+ aG[s]=0; aP[s]=-1; aS[s]=aRun; hPush(s,0); let found=false;
+ while(hL>0){ const n=hPop(); if(n===t){found=true;break;} if(aC[n]===aRun)continue; aC[n]=aRun;
+  const lv=n>=GN?1:0, c=n-lv*GN, i=c%GW, j=(c/GW)|0, g=aG[n];
+  for(let k=0;k<8;k++){ const ni=i+DI[k], nj=j+DJ[k]; if(ni<0||nj<0||ni>=GW||nj>=GD)continue; const nc=nj*GW+ni, sl=stairLv[nc], nl=sl>=0?sl:lv, nn=nl*GN+nc; if(blk[nn])continue;
+   if(k>3&&(blk[lv*GN+j*GW+ni]||blk[lv*GN+nj*GW+i]))continue;
+   const ng=g+(k>3?1.414:1); if(aS[nn]===aRun&&aG[nn]<=ng)continue; aS[nn]=aRun; aG[nn]=ng; aP[nn]=n;
+   const h=nl===tl?oct(ni-ti,nj-tj):Math.min(oct(ni-7,nj-22)+d0,oct(ni-113,nj-22)+d1);
+   if(hL<hN.length-1)hPush(nn,ng+h); } }
+ if(!found)return null;
+ const out=[]; let n=t; while(n!==-1&&n!==s){ const lv=n>=GN?1:0,c=n-lv*GN; out.push({x:(c%GW+.5)*CS,z:(((c/GW)|0)+.5)*CS,lv,st:stairLv[c]>=0}); n=aP[n]; } out.reverse();
+ const res=[]; let ax=sx,az=sz,alv=s>=GN?1:0,ast=stairLv[s-alv*GN]>=0,i=0;
+ while(i<out.length){ let j=i; if(!ast){ j=Math.min(out.length-1,i+14); while(j>i&&(out[j].lv!==alv||out[j].st||!navClear(ax,az,out[j].x,out[j].z,alv)))j--; }
+  res.push(out[j]); ax=out[j].x; az=out[j].z; alv=out[j].lv; ast=out[j].st; i=j+1; }
+ return res; }
+
+/* ================= FACES (2D canvas, Baldi-style) ================= */
+function drawFace(x,who,o){ o=o||{}; const sk=o.skin||'#f3cdaa', ink='#1a1410';
+ x.clearRect(0,0,256,288); x.save(); x.beginPath(); x.ellipse(128,148,126,140,0,0,7); x.clip();
+ x.fillStyle=sk; x.beginPath(); x.ellipse(128,150,120,134,0,0,7); x.fill();
+ const eye=(cx,cy,rx,ry,px,py,lid,lc)=>{ x.fillStyle='#fff'; x.beginPath(); x.ellipse(cx,cy,rx,ry,0,0,7); x.fill(); x.lineWidth=4; x.strokeStyle=ink; x.stroke();
+  x.fillStyle=o.iris||'#4a2f1a'; x.beginPath(); x.arc(cx+px,cy+py,ry*.56,0,7); x.fill(); x.fillStyle='#000'; x.beginPath(); x.arc(cx+px,cy+py,ry*.3,0,7); x.fill(); x.fillStyle='#fff'; x.beginPath(); x.arc(cx+px+5,cy+py-6,ry*.15,0,7); x.fill();
+  if(lid){ const ly=cy-ry+ry*2*lid; x.save(); x.beginPath(); x.rect(cx-rx-8,cy-ry-8,rx*2+16,ly-(cy-ry-8)); x.clip(); x.fillStyle=lc||sk; x.beginPath(); x.ellipse(cx,cy,rx+2,ry+2,0,0,7); x.fill(); x.restore(); x.lineWidth=5; x.strokeStyle=ink; x.beginPath(); x.moveTo(cx-rx-3,ly); x.lineTo(cx+rx+3,ly); x.stroke(); } };
+ const ln=(w,pts)=>{ x.lineWidth=w; x.strokeStyle=ink; x.lineCap='round'; x.beginPath(); x.moveTo(pts[0],pts[1]); if(pts.length===6)x.quadraticCurveTo(pts[2],pts[3],pts[4],pts[5]); else x.lineTo(pts[2],pts[3]); x.stroke(); };
+ const blush=(cx,cy,r,a)=>{ x.fillStyle='rgba(255,90,110,'+a+')'; x.beginPath(); x.ellipse(cx,cy,r,r*.65,0,0,7); x.fill(); };
+ if(who==='polina'){
+  blush(58,196,24,.28); blush(198,196,24,.28);
+  eye(82,152,31,26,9,5,.44,'#d7a6b4'); eye(174,152,31,26,9,5,.44,'#d7a6b4');
+  ln(4,[48,150,36,140]); ln(4,[52,160,38,156]); ln(4,[208,150,220,140]); ln(4,[204,160,218,156]);
+  ln(8,[52,116,84,112,114,120]); ln(8,[146,108,178,88,208,104]);
+  ln(4,[122,186,128,198,138,190]);
+  x.fillStyle='#b8404f'; x.beginPath(); x.moveTo(98,232); x.quadraticCurveTo(128,244,166,222); x.quadraticCurveTo(132,236,98,232); x.fill(); ln(6,[98,232,130,246,168,220]); ln(4,[166,214,174,220]);
+  x.fillStyle='#15101a'; x.beginPath(); x.moveTo(0,0); x.lineTo(256,0); x.lineTo(256,190); x.quadraticCurveTo(246,84,160,54); x.quadraticCurveTo(110,96,36,104); x.quadraticCurveTo(12,130,0,200); x.fill();
+  x.strokeStyle='#3a2c48'; x.lineWidth=3; x.beginPath(); x.moveTo(150,40); x.quadraticCurveTo(100,80,40,90); x.stroke();
+ } else if(who==='mark'){
+  blush(52,202,30,.4); blush(204,202,30,.4);
+  eye(84,146,28,30,4,2,0); eye(172,146,28,30,-4,2,0);
+  ln(11,[48,106,80,88,112,100]); ln(11,[144,100,176,88,208,106]);
+  x.fillStyle='#e3b08c'; x.beginPath(); x.ellipse(128,190,15,11,0,0,7); x.fill();
+  x.fillStyle='#5a1a22'; x.beginPath(); x.moveTo(70,214); x.quadraticCurveTo(128,236,186,214); x.quadraticCurveTo(128,290,70,214); x.fill();
+  x.fillStyle='#fff'; x.beginPath(); x.moveTo(78,217); x.quadraticCurveTo(128,236,178,217); x.lineTo(174,229); x.quadraticCurveTo(128,244,82,229); x.fill();
+  x.fillStyle='#ff8090'; x.beginPath(); x.ellipse(128,256,22,10,0,0,7); x.fill(); ln(5,[70,214,128,236,186,214]);
+  x.fillStyle='rgba(150,90,50,.5)'; for(const p of [[62,180],[74,188],[52,190],[192,180],[182,188],[204,190]]){ x.beginPath(); x.arc(p[0],p[1],3,0,7); x.fill(); }
+  x.fillStyle='#2a1d14'; x.beginPath(); x.moveTo(0,0); x.lineTo(256,0); x.lineTo(256,120); x.lineTo(236,72); x.lineTo(214,84); x.lineTo(192,58); x.lineTo(166,76); x.lineTo(140,52); x.lineTo(112,74); x.lineTo(86,56); x.lineTo(62,82); x.lineTo(40,68); x.lineTo(20,96); x.lineTo(0,120); x.fill();
+ } else {
+  const v=o.v||0; blush(60,196,20,.2); blush(196,196,20,.2);
+  eye(84,150,26,24+v%2*4,(v%3-1)*5,2,v%2?.2:0); eye(172,150,26,24+v%2*4,(v%3-1)*5,2,v%2?.2:0);
+  ln(7,[56,112+v%3*4,84,104,110,112]); ln(7,[146,112,172,104,200,112+v%3*4]); ln(4,[122,184,128,194,136,186]);
+  if(v%3===0)ln(6,[92,224,128,246,164,224]); else if(v%3===1)ln(6,[98,232,158,232]); else { x.fillStyle='#5a1a22'; x.beginPath(); x.ellipse(128,232,16,12,0,0,7); x.fill(); }
+  if(o.glasses){ x.lineWidth=5; x.strokeStyle='#222'; x.strokeRect(50,122,68,56); x.strokeRect(138,122,68,56); ln(5,[118,146,138,146]); }
+  x.fillStyle=o.hairC||'#3a2a1c'; x.beginPath(); x.moveTo(0,0); x.lineTo(256,0); x.lineTo(256,130); x.quadraticCurveTo(230,70,128,62+v%2*20); x.quadraticCurveTo(26,70,0,130); x.fill();
+ }
+ x.restore(); }
+function faceTex(who,o){ const c=document.createElement('canvas'); c.width=256; c.height=288; drawFace(c.getContext('2d'),who,o); const t=new THREE.CanvasTexture(c); t.encoding=THREE.sRGBEncoding; return t; }
+function drawPortrait(cv,who){ const x=cv.getContext('2d'),W=cv.width,H=cv.height,pol=who==='polina'; const g=x.createLinearGradient(0,0,0,H); g.addColorStop(0,pol?'#ff9fbe':'#7fc8ff'); g.addColorStop(1,pol?'#5a2d82':'#1d3a7a'); x.fillStyle=g; x.fillRect(0,0,W,H);
+ x.save(); x.translate(W/2,H*.52); x.globalAlpha=.13; x.fillStyle='#fff'; for(let i=0;i<12;i++){ x.rotate(Math.PI/6); x.beginPath(); x.moveTo(0,0); x.lineTo(-38,-420); x.lineTo(38,-420); x.fill(); } x.restore();
+ if(pol){ x.fillStyle='#15101a'; x.beginPath(); x.ellipse(W/2,172,116,146,0,0,7); x.fill(); x.fillRect(W/2-116,172,232,230); }
+ x.fillStyle=pol?'#1c1a26':'#3b78c4'; x.beginPath(); x.ellipse(W/2,H+46,pol?132:180,128,0,0,7); x.fill();
+ if(!pol){ x.fillStyle='#2f62a6'; x.beginPath(); x.ellipse(W/2,H+10,60,70,0,0,7); x.fill(); }
+ x.fillStyle=pol?'#e9c09c':'#eac3a0'; x.fillRect(W/2-(pol?22:30),246,pol?44:60,56);
+ const f=document.createElement('canvas'); f.width=256; f.height=288; drawFace(f.getContext('2d'),who); x.drawImage(f,W/2-(pol?96:108),pol?62:58,pol?192:216,pol?216:226);
+ x.fillStyle='rgba(255,255,255,.9)'; x.font='900 20px Arial'; x.textAlign='right'; x.fillText(pol?'«Отстань.»':'«ПОЛИНА-А-А!»',W-14,H-16); }
+
+/* ================= 3D CHARACTERS ================= */
+const CG={ torso:new THREE.LatheGeometry([[0,0],[.15,0],[.168,.08],[.158,.22],[.172,.38],[.15,.47],[.06,.53],[0,.54]].map(p=>new THREE.Vector2(p[0],p[1])),16),
+ sp:new THREE.SphereGeometry(1,14,10), lim:new THREE.CylinderGeometry(1,.85,1,10), cap:new THREE.SphereGeometry(1,16,10,0,Math.PI*2,0,Math.PI*.56),
+ face:new THREE.PlaneGeometry(.26,.29), box:new THREE.BoxGeometry(1,1,1), disc:new THREE.CircleGeometry(.3,16) };
+const blobMat=new THREE.MeshBasicMaterial({color:0,transparent:true,opacity:.28,depthWrite:false});
+function makeChar(c){ const g=new THREE.Group(), body=new THREE.Group(); g.add(body); const f=c.fat||1, sf=Math.sqrt(f);
+ const mt=(col,r)=>new THREE.MeshStandardMaterial({color:col,roughness:r||.8,side:THREE.DoubleSide});
+ const skin=mt(c.skin||0xf3cdaa,.7), top=mt(c.top), bot=mt(c.bot), shoe=mt(c.shoe||0x1c1c1c,.6), hair=mt(c.hair||0x15101a,.55);
+ const add=(geo,m,x,y,z,p)=>{ const o=new THREE.Mesh(geo,m); o.position.set(x,y,z); o.castShadow=true; (p||body).add(o); return o; };
+ add(CG.torso,top,0,.76,0).scale.set(f,1,f*.74);
+ if(f>1.15)add(CG.sp,top,0,.97,.045).scale.set(.178*f,.2,.15*f);
+ add(CG.sp,bot,0,.79,0).scale.set(.165*f,.1,.125*f);
+ const limb=(x,y,l1,l2,r,m1,m2,leg)=>{ const a=new THREE.Group(); a.position.set(x,y,0); body.add(a); add(CG.lim,m1,0,-l1/2,0,a).scale.set(r,l1,r); add(CG.sp,m1,0,0,0,a).scale.setScalar(r*1.04);
+  const k=new THREE.Group(); k.position.y=-l1; a.add(k); add(CG.sp,m1,0,0,0,k).scale.setScalar(r*.86); add(CG.lim,m2,0,-l2/2,0,k).scale.set(r*.85,l2,r*.85);
+  if(leg)add(CG.sp,shoe,0,-l2-.015,.04,k).scale.set(.068*sf,.045,.12); else add(CG.sp,skin,0,-l2-.03,0,k).scale.setScalar(r*.98);
+  return {a,k}; };
+ const LL=limb(-.085*f,.79,.39,.37,.068*sf,bot,bot,1), RL=limb(.085*f,.79,.39,.37,.068*sf,bot,bot,1);
+ const LA=limb(-.2*f,1.235,.26,.24,.047*sf,top,c.short?skin:top), RA=limb(.2*f,1.235,.26,.24,.047*sf,top,c.short?skin:top);
+ LA.a.rotation.z=-.1*f; RA.a.rotation.z=.1*f;
+ add(CG.lim,skin,0,1.31,0).scale.set(.045,.1,.045);
+ const head=new THREE.Group(); head.position.y=1.425; body.add(head);
+ add(CG.sp,skin,0,0,0,head).scale.set(.125,.135,.125);
+ const fm=new THREE.Mesh(CG.face,new THREE.MeshStandardMaterial({map:c.face,transparent:true,alphaTest:.4,roughness:.8})); fm.position.z=.131; head.add(fm);
+ const cap=add(CG.cap,hair,0,.012,-.01,head); cap.scale.set(.139,.147,.141); cap.rotation.x=-.75;
+ if(c.hs==='long'){ add(CG.box,hair,0,-.24,-.105,head).scale.set(.25,.5,.07); add(CG.sp,hair,-.118,-.13,-.03,head).scale.set(.04,.2,.07); add(CG.sp,hair,.118,-.13,-.03,head).scale.set(.04,.2,.07); }
+ else if(c.hs==='bob'){ add(CG.box,hair,0,-.09,-.1,head).scale.set(.25,.2,.08); }
+ else if(c.hs==='pony'){ add(CG.sp,hair,0,-.02,-.17,head).scale.setScalar(.06); add(CG.sp,hair,0,-.15,-.2,head).scale.set(.045,.12,.045); }
+ if(c.bag)add(CG.box,mt(c.bag),0,1.05,-.16*f).scale.set(.26,.34,.12);
+ const bl=new THREE.Mesh(CG.disc,blobMat); bl.rotation.x=-Math.PI/2; bl.position.y=.03; bl.scale.setScalar(f); g.add(bl);
+ g.scale.setScalar((c.h||1.55)/1.56);
+ return {g,body,head,LL,RL,LA,RA,ph:Math.random()*6,talk:0,tt:0,
+  anim(dt,spd){ const run=spd>3.7, k=spd>.15?1:0; if(k)this.ph+=dt*(run?12.5:8)*clamp(spd/(run?5:2.8),.5,1.25); this.tt+=dt;
+   const amp=k*(run?.95:.5), s=Math.sin(this.ph), c2=Math.cos(this.ph), q=1-Math.exp(-dt*14);
+   const set=(o,v)=>{ o.rotation.x+=(v-o.rotation.x)*q; };
+   set(LL.a,s*amp); set(RL.a,-s*amp); set(LL.k,Math.max(0,c2)*amp*1.25+(run?.25:0)*k); set(RL.k,Math.max(0,-c2)*amp*1.25+(run?.25:0)*k);
+   if(this.talk>0){ this.talk-=dt; set(RA.a,-1.5+Math.sin(this.tt*9)*.25); set(RA.k,-.9); set(LA.a,-.2); set(LA.k,-.3); head.rotation.x=Math.sin(this.tt*7)*.06; }
+   else { set(LA.a,-s*amp*.85); set(RA.a,s*amp*.85); set(LA.k,-(run?1.35:.18)-k*.1); set(RA.k,-(run?1.35:.18)-k*.1); head.rotation.x*=1-q; }
+   body.position.y=Math.abs(s)*.035*k*(run?1.7:1)+(k?0:Math.sin(this.tt*1.8)*.004); body.rotation.x+=((run?.2:0)-body.rotation.x)*q; body.rotation.z=s*.035*k; } }; }
+</script>
+<script>
+/* ================= STATE / ENTITIES ================= */
+const G={st:'boot',mode:'polina',phase:'',cut:false,lock:false,chase:false,irr:0,hasKey:false,task:0,gifts:0,given:0,time:480,camFn:null,obj:'',run:0};
+const ents=[]; let P=null;
+function mkEnt(cfg,name,pitch){ const ch=makeChar(cfg); scene.add(ch.g); const e={ch,name,pitch:pitch||220,x:0,z:0,y:0,lv:0,rot:0,spd:0,path:null,pi:0,st:'idle',t:0,active:true,hidden:null,lie:false,stun:0,cd:0,rp:0,sx:0,sz:0,stk:0,alarm:0,lost:0,grace:0}; ents.push(e); return e; }
+function place(e,x,z,lv,rot){ e.x=x; e.z=z; e.lv=lv||0; if(rot!==undefined){ e.rot=rot; e.ch.g.rotation.y=rot; } e.path=null; e.spd=0; e.y=groundY(x,z,e.lv); }
+function syncEnt(e,dt){ const g=e.ch.g; g.visible=e.active&&!e.hidden; if(!g.visible)return;
+ if(e.lie){ g.rotation.set(-Math.PI/2,0,0); g.position.set(e.x,.62,e.z); return; }
+ e.y=groundY(e.x,e.z,e.lv); g.position.set(e.x,e.y,e.z); g.rotation.x=0; let d=e.rot-g.rotation.y; d=Math.atan2(Math.sin(d),Math.cos(d)); g.rotation.y+=d*(1-Math.exp(-dt*11)); e.ch.anim(dt,e.spd); }
+const zoneOf=e=>e.x<-100?'home':(e.x>0&&e.x<60&&e.z>0&&e.z<36)?'school':'out';
+const dist=(a,b)=>Math.hypot(a.x-b.x,a.z-b.z);
+const POL=mkEnt({top:0x1c1a26,bot:0x15141c,hair:0x15101a,hs:'long',face:faceTex('polina'),h:1.55,bag:0x8a3b5c},'Полина',330);
+const MRK=mkEnt({top:0x3b78c4,bot:0x3a4254,hair:0x2a1d14,hs:'short',fat:1.4,face:faceTex('mark'),h:1.55,short:1},'Марк',150);
+const NPCS=[]; (function(){ const TOPS=[0xc63b3b,0x3d9a5f,0xe8873a,0x8a5bc4,0xf0c23a,0x3aa7b5,0xd1577f,0x5a6b7d,0xf0f0f0], HAIRS=[0x3a2a1c,0x6b4423,0xc9a14a,0x1a1a1a,0x8a3a1c], BG=[0,0xc63b3b,0x3d6fd1];
+ for(let i=0;i<9;i++){ const hc=HAIRS[i%5]; const n=mkEnt({top:TOPS[i],bot:i%2?0x2b3550:0x3a3a3a,hair:hc,hs:['short','pony','bob','long'][i%4],face:faceTex('npc',{v:i,hairC:'#'+hc.toString(16).padStart(6,'0'),glasses:i%4===3}),h:1.44+i%3*.06,fat:1+(i%3)*.08,short:i%2,bag:BG[i%3]},'Ученик',190+i*24); n.ws=1.7+i%3*.3; NPCS.push(n); }
+ const t=mkEnt({top:0x6b2d4a,bot:0x2a2a2a,hair:0x8a8a8a,hs:'bob',face:faceTex('npc',{v:1,hairC:'#8a8a8a',glasses:true}),h:1.68},'Завуч',250); t.ws=1.6; t.teacher=true; NPCS.push(t); })();
+const POI=[[8,18,0],[20,18,0],[30,18,0],[45,18,0],[56,18,0],[30,28,0],[26,32,0],[40,12.5,0],[42,3,0],[36.5,8,0],[16,5.5,0],[11.8,13,0],[28,9.5,0],[24,13,0],[6,30.5,0],[2,23,0],[17,23,0],[49,28,0],[42,33,0],[57,24,0],[8,12,0],[52.5,12,0],
+ [8,18,1],[20,18,1],[32,18,1],[45,18,1],[56,18,1],[5,3.5,1],[55,3.5,1],[16,9.5,1],[12,13,1],[30,9.5,1],[43,9.5,1],[7,30.5,1],[2.5,23,1],[20,24,1],[28,30,1],[33,25,1],[42,23,1],[50,22.5,1],[43,34.5,1]].map(p=>({x:p[0],z:p[1],lv:p[2]}));
+
+/* ================= MOVEMENT / COLLISION / SIGHT ================= */
+function resolve(e,r){ for(let it=0;it<2;it++)for(const c of colliders){ if(c.off||c.lv!==e.lv)continue; if(e.x<c.x0-r||e.x>c.x1+r||e.z<c.z0-r||e.z>c.z1+r)continue;
+ const nx=clamp(e.x,c.x0,c.x1), nz=clamp(e.z,c.z0,c.z1), dx=e.x-nx, dz=e.z-nz, d2=dx*dx+dz*dz; if(d2>=r*r)continue;
+ if(d2>1e-8){ const d=Math.sqrt(d2); e.x=nx+dx/d*r; e.z=nz+dz/d*r; }
+ else { const l=e.x-c.x0, rr=c.x1-e.x, t=e.z-c.z0, b=c.z1-e.z, m=Math.min(l,rr,t,b); if(m===l)e.x=c.x0-r; else if(m===rr)e.x=c.x1+r; else if(m===t)e.z=c.z0-r; else e.z=c.z1+r; } } }
+const stairFix=e=>{ if(inStair(e.x,e.z))e.lv=e.z<11?1:0; };
+function goTo(e,x,z,lv){ const p=findPath(e.x,e.z,e.lv,x,z,lv); e.path=p; e.pi=0; return !!p; }
+function follow(e,dt,spd){ if(!e.path||e.pi>=e.path.length){ e.spd=0; return true; }
+ const p=e.path[e.pi], dx=p.x-e.x, dz=p.z-e.z, d=Math.hypot(dx,dz); if(d<.3){ e.pi++; return e.pi>=e.path.length; }
+ const st=Math.min(d,spd*dt); e.x+=dx/d*st; e.z+=dz/d*st; e.rot=Math.atan2(dx,dz); e.spd=spd; resolve(e,.26); stairFix(e);
+ e.stk+=dt; if(e.stk>1.2){ if(Math.hypot(e.x-e.sx,e.z-e.sz)<.25*spd){ const l=e.path[e.path.length-1]; goTo(e,l.x,l.z,l.lv); } e.sx=e.x; e.sz=e.z; e.stk=0; }
+ return false; }
+function los(ax,az,bx,bz,lv){ const d=Math.hypot(bx-ax,bz-az), n=Math.ceil(d/.4); for(let i=1;i<n;i++){ const t=i/n, x=ax+(bx-ax)*t, z=az+(bz-az)*t; for(const c of tall){ if(c.off||c.lv!==lv)continue; if(x>c.x0&&x<c.x1&&z>c.z0&&z<c.z1)return false; } } return true; }
+const sees=(a,b,R)=>a.lv===b.lv&&dist(a,b)<R&&los(a.x,a.z,b.x,b.z,a.lv);
+const face=(a,b)=>{ a.rot=Math.atan2(b.x-a.x,b.z-a.z); };
+
+/* ================= UI HELPERS ================= */
+const show=(id,v)=>$(id).classList.toggle('hide',!v);
+let toastT=0; function toast(t,d){ const e=$('toast'); e.textContent=tr(t); e.classList.add('on'); clearTimeout(toastT); toastT=setTimeout(()=>e.classList.remove('on'),(d||2.8)*1000); }
+function setObj(t){ G.obj=t; $('obj').innerHTML='<small>'+tr('ЗАДАЧА')+'</small>'+tr(t); }
+function fade(on,txt){ const f=$('fade'); f.textContent=tr(txt||''); f.classList.toggle('on',on); return wait(on?560:60); }
+let dlg=null;
+function relock(){ if(!isTouch&&G.st==='play'&&!document.pointerLockElement){ try{ const p=$('cv').requestPointerLock(); if(p&&p.catch)p.catch(()=>{}); }catch(e){} } }
+function say(who,text,opts){ return new Promise(res=>{ G.cut=true; dlg={res,n:opts?opts.length:0}; $('dName').textContent=tr(who); $('dText').textContent=tr(text); const o=$('dOpts'); o.innerHTML=''; o.classList.toggle('one',!opts);
+ (opts||['Далее ▶']).forEach((t,i)=>{ const b=document.createElement('button'); b.innerHTML=(opts&&!isTouch?'<kbd>'+(i+1)+'</kbd>':'')+tr(t); b.onclick=ev=>{ ev.stopPropagation(); dlgPick(i); }; o.appendChild(b); });
+ show('dlg',true); show('prompt',false); if(document.pointerLockElement)document.exitPointerLock(); AU.babble(who==='Марк'?150:who==='Полина'?330:240); }); }
+function dlgPick(i){ if(!dlg)return; const d=dlg; dlg=null; show('dlg',false); G.cut=false; AU.click(); relock(); d.res(i); }
+const bubs=[]; for(let i=0;i<6;i++){ const d=document.createElement('div'); d.className='bb hide'; $('bub').appendChild(d); bubs.push({d,e:null,t:0}); }
+function bubble(e,text,dur){ const b=bubs.find(b=>b.e===e)||bubs.find(b=>!b.e); if(!b)return; b.e=e; b.t=dur||2.6; b.d.textContent=tr(text); e.ch.talk=b.t; if(P&&e.lv===P.lv&&dist(e,P)<11)AU.babble(e.pitch,4); }
+const _pv=new THREE.Vector3();
+function updBubs(dt){ for(const b of bubs){ if(!b.e)continue; b.t-=dt; const e=b.e; let vis=b.t>0&&e.active&&e.lv===P.lv&&dist(e,P)<16; if(b.t<=0)b.e=null;
+ if(vis){ _pv.set(e.x,e.y+1.82,e.z).project(camera); vis=_pv.z<1&&Math.abs(_pv.x)<1.1&&Math.abs(_pv.y)<1.1; if(vis){ b.d.style.left=((_pv.x+1)/2*innerWidth)+'px'; b.d.style.top=((1-_pv.y)/2*innerHeight)+'px'; } }
+ b.d.classList.toggle('hide',!vis); } }
+function clearBubs(){ for(const b of bubs){ b.e=null; b.d.classList.add('hide'); } }
+
+/* ================= INPUT ================= */
+const keys={}, inp={yaw:0,pitch:.3,jx:0,jy:0,run:false};
+addEventListener('keydown',e=>{ if(e.repeat)return; keys[e.code]=true; AU.init();
+ if(dlg){ if(dlg.n){ const i=['Digit1','Digit2','Digit3','Digit4'].indexOf(e.code); if(i>=0&&i<dlg.n)dlgPick(i); } else if(e.code==='KeyE'||e.code==='Enter'||e.code==='Space')dlgPick(0); if(e.code==='Space'||e.code==='Enter')e.preventDefault(); return; }
+ if(G.st==='play'){ if(e.code==='KeyE')interact(); if(e.code==='Escape'||e.code==='KeyP')pause(true); if(e.code==='Space'||e.code.indexOf('Arrow')===0)e.preventDefault(); }
+ else if(G.st==='pause'&&e.code==='Escape'&&$('sett').classList.contains('hide'))pause(false); });
+addEventListener('keyup',e=>{ keys[e.code]=false; });
+addEventListener('blur',()=>{ for(const k in keys)keys[k]=false; });
+document.addEventListener('mousemove',e=>{ if(document.pointerLockElement&&G.st==='play'){ const s=.0012+S.sens*.00005; inp.yaw-=e.movementX*s; inp.pitch=clamp(inp.pitch+e.movementY*s,-.45,1.2); } });
+$('cv').addEventListener('click',()=>{ AU.init(); if(G.st==='play'&&!dlg)relock(); });
+document.addEventListener('pointerlockchange',()=>{ const l=!!document.pointerLockElement; show('lockHint',!l&&!isTouch&&G.st==='play'&&!dlg); if(!l&&G.st==='play'&&!dlg&&!G.lock&&!isTouch)pause(true); });
+document.addEventListener('contextmenu',e=>e.preventDefault());
+(function(){ const jz=$('joyZone'), lz=$('lookZone'), jb=$('joyB'), jk=$('joyK'); let jid=null,jcx=0,jcy=0,lid=null,lx=0,ly=0; const TL=e=>Array.prototype.slice.call(e.changedTouches);
+ const mv=t=>{ let dx=t.clientX-jcx, dy=t.clientY-jcy; const d=Math.hypot(dx,dy), m=50; if(d>m){ dx*=m/d; dy*=m/d; } inp.jx=dx/m; inp.jy=dy/m; jk.style.transform='translate('+dx+'px,'+dy+'px)'; };
+ jz.addEventListener('touchstart',e=>{ e.preventDefault(); AU.init(); if(jid!==null)return; const t=e.changedTouches[0]; jid=t.identifier; const r=jb.getBoundingClientRect(); jcx=r.left+r.width/2; jcy=r.top+r.height/2; mv(t); },{passive:false});
+ jz.addEventListener('touchmove',e=>{ e.preventDefault(); TL(e).forEach(t=>{ if(t.identifier===jid)mv(t); }); },{passive:false});
+ const je=e=>TL(e).forEach(t=>{ if(t.identifier===jid){ jid=null; inp.jx=inp.jy=0; jk.style.transform=''; } }); jz.addEventListener('touchend',je); jz.addEventListener('touchcancel',je);
+ lz.addEventListener('touchstart',e=>{ e.preventDefault(); AU.init(); if(lid!==null)return; const t=e.changedTouches[0]; lid=t.identifier; lx=t.clientX; ly=t.clientY; },{passive:false});
+ lz.addEventListener('touchmove',e=>{ e.preventDefault(); TL(e).forEach(t=>{ if(t.identifier===lid){ const s=.003+S.sens*.00008; inp.yaw-=(t.clientX-lx)*s; inp.pitch=clamp(inp.pitch+(t.clientY-ly)*s,-.45,1.2); lx=t.clientX; ly=t.clientY; } }); },{passive:false});
+ const le=e=>TL(e).forEach(t=>{ if(t.identifier===lid)lid=null; }); lz.addEventListener('touchend',le); lz.addEventListener('touchcancel',le);
+ const tap=(id,fn)=>{ $(id).addEventListener('touchstart',e=>{ e.preventDefault(); e.stopPropagation(); AU.init(); fn(); },{passive:false}); $(id).addEventListener('click',fn); };
+ tap('bE',()=>interact()); tap('bRun',()=>{ inp.run=!inp.run; $('bRun').classList.toggle('on',inp.run); }); tap('bPause',()=>pause(true)); })();
+
+/* ================= PLAYER / INTERACTION / CAMERA ================= */
+function updPlayer(dt){ if(P.freeze>0)P.freeze-=dt; if(G.cut||G.lock||P.hidden||P.freeze>0||P.lie){ P.spd=0; return; }
+ let f=((keys.KeyW||keys.ArrowUp)?1:0)-((keys.KeyS||keys.ArrowDown)?1:0)-inp.jy, s=((keys.KeyD||keys.ArrowRight)?1:0)-((keys.KeyA||keys.ArrowLeft)?1:0)+inp.jx;
+ const m=Math.hypot(f,s); let running=false;
+ if(m>.15){ if(m>1){ f/=m; s/=m; } running=(keys.ShiftLeft||keys.ShiftRight||inp.run)&&!P.tired&&P.stam>0;
+  const sp=(G.mode==='polina'?(running?6.2:3.3):(running?5.7:3))*Math.min(1,m), sy=Math.sin(inp.yaw), cy=Math.cos(inp.yaw), dx=-sy*f+cy*s, dz=-cy*f-sy*s, l=Math.hypot(dx,dz)||1;
+  P.x+=dx/l*sp*dt; P.z+=dz/l*sp*dt; P.rot=Math.atan2(dx,dz); resolve(P,.28); stairFix(P); P.spd=sp;
+  P.stepT+=sp*dt; if(P.stepT>(running?2.2:1.5)){ P.stepT=0; AU.step(running?1.3:.8); }
+  if(running){ P.stam-=dt*20; if(P.stam<=0){ P.stam=0; P.tired=true; if(inp.run){ inp.run=false; $('bRun').classList.remove('on'); } toast('Выносливость кончилась! Отдышись...',1.6); } } }
+ else P.spd=0;
+ if(!running)P.stam=Math.min(100,P.stam+dt*(m>.15?9:15)); if(P.tired&&P.stam>35)P.tired=false; }
+function doHide(cx,cz){ if(P.hidden){ P.hidden=null; AU.door(); return; } P.hidden={x:cx,z:cz}; P.spd=0; AU.door();
+ if(G.mode==='polina'&&G.chase){ const m=MRK; m.sawHide=m.lv===P.lv&&dist(m,P)<10&&los(m.x,m.z,P.x,P.z,m.lv); }
+ toast(G.mode==='polina'?'Ты спряталась. Тсс...':'Ты спрятался. Но зачем?..'); }
+function curInt(){ if(G.cut||G.lock||!P)return null; let best=null,bd=1e9; for(const o of interacts){ if(o.lv!==P.lv)continue; const d=Math.hypot(o.x-P.x,o.z-P.z); if(d<o.r&&d<bd&&(!o.cond||o.cond())){ bd=d; best=o; } } return best; }
+function interact(){ if(dlg){ if(!dlg.n)dlgPick(0); return; } if(G.st!=='play'||G.lock)return; if(P.hidden){ doHide(); return; } const o=curInt(); if(o){ AU.click(); o.act(); } }
+function updPrompt(){ const o=P.hidden?{label:'Выйти из укрытия'}:curInt(), p=$('prompt'); if(o&&!dlg){ const t=tr(typeof o.label==='function'?o.label():o.label); if(p._t!==t){ p._t=t; p.innerHTML=(isTouch?'':'<kbd>E</kbd>')+t; } p.classList.remove('hide'); $('bE').classList.add('on'); } else { p.classList.add('hide'); $('bE').classList.remove('on'); } }
+let camD=3.4;
+function camHit(x,y,z,lv,ceil){ if(y>ceil)return true; for(const c of tall){ if(c.off||c.lv!==lv)continue; if(x>c.x0-.18&&x<c.x1+.18&&z>c.z0-.18&&z<c.z1+.18)return true; } return false; }
+function setFov(f){ if(camera.fov!==f){ camera.fov=f; camera.updateProjectionMatrix(); } }
+function safeCinematicCamera(tx,ty,tz,cx,cy,cz,lv){ const dx=cx-tx,dy=cy-ty,dz=cz-tz,len=Math.hypot(dx,dy,dz)||1; let k=1; for(let d=.18;d<=len;d+=.12){ const q=d/len; if(camHit(tx+dx*q,ty+dy*q,tz+dz*q,lv,99)){ k=Math.max(.08,(d-.22)/len); break; } } camera.position.set(tx+dx*k,ty+dy*k,tz+dz*k); camera.lookAt(tx,ty,tz); }
+function updCam(dt){ if(G.camFn){ G.camFn(dt); return; } setFov(66);
+ const cp=Math.cos(inp.pitch), dx=Math.sin(inp.yaw)*cp, dy=Math.sin(inp.pitch), dz=Math.cos(inp.yaw)*cp;
+ if(P.hidden){ camera.position.set(P.hidden.x,P.y+1.45,P.hidden.z); camera.lookAt(P.hidden.x-dx,P.y+1.45-dy*.6,P.hidden.z-dz); return; }
+ const tx=P.x, ty=P.y+1.5, tz=P.z, zn=zoneOf(P), ceil=zn==='home'?2.75:zn==='school'?(inStair(P.x,P.z)?7.5:P.lv*4+3.55):99; let best=3.4;
+ for(let d=.3;d<=3.4;d+=.15){ if(camHit(tx+dx*d,ty+dy*d,tz+dz*d,P.lv,ceil)){ best=Math.max(.25,d-.3); break; } }
+ camD=best<camD?best:lerp(camD,best,1-Math.exp(-dt*5));
+ camera.position.set(tx+dx*camD,Math.max(ty+dy*camD,P.y+.25),tz+dz*camD); camera.lookAt(tx,ty+.15,tz); if(camD<.65)P.ch.g.visible=false; }
+function updDoors(dt){ for(const d of doors){ let near=false; if(!d.locked)for(const e of ents){ if(e.active&&e.lv===d.lv&&Math.abs(e.x-d.x)<1.7&&Math.abs(e.z-d.z)<1.7){ near=true; break; } }
+ if(near&&!d.snd){ d.snd=1; if(d.lv===P.lv&&Math.hypot(d.x-P.x,d.z-P.z)<12)AU.door(); } if(!near&&d.open<.1)d.snd=0;
+ d.open=lerp(d.open,near?1:0,1-Math.exp(-dt*7)); d.piv.rotation.y=d.b0+d.open*1.45; } }
+
+/* ================= PAUSE / SETTINGS ================= */
+function pause(on){ if(on){ if(G.st!=='play'||dlg||G.lock)return; G.st='pause'; $('pauseObj').innerHTML=G.obj||''; show('pause',true); show('lockHint',false); if(document.pointerLockElement)document.exitPointerLock(); G.mus=AU.cur; AU.music(null); }
+ else { if(G.st!=='pause')return; show('pause',false); G.st='play'; AU.music(G.mus||null); relock(); if(!isTouch&&!document.pointerLockElement)show('lockHint',true); } }
+document.addEventListener('visibilitychange',()=>{ if(document.hidden){ if(G.st==='play')pause(true); if(AU.ctx)AU.ctx.suspend(); } else if(AU.ctx)AU.ctx.resume(); });
+function openSett(){ $('sQ').value=S.q; $('sSh').value=S.sh; $('sD').value=S.dist; $('sV').value=S.vol; $('sS').value=S.sens; show('sett',true); }
+['sQ','sSh','sD','sV','sS'].forEach(id=>['input','change'].forEach(ev=>$(id).addEventListener(ev,()=>{ S.q=$('sQ').value; S.sh=$('sSh').value; S.dist=+$('sD').value; S.vol=+$('sV').value; S.sens=+$('sS').value; saveS(); applyQuality(); AU.setVol(); })));
+$('sOk').onclick=()=>{ AU.click(); show('sett',false); };
+$('sDisc').onclick=()=>{ $('disc').style.zIndex=55; G.discBack=true; show('disc',true); };
+$('mSett').onclick=$('pSett').onclick=()=>{ AU.init(); AU.click(); openSett(); };
+$('pRes').onclick=()=>{ AU.click(); pause(false); };
+</script>
+<script>
+/* ================= ITEMS ================= */
+function item(geo,mat,x,y,z,s,ry){ const m=new THREE.Mesh(geo,mat); m.position.set(x,y,z); if(s)m.scale.set(s[0],s[1],s[2]); if(ry)m.rotation.y=ry; m.castShadow=true; scene.add(m); return m; }
+const IT={ bag:item(CG.box,sm(0x8a3b5c),HX+7.4,.95,1.95,[.3,.36,.2]), choco:item(CG.box,sm(0x5a2d12),HX+7.4,.8,1.95,[.24,.04,.13]),
+ key:item(new THREE.TorusGeometry(.07,.022,8,16),M.gold,19.6,4.9,30.1),
+ gifts:[[item(CG.sp,sm(0xd9a05a),40.8,1.1,1.95,[.12,.075,.12])],
+  [item(CG.lim,sm(0x3e8f45),38.9,4.86,7.5,[.012,.2,.012]),item(CG.sp,sm(0xff5d8f),38.9,5,7.5,[.07,.07,.07])],
+  [item(CG.box,sm(0xff2a5a),33.7,4.8,23.3,[.17,.02,.17],.78)]] };
+
+/* ================= TEXTS ================= */
+const CHAT=['Ты сделал домашку?','Дай списать!','В столовой сегодня котлеты!','Марк опять бегает за Полиной...','Кто съел мой бутерброд?','Физра отменяется!','Скинь мем!','Контрольная?! Какая контрольная?!','Я забыл сменку...','Го в столовку!','Звонок — для учителя!','А у нас сейчас инфа?','Ты видел Марка? Он странный.','Хочу домой...'];
+const MARK_LINES=['Полина! А ты знала, что у улитки 25 тысяч зубов? Прямо как у меня вопросов к тебе!','Полина, пойдём в столовую? Я угощаю! ...Половинкой сосиски.','Полина, я написал про тебя стих! «Полина, Полина... ты как... мандарина!»','А хочешь, я понесу твой рюкзак? И тебя. И рюкзак.','Полина, смотри, как я умею! *шевелит ушами*','Ты сегодня такая... такая... такая же, как вчера! Супер!','Полина, а давай сидеть вместе? На всех уроках. Всегда.','Я вчера прошёл игру на сто процентов! Рассказать? Это всего часа три.'];
+const REPLIES=[{t:'Отстань.',v:22,r:'Я не пристаю, я СОПРОВОЖДАЮ!'},{t:'Иди отсюда.',v:26,r:'Куда? Я уже тут!'},{t:'Оставь меня.',v:20,r:'Оставлю... у себя в сердце!'},{t:'Мне пора.',v:10,r:'Мне тоже! Нам по пути!'},
+ {t:'У тебя шнурки развязались.',v:8,stun:7,r:'Где?! ...Стоп. У меня же липучки...'},{t:'Марк, ты как реклама — тебя не пропустить.',v:18,r:'Зато я без подписки!'},{t:'Ладно. Привет, Марк.',v:-14,r:'ОНА ПОЗДОРОВАЛАСЬ! Лучший день в жизни!'},{t:'Я тебя не слышу, у меня лапки.',v:14,r:'Тогда я буду говорить ГРОМЧЕ!!!'},{t:'Смотри, там бесплатные булочки!',v:6,stun:8,r:'ГДЕ?! БУЛОЧКИ?!'}];
+const FLEE=['О нет, Марк!','Только не он!','Я занята!!!','*убегает*','Марк, отстань!'], PCHAT=['Привет!','Ты не видела Марка? Надеюсь, нет.','Что задали?','Если что — меня тут не было.','Спасите...'];
+const shuf=a=>a.slice().sort(()=>Math.random()-.5);
+const addIrr=v=>{ G.irr=clamp(G.irr+v,0,100); };
+
+/* ================= NPC AI ================= */
+function updNPC(n,dt){ n.t-=dt; n.cd-=dt;
+ if(n.teacher&&n.cd<=0&&P.spd>4&&zoneOf(P)==='school'&&sees(n,P,6.5)){ n.cd=16; face(n,P); bubble(n,'НЕ БЕГАТЬ ПО КОРИДОРАМ!!!',3); P.stam=0; P.tired=true; toast('Завуч заметила! Выносливость на нуле!',2.2); }
+ if(n.st==='walk'){ if(follow(n,dt,n.ws)){ n.st='idle'; n.t=rnd(2.5,7); n.spd=0;
+   const o=NPCS.find(m=>m!==n&&m.lv===n.lv&&m.st==='idle'&&dist(m,n)<3);
+   if(o){ face(n,o); face(o,n); bubble(n,pick(CHAT),2.8); o.t=Math.max(o.t,3.5); const run=G.run; setTimeout(()=>{ if(G.st==='play'&&G.run>run&&o.st==='idle')bubble(o,pick(CHAT),2.5); },1500); }
+   else if(Math.random()<.25)bubble(n,pick(CHAT),2.5); } }
+ else { n.spd=0; if(n.t<=0){ const p=pick(POI); if(goTo(n,p.x+rnd(-.6,.6),p.z+rnd(-.6,.6),p.lv)){ n.st='walk'; n.stk=0; n.sx=n.x; n.sz=n.z; } else n.t=1; } } }
+function wander(e,dt,spd){ e.t-=dt; if(e.st==='walk'){ if(follow(e,dt,spd)){ e.st='idle'; e.t=rnd(2,5); const o=NPCS.find(m=>m.lv===e.lv&&dist(m,e)<4); if(o){ face(e,o); bubble(e,pick(PCHAT),2.5); } } }
+ else { e.spd=0; if(e.t<=0){ const q=pick(POI); if(goTo(e,q.x,q.z,q.lv)){ e.st='walk'; e.stk=0; } else e.t=1; } } }
+
+/* ================= MARK AI (Polina mode) ================= */
+const intMark=addInt(0,0,0,1.7,'Сказать Марку «Отстань!»',()=>pokeMark(),()=>G.mode==='polina'&&G.phase==='school'&&!G.chase&&MRK.active&&MRK.cd<8&&MRK.stun<=0);
+async function markTalk(){ const m=MRK; m.cd=15; m.spd=0; face(m,P); face(P,m); m.ch.talk=2;
+ const opts=shuf(shuf(REPLIES.slice(0,4)).slice(0,2).concat(shuf(REPLIES.slice(4)).slice(0,2)));
+ const i=await say('Марк',pick(MARK_LINES),opts.map(o=>o.t)); const o=opts[i]; addIrr(o.v); m.ch.talk=2;
+ await say('Марк',o.r); if(o.stun)m.stun=o.stun; m.cd=15; if(G.irr>=100)startChase(); }
+async function pokeMark(){ const m=MRK; m.cd=12; face(P,m); face(m,P); addIrr(16);
+ await say('Полина','Марк. Отстань!'); await say('Марк',pick(['Ты заговорила со мной ПЕРВАЯ! Это знак!','«Отстань» — это почти «останься»!','Я не слышу отказов, у меня в ушах любовь!']));
+ m.cd=12; if(G.irr>=100)startChase(); }
+function startChase(){ if(G.chase)return; const m=MRK; G.chase=true; m.lost=0; m.grace=2; m.stun=1.6; m.sawHide=false; m.last={x:P.x,z:P.z,lv:P.lv}; m.rp=0; G.irr=100;
+ $('alert').textContent=tr('⚠ ПОГОНЯ! ⚠'); show('alert',true); AU.fail(); bubble(m,'ПОЛИНА-А-А! ВЫСЛУШАЙ МЕНЯ!!!',2.5); toast('МАРК НЕ ВЫДЕРЖАЛ! БЕГИ!',2.5); }
+function endChase(msg){ if(!G.chase)return; G.chase=false; const m=MRK; m.cd=22; m.path=null; G.irr=30; show('alert',false); AU.win(); toast(msg||'Марк потерял тебя из виду. Фух!',3); }
+async function caught(){ if(G.lock)return; G.lock=true; G.chase=false; show('alert',false); const m=MRK; P.hidden=null; face(m,P); face(P,m); m.spd=0; P.spd=0; AU.fail();
+ G.camFn=()=>{ setFov(55); let dx=P.x-m.x, dz=P.z-m.z; const l=Math.hypot(dx,dz)||1; dx/=l; dz/=l; camera.position.set(P.x+dx*1.5-dz*.7,P.y+1.65,P.z+dz*1.5+dx*.7); camera.lookAt(m.x,m.y+1.3,m.z); m.ch.talk=1; };
+ await say('Марк','ПОПАЛАСЬ! Теперь ты выслушаешь мой доклад про Майнкрафт. Он на три часа. С презентацией. На 214 слайдов.');
+ await say('Полина','Не-е-е-е-ет!..'); gameOver('Марк догнал Полину. Доклад длился до самого вечера.'); }
+function updMarkAI(dt){ const m=MRK; if(!m.active)return; m.cd-=dt; const inS=zoneOf(P)==='school', d=dist(P,m), see=inS&&!P.hidden&&m.lv===P.lv&&d<26&&los(m.x,m.z,P.x,P.z,m.lv);
+ intMark.x=m.x; intMark.z=m.z; intMark.lv=m.lv;
+ if(m.stun>0){ m.stun-=dt; m.spd=0; return; }
+ if(G.chase){
+  if(!inS){ endChase('Ты выбежала из школы. Марк остался внутри!'); return; }
+  const know=see||(P.hidden&&m.sawHide);
+  if(know){ m.lost=0; m.grace=1.6; } else { m.lost+=dt; m.grace-=dt; }
+  if(know||(m.grace>0&&!P.hidden))m.last={x:P.x,z:P.z,lv:P.lv};
+  m.rp-=dt; if((know||m.grace>0)&&m.rp<=0){ m.rp=.35; goTo(m,m.last.x,m.last.z,m.last.lv); }
+  const arr=follow(m,dt,4.7);
+  if(arr&&!know&&m.grace<=0){ const c=POI.filter(p=>{ const q=Math.hypot(p.x-m.x,p.z-m.z); return p.lv===m.lv&&q<18&&q>3; }), p=pick(c.length?c:POI); goTo(m,p.x,p.z,p.lv);
+   if(Math.random()<.6)bubble(m,pick(['Полина, ты где?..','Я знаю, что ты где-то здесь!','Полина, я только спросить!','Ау-у-у!']),2.5); }
+  if(m.lost>16){ endChase(); return; }
+  if(d<.95&&m.lv===P.lv&&(!P.hidden||m.sawHide)){ caught(); return; }
+  m.stepT=(m.stepT||0)+dt; if(m.spd>1&&m.stepT>.34&&d<14){ m.stepT=0; AU.step(.55); }
+ } else {
+  if(G.phase!=='school'){ m.spd=0; return; }
+  if(inS&&d>2){ m.rp-=dt; if(m.rp<=0){ m.rp=.7; goTo(m,P.x,P.z,P.lv); } follow(m,dt,2.7); } else { m.spd=0; if(inS)face(m,P); }
+  if(see&&d<2.6&&m.cd<=0)markTalk();
+  else if(see&&d<9&&P.spd>4){ addIrr(dt*5); if(G.irr>=100)startChase(); }
+ } }
+
+/* ================= POLINA AI (Mark mode) ================= */
+function updPolinaAI(dt){ const p=POL; if(!p.active)return; if(p.stun>0){ p.stun-=dt; p.spd=0; return; }
+ if(G.phase!=='school'){ wander(p,dt,2); return; }
+ const d=dist(P,p), same=p.lv===P.lv, see=same&&d<12&&!P.hidden&&los(p.x,p.z,P.x,P.z,p.lv);
+ if(see||(same&&d<3.5&&!P.hidden))p.alarm=5; else p.alarm-=dt;
+ if(p.alarm>0){
+  if(p.st!=='flee'){ p.st='flee'; p.rp=0; p.run=7; p.ts=0; bubble(p,pick(FLEE),2.2); $('alert').textContent=tr('ПОЛИНА УБЕГАЕТ!'); show('alert',true); }
+  p.rp-=dt; if(p.rp<=0||!p.path||p.pi>=p.path.length){ p.rp=2.2; let best=POI[0],bs=-1e9;
+   for(const q of POI){ const s=Math.hypot(q.x-P.x,q.z-P.z)+(q.lv!==P.lv?14:0)-.4*(Math.hypot(q.x-p.x,q.z-p.z)+(q.lv!==p.lv?14:0))+rnd(5); if(s>bs){ bs=s; best=q; } }
+   goTo(p,best.x,best.z,best.lv); }
+  p.run-=dt; let sp=5.3; if(p.run<0){ sp=2.2; if(!p.ts){ p.ts=1; bubble(p,'Фух... сейчас... отдышусь...',2.5); } if(p.run<-3.5){ p.run=7; p.ts=0; } }
+  follow(p,dt,sp);
+  if(d<1&&same&&!G.lock)polinaCaught();
+ } else { if(p.st==='flee'){ p.st='idle'; p.t=1; show('alert',false); } wander(p,dt,2.1); } }
+async function polinaCaught(){ const p=POL; G.lock=true; p.spd=0; P.spd=0; face(p,P); face(P,p); show('alert',false); let done=false;
+ if(G.gifts>G.given){ G.given++; AU.ding(); const n=G.given;
+  await say('Марк',['Полина! Это тебе! Почти не надкусано!','Полина! Стой! У меня для тебя ещё подарок!','Полина! Вот! От всего сердца и немножко от желудка!'][n-1]);
+  await say('Полина',['Эм... спасибо?.. Но я всё равно побегу.','Опять ты?! ...Ладно, давай сюда. Но это ничего не значит!','Марк, ты... упорный. Как таракан. В хорошем смысле.'][n-1]);
+  if(n>=3){ await say('Полина','Ладно, Марк. Ты смешной. Но мне пора домой! Пока!'); G.phase='goHome'; done=true; AU.win(); toast('Все подарки вручены! Пора домой.',3); }
+  else toast('Симпатия Полины выросла!'); }
+ else { await say('Полина','С пустыми руками? Даже без булочки? Фу, Марк!'); toast('Нужен подарок! Ищи их по школе.'); }
+ G.lock=false; P.freeze=done?0:2.6; p.alarm=done?0:8; p.st='idle'; p.t=0; p.run=7; p.rp=0; p.path=null; refreshObj(); }
+function takeGift(i){ if(G.gb&(1<<i))return; G.gb|=1<<i; G.gifts++; IT.gifts[i].forEach(m=>m.visible=false); AU.ding(); toast(['Булочка добыта! Главное — не съесть.','Цветок с учительского стола. Биологичка не заметит.','Валентинка! Подписана: «от тайного Марка».'][i],3); refreshObj(); }
+</script>
+<script>
+/* ================= GAME FLOW ================= */
+const isPol=()=>G.mode==='polina';
+function refreshObj(){ const pol=isPol(), ph=G.phase; let t='';
+ if(ph==='home0')t=pol?'Возьми рюкзак со стола':'Возьми со стола шоколадку — на удачу';
+ else if(ph==='home1')t='Выйди из дома через дверь';
+ else if(ph==='toSchool')t='Иди в школу через дорогу (главный вход)';
+ else if(ph==='school'){ if(pol)t=(['Сдай куртку в гардероб (1 этаж, слева от холла)','Иди на урок: кабинет 201 «Математика» на 2 этаже, сядь за парту','Пообедай в столовой (1 этаж)','Забери куртку из гардероба'][G.task]||'')+'<br><span style="color:#ff9fbe">Марк не отстаёт... Не доводи шкалу до максимума!</span>';
+  else t='Собери подарки: '+G.gifts+'/3<br><span style="color:#bdb9e6">булочка — столовая · цветок — каб. 203 · валентинка — библиотека</span><br>Догони Полину и вручи: '+G.given+'/3'; }
+ else if(ph==='goHome')t=zoneOf(P)==='school'?'Уроки окончены! Выйди из школы.<br><span style="color:#bdb9e6">Главный вход заперт (ключ — в учительской, 2 этаж). Запасной выход — в восточном конце коридора 1 этажа.</span>':'Иди домой — дом через дорогу напротив школы';
+ else if(ph==='toBed')t='Ложись на кровать';
+ else if(ph==='peep')t='Кто-то стучит! Подойди к двери и посмотри в глазок';
+ else if(ph==='d2door')t='Подойди к двери и нажми E';
+ else if(ph==='d3bag')t=G.d3bagTaken?'Выйди из дома через дверь':'Возьми рюкзак со стола';
+ else if(ph==='d3toSchool')t='Иди в школу через дорогу';
+ else if(ph==='d2bag')t=G.d2bagTaken?'Выйди из дома через дверь':'Возьми рюкзак со стола';
+ else if(ph==='d2toSchool')t='Иди в школу через дорогу';
+ else if(ph==='d2search')t='Найди Марка: осмотри гардеробную, столовую и библиотеку ('+(G.d2clues||0)+'/3)';
+ else if(ph==='d2find')t='Найди Марка в кабинете 201 и поговори с ним';
+ setObj(t); }
+function gameOver(t){ G.st='over'; G.lock=false; G.cut=false; G.chase=false; dlg=null; show('hud',false); show('dlg',false); $('overT').textContent=tr(t); show('over',true); AU.music(null); AU.fail(); if(document.pointerLockElement)document.exitPointerLock(); }
+async function homeDoor(){ if(G.phase==='d2bag'||G.phase==='d3bag'){ if(G.phase==='d3bag'&&!G.d3bagTaken){toast('Сначала возьми рюкзак!');return;} G.lock=true; AU.door(); await fade(true); place(P,30,82.4,0,Math.PI); inp.yaw=0; inp.pitch=.25; G.phase=G.phase==='d3bag'?'d3toSchool':'d2toSchool'; G.zone='out'; refreshObj(); await fade(false); G.lock=false; return; } if(G.phase==='home0'){ toast(isPol()?'Сначала возьми рюкзак!':'Сначала возьми шоколадку!'); return; } if(G.phase==='peep'){ peep(); return; }
+ G.lock=true; AU.door(); await fade(true); place(P,30,82.4,0,Math.PI); inp.yaw=0; inp.pitch=.25; G.phase='toSchool'; G.zone='out'; refreshObj(); await fade(false); G.lock=false; toast('Доброе утро! Школа — прямо через дорогу.'); }
+async function enterHome(){ if(G.phase!=='goHome'){ toast(G.phase==='toSchool'?'Рано домой! Сначала школа.':'Домой ещё рано!'); return; }
+ G.lock=true; AU.door(); await fade(true); place(P,HX+3.8,5.6,0,Math.PI); inp.yaw=0; inp.pitch=.3; G.phase='toBed'; G.zone='home'; refreshObj(); await fade(false); G.lock=false; }
+async function schoolIntro(){ G.phase='school'; G.lock=true; AU.bell();
+ if(isPol()){ const m=MRK; m.active=true; place(m,30,30,0,0); face(m,P); face(P,m); m.ch.talk=2;
+  await say('Марк','ПОЛИНА! Привет! А я тебя тут жду! С шести утра!'); await say('Полина','...О нет. Только не это.'); m.cd=9; G.task=0; }
+ else { const p=POL; p.active=true; place(p,45,18,0,0); p.st='idle'; p.t=.5; await say('Марк','Сегодня тот самый день! Соберу подарки, подарю Полине — и она точно меня заметит!'); show('timer',true); }
+ await say('Охранник','Все зашли? Закрываю главный вход на ключ! Ключ отнесу в учительскую.'); setLock('main',true); AU.door();
+ G.lock=false; refreshObj();  }
+function cloak(){ AU.ding(); if(G.task===0){ G.task=1; toast('Куртка сдана. Номерок: 13. Ну конечно.'); } else { G.task=4; G.phase='goHome'; AU.bell(); toast('Уроки окончены! Пора домой.',3); } refreshObj(); }
+async function lesson(){ G.lock=true; await fade(true,'Урок математики... 45 минут спустя'); place(MRK,15.3,9.5,1,0); MRK.path=null; await wait(1300); await fade(false); AU.bell();
+ await say('Учитель','Марк! Хватит кидать записки Полине! Полина, а ты хватит их выбрасывать не читая!'); addIrr(15); G.task=2; MRK.cd=6; G.lock=false; refreshObj(); if(G.irr>=100)startChase(); }
+function lunch(){ G.task=3; P.stam=100; AU.ding(); toast('Котлета съедена. Компот выпит. Жизнь налаживается.',3); refreshObj(); }
+/* interactions */
+addInt(HX+7,1.95,0,1.6,()=>isPol()?'Взять рюкзак':'Взять шоколадку',()=>{ IT.bag.visible=false; IT.choco.visible=false; AU.ding(); G.phase='home1'; refreshObj(); toast(isPol()?'Рюкзак собран. Можно идти.':'Шоколадка взята. Главное — не съесть по дороге!'); },()=>G.phase==='home0');
+addInt(HX+3.8,6.5,0,2.35,()=>G.phase==='peep'?'Посмотреть в глазок':((G.phase==='d2bag'&&G.d2bagTaken)||(G.phase==='d3bag'&&G.d3bagTaken)?'Выйти из дома и идти в школу':'Выйти на улицу'),()=>homeDoor(),()=>G.phase==='home0'||G.phase==='home1'||G.phase==='peep'||G.phase==='d2bag'||G.phase==='d3bag');
+addInt(HX+1.6,1.6,0,1.5,'Лечь на кровать',()=>ending(),()=>G.phase==='toBed');
+addInt(HX+3.8,6.5,0,2.0,'Открыть дверь (E)',()=>day2Slap(),()=>G.phase==='d2door');
+addInt(HX+7,1.95,0,1.7,'Взять рюкзак',()=>{IT.bag.visible=false;G.d2bagTaken=true;AU.ding();G.phase='d2bag';refreshObj();toast('Рюкзак собран. Теперь выйди из дома через дверь.');},()=>G.phase==='d2bag'&&!G.d2bagTaken);
+addInt(HX+7,1.95,0,1.7,'Взять рюкзак',()=>{IT.bag.visible=false;G.d3bagTaken=true;AU.ding();G.phase='d3bag';refreshObj();toast('Рюкзак собран. Теперь иди в школу.');},()=>G.phase==='d3bag'&&!G.d3bagTaken);
+addInt(17,24.3,0,2.0,'Осмотреть гардеробную',()=>d2Clue(1,'Записка','одноклассник видел Марка у старого кабинета'),()=>G.phase==='d2search');
+addInt(44.5,2.6,0,2.0,'Расспросить в столовой',()=>d2Clue(2,'Разговор','Марк сегодня почти ничего не ел и ушёл наверх'),()=>G.phase==='d2search');
+addInt(33.7,24.2,1,2.0,'Осмотреть библиотеку',()=>d2Clue(4,'Закладка','в книге осталась записка с номером кабинета 201'),()=>G.phase==='d2search');
+addInt(14.6,7.5,1,2.3,'Поговорить с Марком',()=>day2FindMark(),()=>G.phase==='d2find');
+
+addInt(30,83.2,0,1.7,'Войти домой',()=>enterHome(),()=>zoneOf(P)==='out');
+addInt(17,24.3,0,1.6,()=>G.task===0?'Сдать куртку':'Забрать куртку',cloak,()=>isPol()&&G.phase==='school'&&(G.task===0||G.task===3));
+addInt(14.6,7.5,1,1.7,'Сесть за парту (урок)',()=>lesson(),()=>isPol()&&G.phase==='school'&&G.task===1);
+addInt(44.5,2.6,0,1.7,'Взять обед',lunch,()=>isPol()&&G.phase==='school'&&G.task===2);
+addInt(19.6,30.4,1,1.7,'Взять ключ от главного входа',()=>{ G.hasKey=true; IT.key.visible=false; AU.ding(); toast('Ключ от главного входа у тебя!'); },()=>!G.hasKey&&DOOR.main.locked);
+addInt(30,36,0,1.5,()=>G.hasKey?'Открыть главный вход ключом':'Главный вход (заперто)',()=>{ if(G.hasKey){ setLock('main',false); AU.ding(); toast('Главный вход открыт!'); } else toast('Заперто! Ключ — в учительской на 2 этаже. Или иди через запасной выход в конце коридора.',3.5); },()=>DOOR.main.locked);
+addInt(40.8,2.6,0,1.6,'Взять булочку',()=>takeGift(0),()=>!isPol()&&G.phase==='school'&&!(G.gb&1));
+addInt(39.8,7.5,1,1.7,'Взять цветок',()=>takeGift(1),()=>!isPol()&&G.phase==='school'&&!(G.gb&2));
+addInt(33.7,24.2,1,1.6,'Взять валентинку',()=>takeGift(2),()=>!isPol()&&G.phase==='school'&&!(G.gb&4));
+
+/* ================= ENDINGS ================= */
+async function ending(){ const pol=isPol(), me=P; G.lock=true; G.phase='end'; await fade(true);
+ me.lie=true; me.x=HX+.8; me.z=2.15; G.camFn=()=>{ setFov(60); camera.position.set(HX+3.3,2.3,3.4); camera.lookAt(HX+.8,.7,1.3); };
+ AU.music('home'); await fade(false);
+ await say(me.name,pol?'Наконец-то дома... Какой длинный день. И ни одного Марка вокруг.':'Какой день... Три подарка! Она почти улыбнулась! Наверное.');
+ await fade(true,'Z z z . . .'); AU.music(null); await wait(1500); AU.knock(); await wait(1600); AU.knock(); await wait(1200); await fade(false);
+ await say(me.name,'...А? Кто там стучит в такое время?');
+ me.lie=false; place(me,HX+2.3,2.3,0,0); G.camFn=null; inp.yaw=Math.PI; inp.pitch=.3; G.phase='peep'; G.knockT=2.5; refreshObj(); G.lock=false; }
+async function peep(){ const pol=isPol(), ot=pol?MRK:POL, me=P; G.lock=true; G.phase='end'; await fade(true);
+ ot.active=true; ot.hidden=null; ot.lie=false; ot.stun=0; place(ot,HX+3.8,8.5,0,Math.PI); me.active=false;
+ G.camFn=()=>{ setFov(80); camera.position.set(HX+3.8,1.46,7.32); camera.lookAt(HX+3.8,1.36,8.5); ot.ch.talk=1; };
+ show('peep',true); AU.knock(); await fade(false); await wait(1400);
+ await say(ot.name,pol?'Полина... Я тебя искал!':'Марк... Я тебя люблю!');
+ await say(me.name,pol?'...Всё. Я переезжаю. В другую страну. Сегодня.':'...Это сон? Ущипните меня! Только не сильно!');
+ await fade(true); show('peep',false); G.camFn=null; G.lock=true; G.st='day1end'; if(document.pointerLockElement)document.exitPointerLock(); $('day1Choice').style.display='flex'; $('fade').classList.remove('on'); }
+function startDay2(){
+ $('day1Choice').style.display='none'; $('day2Card').style.display='flex'; G.st='day2intro';
+}
+$('goDay2').onclick=()=>{ AU.init(); AU.click(); startDay2(); };
+$('goMain').onclick=()=>{ $('day1Choice').style.display='none'; showMenu(); };
+$('day2Menu').onclick=()=>{ $('day2Card').style.display='none'; showMenu(); };
+$('beginDay2').onclick=async()=>{
+ $('day2Card').style.display='none'; AU.init(); AU.click();
+ Object.assign(G,{st:'play',mode:'polina',phase:'d2door',lock:false,cut:false,chase:false,irr:0,task:0,d2clues:0,d2clueMask:0,d2bagTaken:false,camFn:null,zone:'home'});
+ setLock('main',false); P=POL; POL.active=true; MRK.active=false; POL.lie=false; place(P,HX+3.8,5.15,0,Math.PI);
+ place(MRK,HX+3.8,8.55,0,Math.PI); MRK.active=true; MRK.ch.talk=0;
+ for(const e of NPCS)e.active=false;
+ IT.bag.visible=true; IT.choco.visible=false; IT.gifts.forEach(g=>g.forEach(m=>m.visible=false));
+ inp.yaw=0; inp.pitch=.22; P.stam=100; P.tired=false; G.camFn=null; AU.music('home');
+ refreshObj(); show('hud',true); show('touch',isTouch); relock(); toast('ДЕНЬ 2 — Подойди к двери и нажми E.',4);
+};
+async function day2Slap(){
+ if(G.phase!=='d2door'||G.lock)return;
+ G.lock=true; P.spd=0; MRK.spd=0; face(P,MRK); face(MRK,P); AU.door();
+ place(P,HX+3.8,6.12,0,Math.PI); place(MRK,HX+3.8,8.12,0,Math.PI); MRK.active=true;
+ const hd=DOOR.home;
+ // Open the doorway first. The camera looks through the actual doorway, never through a wall.
+ setLock('home',false);
+ G.camFn=()=>{setFov(56);safeCinematicCamera(HX+3.8,1.12,7.05,HX+3.82,2.05,9.25,0);};
+ await fade(true);
+ if(hd){ const from=hd.piv.rotation.y, to=hd.b0+1.42, t0=performance.now(); while(performance.now()-t0<360){ const t=Math.min(1,(performance.now()-t0)/360),e=1-Math.pow(1-t,3); hd.piv.rotation.y=from+(to-from)*e; await wait(16); } hd.piv.rotation.y=to; }
+ await fade(false);
+ await say('Полина','Ты?! Ты опять пришёл ко мне домой?!');
+ await say('Полина','Я же просила не следить за мной! Хватит ходить за мной повсюду!');
+ // A short, continuous push gesture: arm winds up, Polina leans forward, Mark steps back.
+ const tween=async(ms,fn)=>{const t0=performance.now(); while(true){const t=Math.min(1,(performance.now()-t0)/ms),e=t*t*(3-2*t);fn(e,t);if(t>=1)break;await wait(16);}};
+ await tween(260,t=>{POL.ch.RA.a.rotation.z=-.12-1.02*t;POL.ch.g.rotation.z=-.025-.055*t;});
+ AU.tone(125,.12,'triangle',.07);
+ const markStart=MRK.z;
+ await tween(520,t=>{POL.ch.RA.a.rotation.z=-1.14+.78*t;POL.ch.g.rotation.z=-.08+.11*t;MRK.z=markStart+.52*(t*t*(3-2*t));MRK.spd=2.1;MRK.ch.g.rotation.z=-.035-.10*(1-t);});
+ MRK.spd=0; MRK.ch.g.rotation.z=0; await wait(180);
+ await tween(300,t=>{POL.ch.RA.a.rotation.z=-.36*(1-t);POL.ch.g.rotation.z=.03*(1-t);});
+ POL.ch.RA.a.rotation.z=0; POL.ch.g.rotation.z=0;
+ await say('Марк','Я… я просто хотел поговорить.');
+ await say('Полина','Мне не нужны такие визиты. Уходи.');
+ await say('Марк','Понял… Прости. Я уйду.');
+ // Mark backs away through the open doorway; then the door closes smoothly.
+ const backStart=MRK.z;
+ await tween(520,t=>{MRK.z=backStart+.42*t;MRK.spd=1.8;});
+ MRK.spd=0;
+ if(hd){ const from=hd.piv.rotation.y,to=hd.b0,t0=performance.now(); while(performance.now()-t0<300){const t=Math.min(1,(performance.now()-t0)/300),e=t*t*(3-2*t);hd.piv.rotation.y=from+(to-from)*e;await wait(16);}hd.piv.rotation.y=to; }
+ setLock('home',true);
+ await wait(180); MRK.active=false; G.camFn=null;
+ await say('Полина','Вот и правильно…');
+ await say('Полина','...Почему-то мне совсем не стало легче.');
+ G.phase='d2bag'; G.d2bagTaken=false; G.lock=false; place(P,HX+3.8,5.15,0,Math.PI); refreshObj(); toast('Возьми рюкзак со стола. Затем подойди к двери и нажми E.',4);
+}
+async function day2SchoolIntro(){
+ G.phase='d2search'; G.lock=true; G.d2clues=0; G.d2clueMask=0; MRK.active=false;
+ await say('Полина','Вчера я была слишком резкой. Но он действительно не должен был меня преследовать.');
+ await say('Полина','Надо хотя бы узнать, где он. Может, кто-нибудь видел его сегодня.');
+ G.lock=false; refreshObj(); toast('Ищи подсказки в разных частях школы. Осмотри 3 места.',4);
+}
+function d2Clue(bit,title,line){ if(G.phase!=='d2search'||(G.d2clueMask&bit))return; G.d2clueMask|=bit; G.d2clues++; AU.ding(); toast(title+' — '+line,4); if(G.d2clues>=3){
+   MRK.active=true; MRK.hidden=null; MRK.lie=false; place(MRK,14.6,7.5,1,Math.PI); MRK.st='idle'; G.phase='d2find'; refreshObj(); toast('Все подсказки указывают на кабинет 201. Проверь его.',4);
+  } else refreshObj(); }
+async function day2FindMark(){ if(G.phase!=='d2find'||G.lock)return; G.lock=true; face(P,MRK); face(MRK,P); MRK.active=true; MRK.ch.talk=1;
+ G.camFn=()=>{setFov(60);const tx=(P.x+MRK.x)/2,ty=1.15,tz=(P.z+MRK.z)/2;safeCinematicCamera(tx,ty,tz,tx+2.4,ty+1.6,tz+2.8,P.lv);};
+ await say('Полина','Марк… Вот ты где. Я тебя искала.');
+ await say('Марк','Зачем? Чтобы снова сказать, чтобы я отстал?');
+ await say('Полина','Я хочу извиниться за пощёчину и за то, как я с тобой разговаривала. Я была зла и испугалась.');
+ await say('Полина','Но ты тоже должен понять: следить за мной и приходить без приглашения — это неправильно. Мне нужно личное пространство.');
+ await say('Марк','Я понял. Я не буду больше так делать. Прости, что напугал тебя.');
+ await say('Полина','Спасибо. Может, попробуем просто общаться в школе? Без преследований и странных сюрпризов.');
+ await say('Марк','Да. Я буду вести себя нормально. Обещаю.');
+ await fade(true); G.camFn=null; MRK.ch.talk=0; G.lock=false;
+ G.st='day3intro'; show('hud',false); $('day3Card').style.display='flex'; $('fade').classList.remove('on');
+ if(document.pointerLockElement)document.exitPointerLock();
+}
+async function startDay3(){
+ $('day3Card').style.display='none'; AU.init(); AU.click();
+ Object.assign(G,{st:'play',mode:'polina',phase:'d3bag',lock:false,cut:false,chase:false,irr:0,task:0,d3bagTaken:false,camFn:null,zone:'home'});
+ P=POL; POL.active=true; MRK.active=false; POL.lie=false; POL.ch.talk=0; MRK.ch.talk=0;
+ for(const e of NPCS)e.active=false;
+ place(P,HX+3.8,5.15,0,Math.PI); IT.bag.visible=true; IT.choco.visible=false; IT.gifts.forEach(g=>g.forEach(m=>m.visible=false));
+ setLock('main',false); inp.yaw=0; inp.pitch=.22; P.stam=100; P.tired=false; G.camFn=null; AU.music('home');
+ refreshObj(); show('hud',true); show('touch',isTouch); relock(); toast('ДЕНЬ 3 — Возьми рюкзак и отправляйся в школу.',4);
+}
+$('beginDay3').onclick=()=>startDay3(); $('day3Menu').onclick=()=>{ $('day3Card').style.display='none'; showMenu(); };
+async function day3SchoolIntro(){
+ if(G.phase!=='d3toSchool'||G.lock)return;
+ // Mark spots Polina at the school entrance and immediately loses his temper.
+ G.phase='d3chase'; G.lock=false; G.cut=false; G.chase=true; G.irr=100;
+ P.spd=0; P.stam=100; P.tired=false;
+ MRK.active=true; MRK.hidden=null; MRK.lie=false; MRK.stun=0;
+ place(MRK,P.x+2.2,P.z+4.2,0,Math.PI);
+ MRK.chaseStam=185; MRK.spd=0; MRK.ch.talk=0;
+ face(MRK,P);
+ G.camFn=null;
+ $('alert').textContent=tr('⚠ ПОГОНЯ! ⚠'); show('alert',true);
+ AU.fail(); AU.music('chase');
+ bubble(MRK,'ПОЛИНА! СТОЙ! ТЫ СЕЙЧАС МЕНЯ ВЫСЛУШАЕШЬ!',2.8);
+ toast('МАРК В ЯРОСТИ! БЕГИ КАК МОЖЕШЬ!',3.2);
+}
+function updDay3Chase(dt){
+ if(G.phase!=='d3chase'||G.lock)return;
+ const dx=P.x-MRK.x, dz=P.z-MRK.z, d=Math.hypot(dx,dz)||1;
+ // Mark's sprint is about 1.22x faster than Polina's and his reserve is larger.
+ const sprinting=MRK.chaseStam>0;
+ const speed=sprinting?7.55:6.35;
+ MRK.x+=(dx/d)*speed*dt; MRK.z+=(dz/d)*speed*dt;
+ MRK.rot=Math.atan2(dx,dz); MRK.spd=speed;
+ MRK.chaseStam=Math.max(0,MRK.chaseStam-dt*9.5);
+ if(MRK.chaseStam<=0)MRK.chaseStam=Math.min(185,MRK.chaseStam+dt*3.5);
+ resolve(MRK,.28); stairFix(MRK);
+ if(d<1.18){
+  G.lock=true; G.chase=false; G.phase='d3meet'; MRK.spd=0; P.spd=0;
+  show('alert',false); day3Confrontation();
+ }
+}
+async function day3Confrontation(){
+ G.lock=true; G.chase=false; G.phase='d3meet';
+ face(P,MRK); face(MRK,P); POL.ch.talk=0; MRK.ch.talk=0;
+ G.camFn=()=>{setFov(58);const tx=(P.x+MRK.x)/2,tz=(P.z+MRK.z)/2;safeCinematicCamera(tx,2.0,tz,tx+2.7,2.4,tz+3.5,P.lv);};
+ await say('Марк','НАКОНЕЦ-ТО! ХВАТИТ УБЕГАТЬ ОТ МЕНЯ! Я ВИДЕЛ ТЕБЯ С ДРУГИМ ПАРНЕМ!');
+ await say('Полина','И что? Ты опять за мной следишь? Ревнуешь меня к каждому, с кем я разговариваю?');
+ await say('Марк','Нет, я просто хотел понять, кто он такой...');
+ await say('Полина','Вот именно. Ты меня преследуешь и постоянно ревнуешь. Мне это надоело.');
+ await say('Полина','Я не собираюсь с тобой общаться. Я не верю, что у тебя хоть что-нибудь получится. Оставь меня в покое.');
+ await say('Марк','Но Полина...');
+ await say('Полина','Прощай, Марк.');
+ MRK.ch.talk=0; G.camFn=null;
+ await fade(true,'20 ЛЕТ СПУСТЯ');
+ await wait(2600);
+ // A quiet roadside epilogue: the same Polina and Mark models are reused.
+ place(P,36.2,59.6,0,Math.PI/2); P.active=true; P.ch.talk=0;
+ MRK.active=false; MRK.ch.talk=0; G.chase=false;
+ G.camFn=()=>{setFov(54);camera.position.set(30.5,7.4,53.2);camera.lookAt(38.5,1.1,65.1);};
+ await fade(false);
+ await day3BusEnding();
+}
+async function day3BusEnding(){
+ const mat=(color,rough=.72,metal=0)=>new THREE.MeshStandardMaterial({color,roughness:rough,metalness:metal});
+ const bus=new THREE.Group(); const blue=mat(0x2876b9), dark=mat(0x20232a), glass=mat(0x8fc9df,.28), rubber=mat(0x17191d), light=mat(0xffe9a6,.35);
+ const cube=(m,x,y,z,w,h,d)=>{const o=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),m);o.position.set(x,y,z);o.castShadow=true;o.receiveShadow=true;bus.add(o);return o;};
+ const busBody=cube(blue,0,1.05,0,5.8,1.65,2.05); cube(blue,.15,1.94,0,3.7,.55,1.96);
+ cube(glass,-.15,1.95,1.01,3.35,.48,.035); cube(glass,-.15,1.95,-1.01,3.35,.48,.035);
+ cube(dark,-2.25,1.88,0,.75,.72,1.9); cube(light,-2.91,.98,.72,.08,.24,.34); cube(light,-2.91,.98,-.72,.08,.24,.34);
+ const frontBumper=cube(dark,-2.93,.72,0,.12,.24,1.82); cube(dark,2.92,.95,0,.08,.3,1.5);
+ const wheels=[];
+ for(const x of [-1.95,1.95])for(const z of [-.99,.99]){const w=new THREE.Mesh(new THREE.CylinderGeometry(.43,.43,.2,18),rubber);w.rotation.x=Math.PI/2;w.position.set(x,.48,z);w.castShadow=true;bus.add(w);wheels.push(w);}
+ bus.position.set(49,.0,62.5); scene.add(bus);
+ const post=new THREE.Group(), pole=new THREE.Mesh(new THREE.CylinderGeometry(.09,.12,3.2,12),dark);pole.position.y=1.6;pole.castShadow=true;post.add(pole);
+ const base=new THREE.Mesh(new THREE.CylinderGeometry(.28,.32,.18,12),dark);base.position.y=.09;post.add(base);post.position.set(37.1,0,61.35);scene.add(post);
+ const tween=async(ms,fn)=>{const t0=performance.now();while(true){const t=Math.min(1,(performance.now()-t0)/ms),e=t*t*(3-2*t);fn(e,t);if(t>=1)break;await wait(16);}};
+ // Polina strolls along the pavement before noticing the approaching minibus.
+ face(P,{x:49,z:62.5}); P.spd=1.25;
+ await tween(950,t=>{P.x=36.2+1.35*t;});
+ P.spd=0; face(P,{x:49,z:62.5});
+ // The minibus approaches along its lane and hits the post at the roadside edge.
+ await tween(2350,t=>{bus.position.x=49-8.9*t;wheels.forEach(w=>w.rotation.z-=.16);});
+ AU.noise(.22,.25,180,'lowpass'); AU.tone(92,.35,'triangle',.13); AU.tone(58,.28,'sawtooth',.06,.08);
+ const smokeGroup=new THREE.Group(), smokeMats=[];
+ for(let i=0;i<9;i++){
+  const smat=new THREE.MeshStandardMaterial({color:0x777b80,transparent:true,opacity:.72,roughness:1,depthWrite:false});
+  smokeMats.push(smat);
+  const puff=new THREE.Mesh(new THREE.SphereGeometry(.22+rnd(.16),10,8),smat);
+  puff.position.set(37.25+rnd(-.25,.3),.85+rnd(.1,.7),61.35+rnd(-.35,.35));
+  puff.scale.set(1,1.15,1); smokeGroup.add(puff);
+ }
+ scene.add(smokeGroup);
+ const bx=bus.position.x;
+ await tween(620,t=>{
+  bus.rotation.z=.045*Math.sin(t*Math.PI*2)*(1-t);
+  bus.position.x=bx-.16*t;
+  busBody.scale.x=1-.27*t; busBody.position.x=.34*t;
+  frontBumper.scale.x=1-.58*t; frontBumper.position.x=-2.93+.27*t;
+  smokeGroup.children.forEach((p,i)=>{p.position.y+=.006+(i%3)*.001;p.position.x-=.0015;p.scale.multiplyScalar(1.0015);smokeMats[i].opacity=Math.max(0,.72-t*.62);});
+ });
+ await wait(450);
+ place(MRK,40.05,62.7,0,Math.PI); MRK.active=true; MRK.spd=0; face(MRK,P);
+ await tween(1050,t=>{MRK.x=40.05+(36.9-40.05)*t;MRK.z=62.7+(60.9-62.7)*t;MRK.spd=1.8;});
+ MRK.spd=0; face(MRK,P); MRK.ch.talk=100;
+ await say('Марк','ПОЛИНА! А ТЫ ГОВОРИЛА, У МЕНЯ НИЧЕГО НЕ ПОЛУЧИТСЯ! ВИДИШЬ, НА КАКОЙ BUGATTI ЕЗЖУ?!');
+ MRK.ch.talk=0;
+ await say('Полина','Марк?.. Это же маршрутка.');
+ await say('Марк','Главное — уверенно подать!');
+ await fade(true,'КОНЕЦ');
+ await wait(1300);
+ scene.remove(bus);scene.remove(post);scene.remove(smokeGroup);G.camFn=null;MRK.active=false;
+ credits();
+}
+function credits(){ G.st='credits'; G.lock=false; ['hud','dlg','peep'].forEach(i=>show(i,false)); show('cred',true); $('credEnd').classList.remove('on'); show('skipCred',true);
+ const r=$('roll'); r.classList.remove('go'); void r.offsetWidth; r.classList.add('go'); AU.music('credits'); if(document.pointerLockElement)document.exitPointerLock(); setTimeout(()=>$('fade').classList.remove('on'),400); }
+function credEnd(){ if(G.st!=='credits')return; $('credEnd').classList.add('on'); show('skipCred',false); $('roll').classList.remove('go'); }
+$('roll').addEventListener('animationend',credEnd); $('skipCred').onclick=credEnd;
+
+/* ================= MENU / START ================= */
+function showMenu(){ $('day3Card').style.display='none'; $('day2Card').style.display='none'; $('day1Choice').style.display='none'; G.st='menu'; G.lock=false; G.cut=false; G.chase=false; G.camFn=null; dlg=null; ['hud','over','pause','cred','peep','dlg','sett'].forEach(i=>show(i,false)); $('fade').classList.remove('on'); show('menu',true); clearBubs(); AU.music('menu'); if(document.pointerLockElement)document.exitPointerLock();
+ for(const e of ents){ e.active=false; e.hidden=null; e.lie=false; e.spd=0; } POL.active=MRK.active=true; place(POL,28.7,45,0,.15); place(MRK,31.3,45.4,0,-.15); P=POL; }
+function startGame(mode){ mode='polina'; AU.init(); Object.assign(G,{mode,st:'play',phase:'home0',cut:false,lock:false,chase:false,irr:0,hasKey:false,task:0,gifts:0,gb:0,given:0,time:480,camFn:null,knockT:0,zone:'home',amb:2});
+ ['menu','over','pause','cred','peep','alert','timer','dlg','sett'].forEach(i=>show(i,false)); show('hud',true); show('touch',isTouch); $('fade').classList.remove('on'); clearBubs(); dlg=null;
+ const pol=mode==='polina'; P=pol?POL:MRK; const o=pol?MRK:POL;
+ for(const e of ents){ e.active=true; e.hidden=null; e.lie=false; e.stun=0; e.cd=0; e.path=null; e.st='idle'; e.spd=0; e.alarm=0; e.freeze=0; e.t=0; }
+ place(P,HX+3.4,3.2,0,0); Object.assign(P,{stam:100,tired:false,stepT:0,freeze:0}); o.active=false; place(o,30,28,0,0);
+ NPCS.forEach((n,i)=>{ const p=POI[(i*4+3)%POI.length]; place(n,p.x,p.z,p.lv,rnd(6)); n.t=.3+i*.35; });
+ IT.bag.visible=pol; IT.choco.visible=!pol; IT.key.visible=true; IT.gifts.forEach(g=>g.forEach(m=>m.visible=false));
+ setLock('main',false); inp.yaw=Math.PI; inp.pitch=.3; inp.run=false; inp.jx=inp.jy=0; $('bRun').classList.remove('on'); camD=3.4;
+ $('irrL').textContent=tr('РАЗДРАЖЕНИЕ МАРКА'); AU.music('home'); refreshObj(); relock(); if(!isTouch&&!document.pointerLockElement)show('lockHint',true);
+ toast(pol?'Утро. Полина собирается в школу...':'Утро. Марк полон надежд...',3); }
+$('discOk').onclick=()=>{ AU.init(); AU.click(); show('disc',false); if(!G.discBack)showMenu(); G.discBack=false; };
+$('cardP').onclick=()=>startGame('polina'); $('cardP').addEventListener('keydown',e=>{ if(e.code==='Enter'){ e.stopPropagation(); $('cardP').click(); } });
+$('oAgain').onclick=$('cAgain').onclick=()=>startGame(G.mode);
+$('oMenu').onclick=$('cMenu').onclick=$('pMenu').onclick=()=>{ AU.click(); showMenu(); };
+
+/* ================= MAIN LOOP ================= */
+function update(dt){ G.run+=dt; updPlayer(dt); const zn=zoneOf(P);
+ if(!(G.cut||G.lock)){
+  if(G.phase==='d3chase')updDay3Chase(dt); else if(G.phase==='d2door'||G.phase==='d2bag'||G.phase==='d2toSchool'||G.phase==='d2search'||G.phase==='d2find'||G.phase==='d3bag'||G.phase==='d3toSchool'||G.phase==='d3meet'){ /* Story scenes use their own scripted movement. */ } else if(isPol())updMarkAI(dt); else { updPolinaAI(dt); if(G.phase==='school'){ G.time-=dt; if(G.time<=0){ gameOver('Прозвенел последний звонок. Полина ушла домой, а Марк остался на продлёнку.'); return; } } }
+  if(!G.phase.startsWith('d2')&&!G.phase.startsWith('d3'))for(const n of NPCS)updNPC(n,dt);
+  if(zn!==G.zone){ G.zone=zn; refreshObj(); if(zn==='out'&&G.phase==='school')toast('Уроки ещё не закончились! Вернись в школу.',3); }
+  if((G.phase==='toSchool'||G.phase==='d2toSchool'||G.phase==='d3toSchool')&&zn==='school'&&P.z<35.2){ if(G.phase==='d2toSchool')day2SchoolIntro(); else if(G.phase==='d3toSchool')day3SchoolIntro(); else schoolIntro(); }
+  if(G.phase==='peep'){ G.knockT-=dt; if(G.knockT<=0){ G.knockT=4.5; AU.knock(); } }
+  G.amb-=dt; if(G.amb<=0){ G.amb=rnd(1.5,5); if(zn==='out')AU.bird(); else if(zn==='school'&&!G.chase)for(let i=0;i<3;i++)AU.tone(rnd(180,420),.07,'triangle',.016,i*.09); }
+ } else for(const e of ents)if(e!==P)e.spd=0;
+ if(G.phase!=='end')AU.music((G.chase||(!isPol()&&G.phase==='school'&&POL.st==='flee'))?'chase':(zn==='home'&&G.phase!=='peep')?'home':null);
+ for(const e of ents)syncEnt(e,dt); updDoors(dt); updCam(dt); updBubs(dt); updPrompt();
+ $('stam').style.width=P.stam+'%'; $('stam').style.background=P.tired?'#ff5d5d':''; $('irr').style.width=(isPol()?G.irr:G.given/3*100)+'%';
+ if(!isPol()){ const s=Math.max(0,Math.ceil(G.time)); $('timer').textContent=(s/60|0)+':'+('0'+s%60).slice(-2); if(G.phase!=='school')show('timer',false); }
+ IT.key.rotation.y+=dt*2.5; IT.gifts.forEach(g=>g.forEach(m=>m.rotation.y+=dt*1.5));
+ const lx=G.camFn?camera.position.x:P.x, lz=G.camFn?camera.position.z:P.z;
+ sun.position.set(lx+22,P.y+38,lz+14); sun.target.position.set(lx,P.y,lz); plight.position.set(lx,P.y+2.3,lz); plight.intensity=zn==='out'?0:.55; }
+let last=0;
+function loop(now){ requestAnimationFrame(loop); const dt=Math.min(.05,Math.max(0,(now-last)/1000)); last=now;
+ if(G.st==='play')update(dt);
+ else if(G.st==='menu'){ const t=now*.00012; setFov(58); camera.position.set(30+Math.sin(t)*30,11+Math.sin(t*1.7)*2,68+Math.cos(t)*6); camera.lookAt(30,3.5,34); MRK.ch.talk=1; for(const e of ents)syncEnt(e,dt); sun.position.set(52,38,54); sun.target.position.set(30,0,40); plight.intensity=0; }
+ if(G.st!=='credits'&&G.st!=='boot')renderer.render(scene,camera); }
+/* ================= BOOT ================= */
+applyQuality(); drawPortrait($('pcP'),'polina');
+$('ctrlHint').textContent=tr(isTouch?'Джойстик слева — движение · свайп справа — камера · кнопки: БЕГ, E (действие), II (пауза)':'WASD — движение · Мышь — камера · E — взаимодействие · Shift — бег · Esc — пауза · 1–4 — ответы в диалогах');
+show('load',false); show('language',true); show('disc',false); requestAnimationFrame(loop);
+async function day2Slap(){
+ if(G.phase!=='d2door'||G.lock)return;
+ G.lock=true; P.spd=0; MRK.spd=0; face(P,MRK); face(MRK,P); AU.door();
+ // The camera is outside the doorway looking inward (+Z): Polina faces it,
+ // while Mark faces back toward the doorway. Reuse the exact same rigs as Day 1.
+ place(P,HX+3.8,6.12,0,0); place(MRK,HX+3.8,8.12,0,Math.PI); MRK.active=true;
+ POL.ch.talk=0; MRK.ch.talk=0;
+ POL.ch.g.rotation.set(0,0,0); MRK.ch.g.rotation.set(0,Math.PI,0);
+ const hd=DOOR.home;
+ setLock('home',false);
+ G.camFn=()=>{setFov(56);safeCinematicCamera(HX+3.8,1.12,7.05,HX+3.82,2.05,9.25,0);};
+ await fade(true);
+ if(hd){ const from=hd.piv.rotation.y,to=hd.b0+1.42,t0=performance.now(); while(performance.now()-t0<360){const t=Math.min(1,(performance.now()-t0)/360),e=1-Math.pow(1-t,3);hd.piv.rotation.y=from+(to-from)*e;await wait(16);}hd.piv.rotation.y=to; }
+ await fade(false);
+ await say('Полина','Ты?! Ты опять пришёл ко мне домой?!');
+ await say('Полина','Я же просила не следить за мной! Хватит ходить за мной повсюду!');
+ await say('Марк','Я… я просто хотел поговорить.');
+ await say('Полина','Мне не нужны такие визиты. Уходи.');
+ await say('Марк','Понял… Прости. Я уйду.');
+ if(hd){const from=hd.piv.rotation.y,to=hd.b0,t0=performance.now();while(performance.now()-t0<300){const t=Math.min(1,(performance.now()-t0)/300),e=t*t*(3-2*t);hd.piv.rotation.y=from+(to-from)*e;await wait(16);}hd.piv.rotation.y=to;}
+ setLock('home',true); await wait(180); MRK.active=false; G.camFn=null;
+ await say('Полина','Вот и правильно…');
+ await say('Полина','...Почему-то мне совсем не стало легче.');
+ G.phase='d2bag'; G.d2bagTaken=false; G.lock=false; place(P,HX+3.8,5.15,0,Math.PI); refreshObj(); toast('Возьми рюкзак со стола. Затем подойди к двери и нажми E.',4);
+}
+</script>
+
+
+
+</body>
+</html>
